@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Índice de archivos AIML y áreas temáticas:
+	
+	*udc: aquí aparecen las respuestas que da el bot cuando no sabe qué responder
+	*README: aquí se explica la organización del bot 
+	
+    1.a. General (Cortesía e interacciones generales)
+	    - Saludos y despedidas
+	    - Propósito e identidad
+	    - Problemas técnicos
+	
+	1.b. Respuestas general
+	    - HELLO
+	    - AU REVOIR
+	    - PROPOSITO
+	    - IDENTIDAD
+	    - TONTO
+	    - SERVICIO TECNICO
+	    
+	2.a. Config y pgtas frecuentes (Configuración y preguntas frecuentes)
+	    - Cuestiones generales
+	    - Conexiones
+	    - Pantalla
+	    - Imagen
+	    - Sonido y tono
+	    - Letra
+	
+	2.b. Respuestas configuración
+	    - ENCENDIDO
+	    - APAGADO
+	    - REINICIADO
+	    - ACTIVAPANTALLA
+	    - DESACTIVAPANTALLA
+	    - CARGAMOVIL
+	    - NUEVACONTRASENA
+	    - OTRACONTRASENA
+	    - CONEXWIFI
+	    - CONEXDATOS
+	    - CONEXBLUETOOTH
+	    - HACERCAPTURA
+	    - NUEVOFONDO
+	    - HACERFOTOVIDEO
+	    - VERFOTOVIDEO
+	    - BORRARFOTOVIDEO
+	    - AUMENTARVOLUMEN
+	    - DISMINUIRVOLUMEN
+	    - ACTIVARSILENCIO
+	    - DESACTIVARSILENCIO
+	    - TONOMOVIL
+	    - CAMBIARTAMANO
+	    
+	3.a. Navegación web
+	    - CUESTIONES GENERALES SOBRE EL NAVEGADOR
+	    - BÚSQUEDAS
+	    - PÁGINAS WEB
+	    - MULTIMEDIA
+	    - SEGURIDAD
+	
+	3.b. Respuestas navegación web
+	    - PESTAÑAS
+	    - NAVEGADOR
+	    - TAMAÑO DE LETRA
+	    - HISTORIAL DE BÚSQUEDA
+	    - CORREO
+	    - BÚSQUEDA MANUAL
+	    - BÚSQUEDA POR VOZ
+	    - BÚSQUEDA POR IMAGEN
+	    - FAVORITOS
+	    - COOKIES
+	    - BUSQUEDA Y DESCARGA DE IMAGENES
+	    - BUSQUEDA Y DESCARGA DE VIDEOS
+	    - BUSQUEDA Y DESCARGA DE MUSICA
+	    - NAVEGACION SEGURA
+	    - MENSAJE DE ADVERTENCIA
+	    - PAGINA PELIGROSA
+	    
+	    
+	4.a. Comunicación (Comunicación: llamadas, mensajes, etc.)
+	    - LLAMADAS
+	    - VIDEOLLAMADAS
+	    - HATSAPP
+	    - MENSAJES
+	    - CORREO ELECTRONICO
+	
+	4.b. Respuestas comunicación
+	    - LLAMADA
+	    - CONTACTO
+	    - BUZONVOZ
+	    - FINLLAMADA
+	    - NOMEOIR
+	    - NOOIR
+	    - ALTAVOZ
+	    - VIDEOLLAMADA
+	    - APPVIDEOLLAMADA
+	    - NOMEESCUCHARVIDEO
+	    - NOESCUCHARVIDEO
+	    - WHATSAPP
+	    - GRUPO
+	    - BORRARCHAT
+	    - FOTO
+	    - UBICACION
+	    - DOCUMENTO
+	    - CONTACTOWHATSAPP
+	    - LEERMENSAJE
+	    - MENSAJE
+	    - BORRARMENSAJE
+	    - APPCORREO
+	    - CUENTA
+	    - CORREO
+	    - BORRARCORREO
+	    
+	5.a. Redes sociales
+	    - Preguntas comunes
+	    - Preguntas específicas
+	        - INSTAGRAM
+	        - TWITTER
+	        - TIKTOK
+	        
+	5.b. Respuestas redes sociales
+	    - [SOCIALMEDIA]
+        a) [INSTAGRAM QUE SER]
+        b) [TWITTER QUE SER]
+        c) [TIKTOK QUE SER] 
+	    - [GENTE]
+	    - [MENSAJERS]
+        a) [MENSAJE INSTAGRAM]
+        b) [MENSAJE TWITTER]
+        c) [MENSAJE TIKTOK]
+        - [PRIVADO]
+        a) Respuesta: [PRIVINSTA]´
+        b) Respuesta: [PRIVTW]
+        c) Respuesta: [PRIVTIKTOK]
+        - [SAVE]
+        a) Respuesta: [SAVEINSTA]
+        b) Respuesta: [SAVETW]
+        c) Respuesta: [SAVETIKTOK]
+        - [BLOQUEO]
+        a) Respuesta: [BLOQINSTA]
+        b) Respuesta: [BLOQTW]
+        c) Respuesta:  [BLOQTIKTOK]
+        - [BORRADO]
+        a) Respuesta: [BORRADOINSTA]
+        b) Respuesta: [BORRADORTW]
+        c) Respuesta: [BORRAOTIKTOK]
+        
+        * INSTAGRAM
+        - Respuesta: [STORY]
+        - Respuesta: [SUBSTORY]
+        - Respuesta: [SUBFOTOPERFIL]
+        - Respuesta: [EDITSTORY]
+        
+        * TWITTER
+        - Respuesta: [RETWITTEO]
+        - Respuesta: [COMORETWEET]
+        - Respuesta: [CITAR]
+        - Respuesta: [PARATI]
+        
+        * TIKTOK
+        - Respuesta: [COMPARTIRVIDEO]
+        - Respuesta: [GRABAR]    
+	
+	6.a. Apps y entretenimiento (Aplicaciones y entretenimiento)
+	    - Cuestiones generales
+	    - Juegos
+	    - Vídeos
+	    - Series y películas
+	    - Música y radio
+	    - Salud
+	    - Orientación
+	    - Banca
+	    - Recomendaciones
+	
+	6.b. Respuestas apps y entretenimiento
+	    - TIPOSAPPS
+	    - TIENDA
+	    - PAGO APP
+	    - DIFERENCIA APLICACION
+	    - HACER DESCARGAS
+	    - CALENDARIO
+	    - ALARMA
+	    - NOTAS
+	    - VIDEOS
+	    - STREAMING
+	    - TV
+	    - MUSICA
+	    - RADIO
+	    - MEDICO
+	    - CITAMEDI
+	    - MAPAS
+	    - BANCO
+	    - PAYGOOGLE
+	    - JUEGOS RECOMENDADOS
+	    - OPCIONES ENTRETENIMIENTO
+	    - PASTILLAS
+	    - GOOGLECALENDAR
+	    - MEDISAFE
+	    - RECORDATORIOS
+	    - SALDO
+	    - TRANSFERENCIAS
+	    - TARJETA
+	    - IBANPIN
+	    - BIZUM
+	    - ACCIONESBANCOVARIAS
+	-->
+	
+</aiml>

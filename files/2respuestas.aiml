@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Índice de respuestas del bloque Configuración y preguntas frecuentes:
+	
+	1. Cuestiones generales
+	    - ENCENDIDO
+	    - APAGADO
+	    - REINICIADO
+	    - ACTIVAPANTALLA
+	    - DESACTIVAPANTALLA
+	    - CARGAMOVIL
+	    - NUEVACONTRASENA
+	    - OTRACONTRASENA
+	
+	2. Conexiones
+	    - CONEXWIFI
+	    - CONEXDATOS
+	    - CONEXBLUETOOTH
+	
+	3. Pantalla
+	    - HACERCAPTURA
+	    - NUEVOFONDO
+	
+	4. Imagen
+	    - HACERFOTOVIDEO
+	    - VERFOTOVIDEO
+	    - BORRARFOTOVIDEO
+	
+	5. Sonido y tono
+	    - AUMENTARVOLUMEN
+	    - DISMINUIRVOLUMEN
+	    - ACTIVARSILENCIO
+	    - DESACTIVARSILENCIO
+	    - TONOMOVIL
+	
+	6. Letra
+	    - CAMBIARTAMANO
+	
+	-->
+	
+	<!-- BLOQUE 1: CUESTIONES GENERALES -->
+	
+	    <!-- ENCENDIDO -->
+	<category>
+	    <pattern>ENCENDIDO</pattern>
+	    <template>
+	        <delay>3</delay>Busca en los laterales de tu teléfono móvil un botón pequeño. Si ves varios, fíjate en uno que esté un poco más separado del resto. En iPhone, este botón suele estar en el lado opuesto a los demás, cerca de la cámara. Mantenlo pulsado unos segundos, hasta que se empiece a iluminar la pantalla.
+	        <delay>3</delay>Cuando el móvil se encienda, probablemente te pedirá la clave de tu tarjeta SIM, que es un número especial de 4 dígitos. Te aconsejo que tengas la clave apuntada en papel en un lugar seguro. Si no sabes cuál es o no la recuerdas, pídele ayuda a un familiar o contacta con tu compañía de teléfono (Orange, Vodafone… la que sea).
+	    </template>
+    </category>
+    
+	    <!-- APAGADO -->
+    <category>
+	    <pattern>APAGADO</pattern>
+	    <template>
+	        <delay>3</delay>Coge el móvil con la pantalla encendida y busca en sus lados un botón pequeño. Si hay varios botones, fíjate en uno que esté un poco más separado del resto. En iPhone, este botón suele estar en el lado opuesto a los demás, cerca de la cámara. Déjalo pulsado durante unos segundos, hasta que aparezcan en la pantalla varias opciones, y toca la opción de apagar.
+	        <delay>5</delay>⚠️ Importante: no pulses en resetear si no sabes qué es.
+	    </template>
+    </category>
+
+	    <!-- REINICIADO -->
+    <category>
+	    <pattern>REINICIADO</pattern>
+	    <template>
+	        <delay>3</delay>Coge el móvil con la pantalla encendida y busca en sus lados un botón pequeño. Si hay varios botones, fíjate en uno que esté un poco más separado del resto. En iPhone, este botón suele estar en el lado opuesto a los demás, cerca de la cámara. Déjalo pulsado durante unos segundos, hasta que aparezcan en la pantalla varias opciones, y toca la opción de reiniciar.
+	        <delay>5</delay>⚠️ Importante: no pulses en resetear si no sabes qué es.
+	    </template>
+    </category>
+    
+	    <!-- ACTIVAPANTALLA -->
+	<category>
+	    <pattern>ACTIVAPANTALLA</pattern>
+	    <template>
+	        <delay>4</delay>Busca en los lados del móvil un botón pequeño. Si ves varios, fíjate en uno que esté un poco más separado del resto. En iPhone, este botón suele estar en el lado opuesto a los demás, cerca de la cámara. Solo tienes que pulsarlo un momento y la pantalla se iluminará, pidiéndote probablemente la contraseña.
+	    </template>
+    </category>
+    
+	    <!-- DESACTIVAPANTALLA -->
+	<category>
+	    <pattern>DESACTIVAPANTALLA</pattern>
+	    <template>
+	        <delay>4</delay>Busca en los lados del móvil un botón pequeño. Si ves varios, fíjate en uno que esté un poco más separado del resto. En iPhone, este botón suele estar en el lado opuesto a los demás, cerca de la cámara. Solo tienes que pulsarlo un momento y la pantalla se oscurecerá. Recuerda que de este modo el móvil sigue encendido, pero gastando menos batería.
+	    </template>
+    </category>
+
+	    <!-- CARGAMOVIL -->
+	<category>
+	    <pattern>CARGAMOVIL</pattern>
+	    <template>
+	        <delay>3</delay>Para cargar tu móvil necesitarás el cable de carga y el adaptador. El cable tiene dos extremos enchufables. Un extremo, más grande y de forma rectangular, lo tienes que enchufar en una ranura que hay en el adaptador. Y el otro extremo, que es más pequeño, lo debes insertar en una abertura que hay en uno de los lados de tu móvil. Asegúrate de que el cable encaja correctamente y sin mucho esfuerzo.
+	        <delay>5</delay>A continuación, enchufa el adaptador en una toma de corriente, como harías si enchufases la plancha o una tostadora. Si ves un símbolo de un rayo en la pantalla del móvil, es que se está cargando.
+	    </template>
+    </category>
+        
+        <!-- NUEVACONTRASENA -->
+    <category>
+	    <pattern>NUEVACONTRASENA</pattern>
+	    <template>
+	        <delay>4</delay>Desde la pantalla de inicio de tu móvil, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado con un nombre similar a “Seguridad y contraseñas”. Si no lo ves, prueba a buscar el apartado “Pantalla de bloqueo”, presiona sobre él, y dentro elige la opción “Seguridad y contraseñas”.</li>
+	            <li>En el menú de contraseñas, selecciona la opción que prefieras, aunque mi recomendación es que escojas la contraseña por huella o por “Face ID” (que usa tu cara). Después, sigue las instrucciones que aparecerán en la pantalla.</li>
+	            <li>Cuando completes el proceso, bloquea el móvil y prueba a poner la contraseña. Si el móvil no se desbloquea, puede ser que te hayas equivocado o que el dedo/el móvil esté sucio.</li>
+	        </ol>
+	    </template>
+    </category>
+
+        <!-- OTRACONTRASENA -->
+    <category>
+	    <pattern>OTRACONTRASENA</pattern>
+	    <template><delay>4</delay>Desde la pantalla de inicio de tu móvil, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado con un nombre similar a “Seguridad y contraseñas”. Si no lo ves, prueba a buscar el apartado “Pantalla de bloqueo”, presiona sobre él, y dentro elige la opción “Seguridad y contraseñas”.</li>
+	            <li>En el menú de contraseñas, selecciona la opción que prefieras y sigue las instrucciones que aparecerán en la pantalla.</li>
+	            <li>Cuando termines, bloquea el móvil y prueba a poner la nueva contraseña. Si el móvil no se desbloquea, puede ser que te hayas equivocado o que el dedo/el móvil esté sucio. También podría ser que la nueva contraseña no se haya guardado y la antigua siga activa.</li>
+	        </ol>
+	    </template>
+    </category>
+
+	<!-- BLOQUE 2: CONEXIONES -->
+	
+	    <!-- CONEXWIFI -->
+	<category>
+	    <pattern>CONEXWIFI</pattern>
+	    <template><delay>4</delay>Desde la pantalla de inicio de tu móvil, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado llamado “Wi-Fi”. Si no lo ves, prueba a buscar el apartado “Conexiones” o “Redes”, presiona sobre él, busca dentro la opción “Wi-Fi” y elígela.</li>
+	            <li>En el menú de Wi-Fi, verás un interruptor que debes pulsar. El interruptor debería cambiar de color/posición.</li>
+	            <li>Aparecerá una lista de nombres de redes Wi-Fi. Pulsa la que te interese e introduce la contraseña si es necesario. Si no sabes qué red Wi-Fi escoger o no recuerdas la contraseña de la red que has elegido, pídele ayuda a un familiar, a un amigo o amiga, o a un trabajador (si estás en una tienda o restaurante).</li>
+	            <li>Para asegurarte de que te has conectado, mira que en la parte de arriba de la pantalla haya aparecido un dibujo con varias líneas coloreadas.</li>
+	        </ol>
+	    </template>
+    </category>
+
+	    <!-- CONEXDATOS -->
+	<category>
+	    <pattern>CONEXDATOS</pattern>
+	    <template><delay>4</delay>Desde la pantalla de inicio de tu móvil, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado llamado “Datos móviles”. Si no lo ves, busca un apartado con un nombre parecido a “Conexiones (móviles)” o “Redes (móviles)”, presiona sobre él, busca dentro la opción “Datos móvil” y elígela.</li>
+	            <li>En el menú de Datos móviles, verás un interruptor que debes pulsar. El interruptor debería cambiar de color/posición.</li>
+	            <li>Si ves el símbolo “4G” o “5G” en la parte de arriba de la pantalla, es que los datos se han activado.</li>
+	        </ol>
+	        <delay>3</delay>Si viajas al extranjero, es mejor utilizar la conexión Wi-Fi, ya que te pueden cobrar por usar tus datos móviles. Ante la duda, pregúntale a un familiar con experiencia o a tu compañía de teléfono (Orange, Vodafone… la que sea).
+	    </template>
+    </category>
+
+	    <!-- CONEXBLUETOOTH -->
+	<category>
+	    <pattern>CONEXBLUETOOTH</pattern>
+	    <template><delay>4</delay>Desde la pantalla de inicio de tu móvil, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado llamado “Bluetooth”. Si no lo ves, prueba a buscar el apartado “Conexiones” o “Redes”, presiona sobre él, busca dentro la opción “Bluetooth” y elígela.</li>
+	            <li>En el menú de Bluetooth, verás un interruptor que debes pulsar. El interruptor debería cambiar de color/posición. Si ves una letra “B” en la parte superior de la pantalla, es que el Bluetooth está activo.</li>
+	            <li>Al haberlo activado, aparecerá un listado nombres de dispositivos. Seleccionas a cuál te quieres conectar, y listo.</li>
+	        </ol>
+	    </template>
+    </category>
+
+	<!-- BLOQUE 3: PANTALLA -->
+	
+	    <!-- HACERCAPTURA -->
+	<category>
+	    <pattern>HACERCAPTURA</pattern>
+	    <template>
+	        <delay>3</delay>Si tienes un teléfono iPhone, puedes hacer una captura de pantalla presionando a la vez el botón lateral y el de subir volumen. Si agarras el móvil con la pantalla mirando hacia a ti, el botón lateral es el que ves en el lado derecho, cerca de la cámara. Y el botón de subir volumen está en el lado izquierdo, entre el botón de bajar volumen y el de interrupción de sonido.
+	        <delay>4</delay>Si tu móvil es de otra marca, deberás pulsar al mismo tiempo el botón de encendido/apagado y el de bajar volumen. Si coges el móvil con la pantalla mirando hacia a ti, el botón de bajar volumen está en un lado, casi pegado al de subir volumen (incluso a veces parecen el mismo botón). Y el botón de encendido/apagado se encuentra un poco separado del resto (a veces, en el lado contrario).
+	        <delay>4</delay>Las capturas que hagas se guardarán en la galería con tus otras fotos y vídeos.
+	    </template>
+    </category>
+
+	    <!-- NUEVOFONDO -->
+	<category>
+	    <pattern>NUEVOFONDO</pattern>
+	    <template><delay>4</delay>Desde la pantalla de inicio de tu móvil, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado llamado “Fondo de pantalla”.</li>
+	            <li>Aquí puedes escoger un fondo de pantalla que ya esté descargado en el móvil o descargar un fondo nuevo de los que se ofrecen.</li>
+            </ol>
+            <delay>4</delay>Otra manera de cambiar el fondo de pantalla es entrando en tu aplicación de galería. Dentro, toca la foto que quieras, pulsa en un símbolo de 3 puntos o líneas y elige “Establecer como fondo de pantalla”.
+            <delay>3</delay>Con cualquiera de estos 2 métodos puedes poner la misma foto como fondo de pantalla y de bloqueo o una fotos diferente para cada uno.
+	    </template>
+    </category>
+
+	<!-- BLOQUE 4: IMAGEN -->
+	
+	    <!-- HACERFOTOVIDEO -->
+	<category>
+	    <pattern>HACERFOTOVIDEO</pattern>
+	    <template><delay>4</delay>Busca la aplicación de cámara y pulsa en ella. El icono suele tener un dibujo parecido a una lente de cámara y llevar la etiqueta “Cámara”. Al abrirla verás muchos símbolos y palabras, pero lo importante son solo 3 cosas:
+	        <ol>
+	            <li>El botón grande circular, en el centro de la parte baja de la pantalla, sirve para hacer fotos o grabar vídeos.</li>
+	            <li>El botón circular a su lado, con dos flechas formando un círculo, sirve para elegir la cámara exterior o la de selfi.</li>
+	            <li>El rayo, en la parte de arriba de la pantalla, sirve para activar o desactivar el flash, una luz que ilumina nuestras imágenes (pero no funciona en los vídeos).</li>
+            </ol>
+            <delay>4</delay>El modo “foto” suele estar ya puesto cuando entras en la cámara. Lo sabrás porque, en la parte de abajo de la pantalla, la palabra “foto” saldrá de un color distinto a las demás. Si quieres poner el modo “vídeo”, desliza el dedo horizontalmente sobre la fila de palabras hasta que la palabra “vídeo” sea la que esté de un color diferente.
+            <delay>4</delay>Si quieres que la imagen se vea más grande, pellizca la pantalla con la yema de los dedos. Si quieres que sea más pequeña, haz el gesto contrario, es decir, estira las yemas de los dedos sobre la pantalla.
+	    </template>
+    </category>	    
+
+	    <!-- VERFOTOVIDEO -->
+	<category>
+	    <pattern>VERFOTOVIDEO</pattern>
+	    <template>
+	        <delay>4</delay>Busca la aplicación de galería y pulsa en ella. El icono suele llevar la etiqueta “Galería”. Al abrirla verás todas tus fotos, vídeos y GIF, ordenados desde más reciente (parte alta) hasta más antiguo (parte baja). Puedes deslizarte verticalmente para verlo todo a la vez, o puedes pulsar sobre una foto, vídeo o GIF para verlo en mayor tamaño y mejor calidad. Además, si deslizas el dedo horizontalmente, podrás ver tus fotos, vídeos o GIF ordenados por álbumes.
+	    </template>
+    </category>
+
+	    <!-- BORRARFOTOVIDEO -->
+	<category>
+	    <pattern>BORRARFOTOVIDEO</pattern>
+	    <template>
+	        <delay>3</delay>Busca la aplicación de galería y pulsa en ella. El icono suele llevar la etiqueta “Galería”. Dentro de ella, localiza lo que quieres borrar, pulsa encima y, entre los símbolos que aparecerán abajo, toca el de la papelera.
+	    </template>
+    </category>
+
+	<!-- BLOQUE 5: SONIDO Y TONO -->
+	
+	    <!-- AUMENTARVOLUMEN -->
+	<category>
+	    <pattern>AUMENTARVOLUMEN</pattern>
+	    <template>
+	        <delay>3</delay>Con la pantalla encendida del móvil mirando hacia ti, busca en los lados 2 botones pequeños, uno encima del otro. Si tu móvil es iPhone, estarán en el lado izquierdo, lejos de la cámara. Si tienes otra marca de móvil, puedes encontrarte con 2 botones pequeños pegados o 1 único botón largo. Cuando lo localices, pulsa una vez el que está más arriba (o si es 1 solo botón, pulsa la parte superior). No lo confundas con el botón de encendido/apagado, que está más separado y tiene un tamaño diferente.
+	        <delay>5</delay>Sabrás que el volumen ha subido porque en la pantalla aparecerá una barra o línea que crece. Si la barra o línea decrece, es que has presionado el botón de bajar volumen. Para subir el volumen más rápido, puedes presionar el mismo botón varias veces o mantenerlo pulsado.
+	    </template>
+    </category>	
+	
+	    <!-- DISMINUIRVOLUMEN -->
+	<category>
+	    <pattern>DISMINUIRVOLUMEN</pattern>
+	    <template>
+	        <delay>3</delay>Con la pantalla encendida del móvil mirando hacia ti, busca en los lados 2 botones pequeños, uno debajo del otro. Si tu móvil es iPhone, estarán en el lado izquierdo, lejos de la cámara. Si tienes otra marca de móvil, puedes encontrarte con 2 botones pequeños pegados o 1 único botón largo. Cuando lo localices, pulsa una vez el que está más abajo (o si es un solo botón, pulsa la parte inferior). No lo confundas con el botón de encendido/apagado, que está más separado y tiene un tamaño diferente.
+	        <delay>5</delay>Sabrás que el volumen ha bajado porque en la pantalla aparecerá una barra o línea que decrece. Si la barra o línea crece, es que has presionado el botón de subir volumen. Para bajar el volumen más rápido, puedes presionar el mismo botón varias veces o mantenerlo pulsado.
+	    </template>
+    </category>
+	
+	    <!-- ACTIVARSILENCIO -->
+	<category>
+	    <pattern>ACTIVARSILENCIO</pattern>
+	    <template>
+	        <delay>3</delay>Si tu móvil es un iPhone, busca en los lados un pequeño interruptor. Suele situarse en el lado contrario a la cámara. Cuando lo veas, deslízalo hacia abajo para activar el modo “Silencio”.
+	        <delay>3</delay>Si tienes otra marca de teléfono, busca y pulsa el botón de bajar volumen. En caso de que tengas solo 1 botón de volumen alargado, presiona la parte inferior. Pulsa varias veces o mantén pulsado hasta bajar completamente la barra o línea de volumen de la pantalla.
+	    </template>
+    </category>
+    	
+	    <!-- DESACTIVARSILENCIO -->
+	<category>
+	    <pattern>DESACTIVARSILENCIO</pattern>
+	    <template>
+	        <delay>3</delay>Si tu móvil es un iPhone, busca en los lados un pequeño interruptor. Suele situarse en el lado contrario a la cámara. Cuando lo veas, deslízalo hacia arriba para desactivar el modo “Silencio”.
+	        <delay>3</delay>Si tienes otra marca de teléfono, busca y pulsa el botón de subir volumen. En caso de que tengas solo 1 botón de volumen alargado, presiona la parte superior. Pulsa varias veces o mantén pulsado para ajustar la cantidad de sonido a tu gusto.
+	    </template>
+    </category>
+    	
+	    <!-- TONOMOVIL -->
+	<category>
+	    <pattern>TONOMOVIL</pattern>
+	    <template><delay>4</delay>Para cambiar el tono, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado llamado “Sonido y vibración” o “Sonidos y tacto”.</li>
+	            <li>Te aparecerán varias opciones. Léelas con atención y pulsa donde te interese. Resumidamente, el tono de llamada es la música que suena cuando alguien te llama por teléfono; el tono de notificación es el sonido de cuando recibes un mensaje de una aplicación, y el tono de alarma es la música que suena cuando se activa una alarma de tu aplicación “Reloj”.</li>
+	            <li>Cuando elijas qué tono quieres cambiar, aparecerá una lista de canciones. Pulsa en una para escucharla y, si te gusta, guárdala.</li>
+            </ol>
+        </template>
+    </category>	
+
+	<!-- BLOQUE 6: LETRA -->
+	
+	    <!-- CAMBIARTAMANO -->
+	<category>
+	    <pattern>CAMBIARTAMANO</pattern>
+	    <template><delay>4</delay>Para cambiar el tamaño del texto, sigue estos pasos:
+	        <ol>
+	            <li>Busca y presiona el icono de configuración. Suele parecerse a un engranaje y estar etiquetado como “Configuración” o “Ajustes”.</li>
+	            <li>Dentro del menú de configuración, busca y pulsa en un apartado llamado “Texto” o “Tamaño de texto”. Si no lo encuentras, busca un apartado con el nombre “Pantalla” o “Pantalla y brillo”, presiona en él, busca “Tamaño de texto” y púlsalo.</li>
+	            <li>Al entrar verás una barra o línea coloreada con dos extremos. Desliza el dedo horizontalmente sobre ella para ajustar el tamaño a tu gusto.</li>
+	        </ol>
+	    </template>
+	</category>
+
+</aiml>

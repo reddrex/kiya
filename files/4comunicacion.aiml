@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- Índice de Comunicación:
+
+    1. LLAMADAS
+[RESPUESTA: LLAMADA]
+- ¿Cómo llamar/hablar por teléfono?
+- ¿Cómo hacer/realizar una llamada?
+
+[RESPUESTA: FINLLAMADA]
+- ¿Cómo colgar/terminar/acabar/finalizar una llamada?
+
+[RESPUESTA: CONTACTO]
+- ¿Cómo añadir/crear un contacto?
+
+[RESPUESTA: BUZONVOZ]
+- ¿Cómo escuchar/oír los mensajes del buzón de voz?
+
+[RESPUESTA: NOMEOIR]
+- ¿Qué hacer si la otra persona no te oye/escucha en una llamada?
+
+[RESPUESTA: NOOIR]
+- ¿Qué hacer si no oyes/escuchas a la otra persona en una llamada?
+
+[RESPUESTA: ALTAVOZ]
+- ¿Cómo activar/encender/poner el altavoz?
+
+    2. VIDEOLLAMADAS
+[RESPUESTA: VIDEOLLAMADA]
+- ¿Cómo hacer/realizar una videollamada?
+
+[RESPUESTA: APPVIDEOLLAMADA ]
+- ¿Qué aplicaciones puedo usar/utilizar/descargar para hacer una videollamada?
+
+[RESPUESTA: NOMEESCUCHARVIDEO ]
+- ¿Qué hacer si la otra persona no te ve o no te oye/escucha en una videollamada?
+
+[RESPUESTA: NOESCUCHARVIDEO ]
+- ¿Qué hacer si no puedo ver u oír/escuchar a la otra persona en una videollamada?
+
+    3. WHATSAPP
+[RESPUESTA: WHATSAPP]
+¿Cómo mandar/enviar/escribir mensajes por whatsapp?
+
+[RESPUESTA: GRUPO]
+¿Cómo crear/hacer un grupo en whatsapp?
+
+[RESPUESTA: BORRARCHAT]
+¿Cómo eliminar/borrar un chat/una conversación en whatsapp?
+
+[RESPUESTA: FOTO]
+¿Cómo mandar/enviar fotos/imágenes por whatsapp?
+
+[RESPUESTA: UBICACION]
+¿Cómo compartir/mandar/enviar la ubicación/localización en whatsapp?
+
+[RESPUESTA: DOCUMENTO]
+¿Cómo mandar/enviar/compartir documentos/archivos en whatsapp?
+
+[RESPUESTA: CONTACTO]
+¿Cómo mandar/enviar/compartir contactos/números de teléfono en whatsapp?
+
+    4. MENSAJES
+[RESPUESTA: LEERMENSAJE]
+- ¿Cómo leer/ver/mirar los mensajes del movil?
+
+[RESPUESTA: MENSAJE]
+- ¿Cómo escribir/mandar mensajes?
+
+[RESPUESTA: BORRARMENSAJE]
+- ¿Cómo borrar/eliminar mensajes?
+
+    5. CORREO ELECTRÓNICO
+[RESPUESTA: APPCORREO]
+- ¿Qué aplicaciones puedo utilizar/usar/descargar para escribir/mandar/enviar un correo electrónico/correo/email/mail?
+
+[RESPUESTA: CUENTA]
+- ¿Cómo creo/hago una cuenta de correo electrónico/correo/email/mail?
+
+[RESPUESTA: CORREO]
+- ¿Cómo escribir/mandar/enviar un email/correo electrónico/correo/mail?
+
+[RESPUESTA: BORRARCORREO]
+- ¿Cómo borrar/eliminar un email/correo electrónico/correo/mail?
+	-->
+	
+        <!-- BLOQUE 1: LLAMADAS -->
+		
+		    <!-- ¿Cómo <llamar> por teléfono? -->
+    <category>
+	    <pattern> ^ COMO <set>llamar</set> ^ </pattern>
+	    <template><srai>LLAMADA</srai></template>
+    </category>
+    
+            <!-- ¿¿Cómo <hacer> una llamada? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>hacer</set> ^ LLAMADA ^ </pattern>
+	    <template><srai>LLAMADA</srai></template>
+    </category>
+    
+	        <!-- ¿Cómo <anadir> un contacto? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>anadir</set> ^ CONTACTO ^ </pattern>
+	    <template><srai>CONTACTO</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <escuchar> los mensajes del buzón de voz? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>escuchar</set> ^ BUZONVOZ ^ </pattern>
+	    <template><srai>BUZONVOZ</srai></template>
+    </category>
+    
+	        <!-- ¿Cómo <colgar> una llamada? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>colgar</set> ^ LLAMADA ^ </pattern>
+	    <template><srai>FINLLAMADA</srai></template>
+    </category>
+    
+	        <!-- ¿Qué <hacer> si no me <escuchar> en una llamada? -->
+	<category>
+	    <pattern> ^ QUE ^ <set>hacer</set> ^ SI ^ NO ^ <set>escuchar</set> ^ LLAMADA ^ </pattern>
+	    <template><srai>NOMEOIR</srai></template>
+    </category>
+    
+	        <!-- ¿Qué <hacer> si no <escuchar> a la otra persona en una llamada? -->
+	<category>
+	    <pattern> ^ QUE ^ <set>hacer</set> ^ NO ^ <set>escuchar</set> ^ OTRO ^ LLAMADA ^ </pattern>
+	    <template><srai>NOOIR</srai></template>
+    </category>
+        
+            <!-- ¿Cómo <activar> el altavoz? -->
+    <category>
+        <pattern> ^ COMO ^ <set>activar</set> ^ ALTAVOZ ^ </pattern>
+        <template><srai>ALTAVOZ</srai></template>
+    </category>
+    
+        <!-- BLOQUE 2: VIDEOLLAMADAS -->
+	
+	        <!-- ¿Cómo <hacer> una videollamada? -->
+    <category>
+        <pattern> ^ COMO ^ <set>hacer</set> ^ VIDEOLLAMADA ^ </pattern>
+        <template><srai>VIDEOLLAMADA</srai></template>
+    </category>
+    
+            <!-- ¿Qué <app> puedo <usar> para <hacer> una videollamada? -->
+    <category>
+        <pattern> ^ QUE ^ <set>app</set> ^ PUEDO ^ <set>usar</set> ^ PARA ^ <set>hacer</set> ^ VIDEOLLAMADA ^ </pattern>
+        <template><srai>APPVIDEOLLAMADA</srai></template>
+    </category>
+    
+            <!-- ¿Qué <hacer> si la otra persona no te ve o no te <escuchar> en una videollamada? -->
+    <category>
+        <pattern> ^ QUE ^ <set>hacer</set> ^ OTRO ^ NO ^ <set>escuchar</set> ^ VIDEOLLAMADA ^ </pattern>
+        <template><srai>NOMEESCUCHARVIDEO</srai></template>
+    </category>
+    
+            <!-- ¿Qué <hacer> si no puedo ver o <escuchar> a la otra persona en una videollamada? -->
+    <category>
+        <pattern> ^ QUE ^ <set>hacer</set> ^ NO ^ VER ^ <set>escuchar</set> ^ OTRO ^ VIDEOLLAMADA ^ </pattern>
+        <template><srai>NOESCUCHARVIDEO</srai></template>
+    </category>
+	
+	    <!-- BLOQUE 3: WHATSAPP -->
+    
+            <!-- ¿Cómo <hacer> un grupo en <whatsapp>? -->
+	<category>
+        <pattern> ^ COMO ^ <set>hacer</set> ^ GRUPO ^ <set>whatsapp</set> ^ </pattern>
+        <template><srai>GRUPO</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <borrar> un <chat> en <whatsapp>? -->
+	<category>
+        <pattern> ^ COMO ^ <set>borrar</set> ^ <set>chat</set> ^ <set>whatsapp</set> ^ </pattern>
+        <template><srai>BORRARCHAT</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <mandar> <imagen> por <whatsapp>? -->
+	<category>
+        <pattern> ^ COMO ^ <set>mandar</set> ^ <set>imagen</set> ^ <set>whatsapp</set> ^ </pattern>
+        <template><srai>FOTO</srai></template>
+    </category>
+
+            <!-- ¿Cómo <mandar> <ubicacion> por <whatsapp>? -->
+	<category>
+        <pattern> ^ COMO ^ <set>mandar</set> ^ <set>ubicacion</set> ^ <set>whatsappt</set> ^ </pattern>
+        <template><srai>UBICACION</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <mandar> <documento> por <whatsapp>? -->
+	<category>
+        <pattern> ^ COMO ^ <set>mandar</set> ^ <set>documento</set> ^ <set>whatsapp</set> ^ </pattern>
+        <template><srai>DOCUMENTO</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <mandar> <contacto> por <whatsapp>? -->
+	<category>
+        <pattern> ^ COMO ^ <set>mandar</set> ^ <set>contacto</set> ^ <set>whatsapp</set>set> ^ </pattern>
+        <template><srai>CONTACTOWHATSAPP</srai></template>
+    </category>
+	    
+	    <!-- BLOQUE 4: MENSAJES -->
+	
+		    <!-- ¿Cómo <leer> los mensajes del móvil? -->
+	<category>
+        <pattern> ^ COMO ^ <set>leer</set> ^ MENSAJES ^ </pattern>
+        <template><srai>LEERMENSAJE</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <mandar> mensajes? -->
+	<category>
+        <pattern> ^ COMO ^ <set>mandar</set> ^ MENSAJES ^ </pattern>
+        <template><srai>MENSAJE</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <borrar> mensajes? -->
+	<category>
+        <pattern> ^ COMO ^ <set>borrar</set> ^ MENSAJES ^ </pattern>
+        <template><srai>BORRARMENSAJE</srai></template>
+    </category>
+	
+	    <!-- BLOQUE 5: CORREO ELECTRÓNICO -->
+	    
+	        <!-- ¿Qué <app> puedo <usar> para <mandar> un <correo>? -->
+	<category>
+        <pattern> ^ QUE ^ <set>app</set> ^ <set>usar</set> ^ <set>mandar</set> ^ <set>correo</set> ^ </pattern>
+        <template><srai>APPCORREO</srai></template>
+    </category>
+    
+            <!-- ¿Cómo <hacer> una cuenta de <correo>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>hacer</set> ^ CUENTA ^ <set>correo</set> ^ </pattern>
+        <template><srai>CUENTA</srai></template>
+    </category>
+            
+            <!-- ¿Cómo <mandar> un <correo>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>mandar</set> ^ <set>correo</set> ^ </pattern>
+        <template><srai>CORREO</srai></template>
+    </category>
+	    
+	        <!-- ¿Cómo <borrar> un <correo>? -->
+	<category>
+        <pattern> ^ COMO ^ <set>borrar</set> ^ <set>correo</set> ^ </pattern>
+        <template><srai>BORRARCORREO</srai></template>
+    </category>
+	
+</aiml>

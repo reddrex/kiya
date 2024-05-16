@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <!-- Índice de Navegación web:
+1. CUESTIONES GENERALES SOBRE EL NAVEGADOR
+    [RESPUESTA: PESTANAS]
+    - ¿Cómo (se) abrir una pestaña?
+    - ¿Cómo (se) abrir varias pestañas?
+    - ¿Cómo cambiar pestañas entre ellas?
+    - ¿Cómo cambiar de una pestaña a otra?
+    
+    [RESPUESTA: NAVEGADOR]
+    - ¿Qué hacer si navegador (se) quedar parado/no funcionar?
+    
+    [RESPUESTA: SIZELETRA]
+    - ¿Cómo cambiar el tamaño de la letra? 
+    - ¿Cómo poner letra más grande/pequeña/chica?
+    
+    [RESPUESTA: HISTORIAL DE BUSQUEDA]
+    - ¿Cómo (se) acceder/entrar/ver/consultar historial de búsqueda? 
+    - ¿Cómo acceder/entrar/ver/consultar las páginas que vi antes?
+    
+    [RESPUESTA: CORREO ELECTRÓNICO]
+    - ¿Cómo entrar/acceder/ver/consultar correo electrónico? 
+2. BÚSQUEDAS
+
+    [RESPUESTA: BUSQUEDAS]
+    - ¿Cómo buscar en el navegador?
+    [RESPUESTA: BUSQUEDA POR VOZ]
+    - ¿Cómo buscar hablando/de forma/manera oral?
+     [RESPUESTA: BUSQUEDA POR IMAGEN]
+    - ¿Cómo buscar con fotos/imágenes?
+    
+3. PÁGINAS WEB
+    [RESPUESTA: FAV]
+    - ¿Qué ser favoritos?
+    - ¿Cómo guardar página en favoritos?
+    
+    [RESPUESTA: COOKIES]
+    - ¿Qué ser cookies?
+    - ¿Aceptar/rechazar cookies?
+    
+4. MULTIMEDIA
+    [RESPUESTA: BYDVIDEO]
+    - ¿Cómo buscar vídeo?
+    - ¿Cómo descargar vídeo
+    
+    [RESPUESTA: BYDFOTO]
+    - ¿Cómo buscar foto/imagen?
+    - ¿Cómo descargar foto/imagen?
+    
+    [RESPUESTA: BUSQUEDA Y DESCARGA MUSICA]
+    - ¿Cómo escuchar música/musiquita?
+    - ¿Cómo descargar música/musiquita?
+    
+5. SEGURIDAD
+    [RESPUESTA: NAVEGACION SEGURA]
+    - ¿Cuál ser forma/manera segura de navegar por internet?
+    - ¿Qué hacer para navegar de forma/manera segura por internet ?
+    
+    [RESPUESTA: MENSAJE DE ADVERTENCIA]
+    - ¿Qué hacer si ver mensaje de advertencia/seguridad/peligro?
+    
+    [RESPUESTA: PAGINA PELIGROSA]
+    - ¿Cómo saber si una página web es peligrosa/no fiable?
+ -->
+ 
+   <!-- ¿Cómo (se) abrir una pestaña? -->
+	<category>
+	    <pattern> ^ COMO ^ ABRIR ^ <set>pestana</set> ^ </pattern>
+	    <template><srai>PESTANAS</srai></template>
+    </category>
+    
+      <!-- ¿Cómo cambiar pestañas entre ellas? -->
+	<category>
+	    <pattern> ^ COMO ^ CAMBIAR ^ <set>pestana</set> ^ </pattern>
+	    <template><srai>PESTANAS</srai></template>
+    </category>
+   
+       <!-- ¿Qué hacer si navegador (se) quedar parado/no funcionar? -->
+	<category>
+	    <pattern> ^ QUE ^ HACER ^ NAVEGADOR ^ </pattern>
+	    <template><srai>NAVEGADOR</srai></template>
+    </category>
+    
+       <!-- ¿Cómo cambiar el tamaño de la letra? -->
+	<category>
+	    <pattern> ^ COMO ^ CAMBIAR ^ LETRA ^ NAVEGADOR ^ </pattern>
+	    <template><srai>SIZELETRA</srai></template>
+    </category>
+    
+        <!-- ¿Cómo poner letra más grande/pequeña/chica? -->
+	<category>
+	    <pattern> ^ COMO ^ PONER ^ LETRA ^ NAVEGADOR ^ </pattern>
+	    <template><srai>SIZELETRA</srai></template>
+    </category>
+    
+      <!-- ¿Cómo (se) acceder/entrar/ver/consultar historial de búsqueda? -->
+      <!-- ¿Cómo (se) acceder/entrar/ver/consultar páginas que vi antes? -->  <!-- PENDIENTE -->
+    <category>
+        <pattern> ^ COMO ^ <set>acceder</set> ^ <set>pestana</set> ^ </pattern>
+        <template><srai>HISTBUS</srai></template>
+    </category>
+    
+     <!--  ¿Cómo entrar/acceder/ver/consultar correo electrónico?  --> <!-- PENDIENTE -->
+    <category>
+        <pattern> ^ COMO ^ <set>acceder</set> ^ <set>correo</set> ^ </pattern>
+        <template><srai>MAIL</srai></template>
+    </category>
+  
+       <!--  ¿Cómo buscar en el navegador?  -->
+    <category>
+        <pattern> ^ COMO ^ BUSCAR ^ NAVEGADOR</pattern>
+        <template><srai>MANUALNAV</srai></template> 
+    </category>
+    
+       <!--  ¿Cómo buscar hablando/de forma/manera oral?  -->
+    <category>
+        <pattern> ^ COMO ^ BUSCAR ^ <set>voz</set> ^ </pattern>
+        <template><srai>BUSQUEDA POR VOZ</srai></template>
+    </category>
+    
+      <!--  ¿Cómo buscar con fotos/imágenes?  -->
+    <category>
+        <pattern> ^ COMO BUSCAR CON <set>imagen</set> ^ NAVEGADOR ^ </pattern>
+        <template><srai>BUSQUEDA POR IMAGEN</srai></template>
+    </category>
+    
+      <!-- ¿Qué ser favoritos? --> 
+    <category>
+        <pattern> ^ QUE SER ^ <set>apartados</set> ^ </pattern>
+        <template><srai>FAV</srai></template>
+    </category>
+    
+        <!-- ¿Cómo guardar página web en favoritos? -->
+    <category>
+        <pattern> ^ COMO ^ GUARDAR ^ <set>imagen</set> ^ </pattern>
+        <template><srai>FAV</srai></template>
+    </category>
+    
+        <!-- ¿Qué ser cookies? -->
+    <category>
+        <pattern> ^ QUE ^ SER ^ <set>cookies</set> ^ </pattern>
+        <template><srai>COOKIES</srai></template>
+    </category>
+    
+       <!--  ¿Cómo buscar vídeos?  -->
+    <category>
+        <pattern> ^ COMO ^ BUSCAR ^ <set>imagen</set> ^ <set>redessociales</set> ^ </pattern>
+        <template><srai>BYDVIDEOS</srai></template>
+    </category>
+    
+        <!--  ¿Cómo descargar vídeos?  -->
+    <category>
+        <pattern> ^ COMO ^ <set>descargar</set> ^ <set>imagen</set> ^ </pattern>
+        <template><srai>BYDVIDEOS</srai></template>
+    </category>
+    
+        <!--  ¿Cómo buscar foto/imagen?  -->
+    <category>
+        <pattern> ^ COMO BUSCAR ^ <set>imagen</set> ^ <set>redessociales</set> ^ </pattern>
+        <template><srai>BYDFOTO</srai></template>
+    </category>
+    
+        <!--  ¿Cómo descargar foto/imagen?  -->
+    <category>
+        <pattern> ^ COMO ^ <set>descagar</set> ^ <set>imagen</set> ^ <set>redessociales</set> ^ </pattern>
+        <template><srai>BYDFOTO</srai></template>
+    </category>
+    
+         <!--  ¿Cómo buscar música/musiquita?  -->
+    <category>
+        <pattern> ^ COMO BUSCAR ^ <set>musica</set> ^ </pattern>
+        <template><srai>BYDMUSICA</srai></template>
+    </category>
+    
+        <!--  ¿Cómo descargar música/musiquita?  -->
+    <category>
+        <pattern> ^ COMO ^ <set>descargar</set> ^ <set>musica</set> ^ </pattern>
+        <template><srai>BYDMUSICA</srai></template>
+    </category>
+    
+          <!--  ¿Cuál ser forma/manera segura de navegar por internet?  -->
+    <category>
+        <pattern> ^ CUAL SER ^ <set>formasegura</set> ^ NAVEGAR ^ INTERNET ^ </pattern>
+        <template><srai>NAVEGACION SEGURA</srai></template>
+    </category>
+    
+         <!--  ¿Qué hacer para navegar de forma/manera segura por internet ?  -->
+    <category>
+        <pattern> ^ QUE ^ HACER ^ NAVEGAR ^ <set>formasegura</set> ^ INTERNET ^ </pattern>
+        <template><srai>NAVEGACION SEGURA</srai></template>
+    </category>
+    
+           <!--  ¿Qué hacer si ver mensaje de advertencia/seguridad/peligro?  -->
+    <category>
+        <pattern> ^ QUE ^ HACER ^ VER ^ MENSAJE ^ <set>advertencia</set> ^ </pattern>
+        <template><srai>MENSAJE DE ADVERTENCIA</srai></template>
+    </category>
+    
+           <!--  ¿Cómo saber si una página web es peligrosa/no fiable?  -->
+    <category>
+        <pattern> ^ COMO ^ SABER ^ <set>imagen</set> SER <set>advertencia</set></pattern>
+        <template><srai>PAGINA PELIGROSA</srai></template>
+    </category>
+</aiml>

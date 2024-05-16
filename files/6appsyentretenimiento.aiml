@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Índice de bloque Aplicaciones y entretenimiento:
+	
+	1. Cuestiones generales
+	    [Respuesta: APPS]
+	    - ¿qué ser las <app>?
+	    - ¿las <app> qué ser?
+	    - ¿<paraqué> <servir> las <app>?
+	    - ¿las <app> <paraqué> <servir>?
+	    - ¿qué ser las <app> y <paraqué> <servir>?
+	    - ¿las <app> qué son y <paraqué> <servir>?
+	    - ¿<paraqué> <servir> las <app> y qué ser?
+	    
+	    [Respuesta: TIENDA]
+	    - ¿<donde> <encontrar> <app>?
+	    - ¿<app> <donde> <encontrar>?
+	    
+	    [Respuesta: PAGOAPP]
+	    - ¿las <app> <costardinero>?
+	    - ¿<costardinero> las <app>?
+	    
+	    [Respuesta: DIFERENCIAAPLICACION]
+	    - ¿<quecual> ser diferencia <entre> <app> <sinconcoste> y <app> <sinconcoste>?
+	    
+	    [Respuesta: HACERDESCARGAS]
+	    - ¿<como> descargar <app>?
+	    - ¿<app> <como> descargar?
+	    - ¿<como> descargar x?
+	    - ¿x <como> descargar?
+	    
+	    [Respuesta: CALENDARIO]
+	    - ¿<como> <recordar> <fecha>?
+	    - ¿<quecual> <app> <recordar> <fecha>?
+	    - <querer> <recordar> <fecha>
+	    
+	    [Respuesta: ALARMA]
+	    - <querer> <poner> <alarma>
+	    - ¿<como> <poner> <alarma>?
+	    - ¿<alarma> <como> <poner>?
+	    
+	    [Respuesta: NOTAS]
+	    - <como> <escribir> en <movil>
+	    - <quecual> ser <notas>
+	    
+	2. Vídeos
+	    [Respuesta: VIDEOS]
+	    - ¿<donde> <ver> <vídeo>?
+	    - ¿<video> <donde> <ver>?
+	    - ¿<quecual> <app> <haber> <ver> <video>?
+	    - <querer> <ver> <video>
+	    - <enseñar> <video>
+	    - <como> <ver> <video> <movil>
+	
+	3. Series y películas
+	    [Respuesta: STREAMING]
+	    - ¿<quecual> <app> <serie>?
+	    - ¿<donde> <ver> <serie>?
+	    - <querer> <ver> <serie>
+	    - <enseñar> <serie>
+	    - <como> <ver> <serie> <movil>
+	    
+	    [Respuesta: TV]
+	    - ¿<como> <ver> <tv>?
+	    - <querer> <ver> <tv>
+	    - <enseñar> <tv>
+	    - <como> <ver> <tv> <movil>
+	    
+	4. Música y radio
+	    [Respuesta: MUSICA]
+	    - ¿<donde> <escuchar> <musica>?
+	    - ¿poder <escuchar> <musica> en <movil>?
+	    - ¿poder <servir> <movil> <escuchar> <musica>?
+	    - <querer> <escuchar> <musica>
+	    - <ver> <musica>
+	    - <como> <escuchar> <musica> <movil>
+	    
+	    [Respuesta: RADIO]
+	    - <querer> <escuchar> <radio>
+	    - <como> <escuchar> <radio>
+	    - ¿poder <escuchar> <radio> <movil>?
+	    - <como> <escuchar> <radio> <movil>
+	    
+	5. Salud
+	    [Respuesta: MEDICO]
+	    - ¿<quecual> <app> <pedir> <citamedica>?
+	    - <querer> <pedir> <citamedica>
+	    - <como> <pedir> <citamedica>
+	    
+	    [Respuesta: CITAMEDI]
+	    - <recordar> <citamedica>
+	    
+	6. Orientación
+	    [Respuesta: MAPAS]
+	    - ¿<como> <llegar> <sitio>?
+	    - no <encontrar> <sitio>
+	    - <llevar a> <sitio>
+	    - <querer> <llegar> <sitio>
+	    
+	7. Banca
+	    [Respuesta: BANCO]
+	    - ¿<como> <servir> <bancodigital>?
+	    - ¿<bancodigital> <como> <servir>?
+	    - ¿<como> <hacer> <actividadbanco>?
+	    - ¿<actividadbanco> <como> <hacer>?
+	    
+	    [Respuesta: PAYGOOGLE]
+	    - ¿<como> <pagar> con <movil>?
+	    
+	8. Recomendaciones
+	    [Respuesta: JUEGOSRECOMENDADOS]
+	    - <recomendar> juego
+	    
+	    [Respuesta: OPCIONESENTRETENIMIENTO]
+	    - <recomendar> <media>
+	    
+	    [Respuesta: PASTILLAS]
+	    - ¿<haber> <app> <recordar> <pastillas>?
+	-->
+	
+	<!-- BLOQUE 1: CUESTIONES GENERALES -->
+	
+	    <!-- ¿qué son las <app>? -->
+	<category>
+	    <pattern> ^ QUE ^ SER ^ <set>app</set> ^ </pattern>
+	    <template><srai>TIPOSAPP</srai></template>
+    </category>
+    
+        <!-- ¿las <app> qué son? -->
+	<category>
+	    <pattern> ^ <set>app</set> ^ QUE ^ SER ^ </pattern>
+	    <template><srai>TIPOSAPPS</srai></template>
+    </category>
+    
+	    <!-- ¿<paraqué> <servir> las <app>? -->
+	<category>
+	    <pattern> ^ <set>paraque</set> ^ <set>servir</set> ^ <set>app</set> ^ </pattern>
+	    <template><srai>TIPOSAPPS</srai></template>
+    </category>
+    
+        <!-- ¿las <app> <paraqué> <servir>? -->
+	<category>
+	    <pattern> ^ <set>app</set> ^ <set>paraque</set> ^ <set>servir</set> ^ </pattern>
+	    <template><srai>TIPOSAPPS</srai></template>
+    </category>
+    
+	    <!-- ¿qué son las <app> y <paraqué> <servir>? -->
+	<category>
+	    <pattern> ^ QUE ^ SER ^ <set>app</set> ^ <set>paraque</set> ^ <set>servir</set> ^ </pattern>
+	    <template><srai>TIPOSAPPS</srai></template>
+    </category>
+    
+	    <!-- ¿las <app> qué son y <paraqué> <servir>? -->
+	<category>
+	    <pattern> ^ <set>app</set> ^ QUE ^ SER ^ <set>paraque</set> ^ <set>servir</set> ^ </pattern>
+	    <template><srai>TIPOSAPPS</srai></template>
+    </category>
+    
+	    <!-- ¿<paraqué> <servir> las <app> y qué son? -->
+	<category>
+	    <pattern> ^ <set>paraque</set> ^ <set>servir</set> ^ <set>app</set> ^ QUE ^ SER ^ </pattern>
+	    <template><srai>TIPOSAPPS</srai></template>
+    </category>
+        
+        <!-- ¿<donde> <encontrar> <app>? -->
+    <category>
+        <pattern> ^ <set>donde</set> ^ <set>encontrar</set> ^ <set>app</set> ^ </pattern>
+        <template><srai>TIENDA</srai></template>
+    </category>
+    
+        <!-- ¿<app> <donde> <encontrar>? -->
+    <category>
+        <pattern> ^ <set>app</set> ^ <set>donde</set> ^ <set>encontrar</set> ^ </pattern>
+        <template><srai>TIENDA</srai></template>
+    </category>
+    
+        <!-- ¿las <app> <costardinero>? -->
+    <category>
+        <pattern> ^ <set>app</set> ^ <set>costardinero</set> ^ </pattern>
+        <template><srai>PAGOAPP</srai></template>
+    </category>
+    
+        <!-- ¿<costardinero> las <app>? -->
+    <category>
+        <pattern> ^ <set>costardinero</set> ^ <set>app</set> ^ </pattern>
+        <template><srai>PAGOAPP</srai></template>
+    </category>
+    
+        <!-- ¿<quecual> diferencia <entre> <app> <sinconcoste> y <app> <sinconcoste>? -->
+    <category>
+        <pattern> ^ <set>quecual</set> ^ DIFERENCIA ^ <set>entre</set> ^ <set>app</set> ^ <set>sinconcoste</set> ^ <set>app</set> ^ <set>sinconcoste</set> ^ </pattern>
+        <template><srai>DIFERENCIAAPLICACION</srai></template>
+    </category>
+    
+        <!-- ¿<como> descargar <app>? -->
+    <category>
+        <pattern> ^ <set>como</set> ^ DESCARGAR ^ <set>app</set> ^ </pattern>
+        <template><srai>HACERDESCARGAS</srai></template>
+    </category>
+    
+	    <!-- ¿<app> <como> descargar? -->
+	<category>
+	    <pattern> ^ <set>app</set> ^ <set>como</set> ^ DESCARGAR ^ </pattern>
+	    <template><srai>HACERDESCARGAS</srai></template>
+    </category>
+    
+	    <!-- ¿<como> descargar x? -->
+    <category>
+        <pattern> ^ <set>como</set> ^ DESCARGAR ^ </pattern>
+        <template><srai>HACERDESCARGAS</srai></template>
+    </category>
+    
+	    <!-- ¿x <como> descargar? -->
+    <category>
+        <pattern> ^ <set>como</set> ^ DESCARGAR ^ </pattern>
+        <template><srai>HACERDESCARGAS</srai></template>
+    </category>
+    
+        <!-- ¿<como> <recordar> <fecha>? -->
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>recordar</set> <set>fecha</set> ^ </pattern>
+        <template><srai>CALENDARIO</srai></template>
+    </category>
+    
+        <!-- ¿<quecual> <app> <recordar> <fecha>? -->
+    <category>
+        <pattern> ^ <set>quecual</set> ^ <set>app</set> ^ <set>recordar</set> ^ <set>fecha</set> ^ </pattern>
+        <template><srai>CALENDARIO</srai></template>
+    </category>
+    
+        <!-- <querer> <recordar> <fecha> -->
+    <category>
+        <pattern> ^ <set>querer</set> ^ <set>recordar</set> ^ <set>fecha</set> ^ </pattern>
+        <template><srai>CALENDARIO</srai></template>
+    </category>
+    
+        <!-- <querer> <poner> <alarma> -->
+    <category>
+        <pattern> ^ <set>querer</set> ^ <set>poner</set> ^ <set>alarma</set> ^ </pattern>
+        <template><srai>ALARMA</srai></template>
+    </category>
+    
+        <!-- ¿<como> <poner> <alarma>? -->
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>poner</set> ^ <set>alarma</set> ^ </pattern>
+        <template><srai>ALARMA</srai></template>
+    </category>
+    
+        <!-- ¿<alarma> <como> <poner>? -->
+    <category>
+        <pattern> ^ <set>alarma</set> ^ <set>como</set> ^ <set>poner</set> ^ </pattern>
+        <template><srai>ALARMA</srai></template>
+    </category>
+    
+        <!-- <como> <escribir> en <movil> -->
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>escribir</set> ^ EN ^ <set>movil</set> ^ </pattern>
+        <template><srai>NOTAS</srai></template>
+    </category>
+    
+        <!-- <quecual> ser <notas> -->
+    <category>
+        <pattern> ^ <set>quecual</set> ^ SER ^ <set>notas</set> ^ </pattern>
+        <template><srai>NOTAS</srai></template>
+    </category>
+    
+	<!-- BLOQUE 2: VÍDEOS -->
+	
+	    <!-- ¿<donde> <ver> <vídeo>? -->
+    <category>
+        <pattern> ^ <set>donde</set> ^ <set>ver</set> ^ <set>video</set> ^ </pattern>
+        <template><srai>VIDEOS</srai></template>
+    </category>
+    
+        <!-- ¿<video> <donde> <ver>? -->
+    <category>
+        <pattern> ^ <set>video</set> ^ <set>donde</set> ^ <set>ver</set> ^ </pattern>
+        <template><srai>VIDEOS</srai></template>
+    </category>
+    
+        <!-- ¿<quecual> <app> <haber> <ver> <video>? -->
+    <category>
+        <pattern> ^ <set>quecual</set> ^ <set>app</set> ^ <set>haber</set> ^ <set>ver</set> ^ <set>video</set> ^ </pattern>
+        <template><srai>VIDEOS</srai></template>
+    </category>
+    
+        <!-- <querer> <ver> <video> -->
+    <category>
+        <pattern> ^ <set>querer</set> ^ <set>ver</set> ^ <set>video</set> ^ </pattern>
+        <template><srai>VIDEOS</srai></template>
+    </category>
+    
+        <!-- <ver> <video> -->
+    <category>
+        <pattern> ^ <set>ver</set> ^ <set>video</set> ^ </pattern>
+        <template><srai>VIDEOS</srai></template>
+    </category>
+    
+        <!-- <como> <ver> <video> <movil> -->
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>ver</set> ^ <set>video</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>VIDEOS</srai></template>
+    </category>
+	
+	<!-- BLOQUE 3: SERIES Y PELÍCULAS -->
+	
+	    <!-- ¿<quecual> <app> <serie>? -->
+	<category>
+        <pattern> ^ <set>quecual</set> ^ <set>app</set> ^ <set>serie</set> ^ </pattern>
+        <template><srai>STREAMING</srai></template>
+    </category>
+    
+        <!-- ¿<donde> <ver> <serie>? -->
+	<category>
+        <pattern> ^ <set>donde</set> ^ <set>ver</set> ^ <set>serie</set> ^ </pattern>
+        <template><srai>STREAMING</srai></template>
+    </category>
+    
+        <!-- <querer> <ver> <serie> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>ver</set> ^ <set>serie</set> ^ </pattern>
+        <template><srai>STREAMING</srai></template>
+    </category>
+	
+	    <!-- <ver> <serie> -->
+	<category>
+        <pattern> ^ <set>ver</set> ^ <set>serie</set> ^ </pattern>
+        <template><srai>STREAMING</srai></template>
+    </category>
+    
+        <!-- <como> <ver> <serie> <movil> -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>ver</set> ^ <set>serie</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>STREAMING</srai></template>
+    </category>
+    
+        <!-- ¿<como> <ver> <tv>? -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>ver</set> ^ <set>tv</set> ^ </pattern>
+        <template><srai>TV</srai></template>
+    </category>
+    
+        <!-- <querer> <ver> <tv> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>ver</set> ^ <set>tv</set> ^ </pattern>
+        <template><srai>TV</srai></template>
+    </category>
+    
+        <!-- <ver> <tv> -->
+	<category>
+        <pattern> ^ <set>ver</set> ^ <set>tv</set> ^ </pattern>
+        <template><srai>TV</srai></template>
+    </category>
+    
+        <!-- <como> <ver> <tv> <movil> -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>ver</set> ^ <set>tv</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>TV</srai></template>
+    </category>
+	    
+	<!-- BLOQUE 4: MÚSICA -->
+	
+		<!-- ¿<donde> <escuchar> <musica>? -->
+	<category>
+        <pattern> ^ <set>donde</set> ^ <set>escuchar</set> ^ <set>musica</set> ^ </pattern>
+        <template><srai>MUSICA</srai></template>
+    </category>
+    
+        <!-- ¿poder <escuchar> <musica> en <movil>? -->
+	<category>
+        <pattern> ^ <set>poder</set> ^ <set>escuchar</set> ^ <set>musica</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>MUSICA</srai></template>
+    </category>
+    
+        <!-- ¿poder <servir> <movil> <escuchar> <musica>? -->
+	<category>
+        <pattern> ^ <set>poder</set> ^ <set>servir</set> ^ <set>movil</set> ^ <set>escuchar</set> ^ <set>musica</set> ^ </pattern>
+        <template><srai>MUSICA</srai></template>
+    </category>
+    
+        <!-- <querer> <escuchar> <musica> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>escuchar</set> ^ <set>musica</set> ^ </pattern>
+        <template><srai>MUSICA</srai></template>
+    </category>
+    
+        <!-- <ver> <musica> -->
+	<category>
+        <pattern> ^ <set>ver</set> ^ <set>musica</set> ^ </pattern>
+        <template><srai>MUSICA</srai></template>
+    </category>
+    
+        <!-- <como> <escuchar> <musica> <movil> -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>escuchar</set> ^ <set>musica</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>MUSICA</srai></template>
+    </category>
+    
+        <!-- <querer> <escuchar> <radio> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>escuchar</set> ^ <set>radio</set> ^ </pattern>
+        <template><srai>RADIO</srai></template>
+    </category>
+    
+        <!-- <como> <escuchar> <radio> -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>escuchar</set> ^ <set>radio</set> ^ </pattern>
+        <template><srai>RADIO</srai></template>
+    </category>
+    
+        <!-- ¿poder <escuchar> <radio> <movil>? -->
+	<category>
+        <pattern> ^ PODER ^ <set>escuchar</set> ^ <set>radio</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>RADIO</srai></template>
+    </category>
+    
+        <!-- <como> <escuchar> <radio> <movil> -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>escuchar</set> ^ <set>radio</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>RADIO</srai></template>
+    </category>
+	
+	<!-- BLOQUE 5: SALUD -->
+	
+	    <!-- ¿<quecual> <app> <pedir> <citamedica>? -->
+	<category>
+        <pattern> ^ <set>quecual</set> ^ <set>app</set> ^ <set>pedir</set> ^ <set>citamedica</set> ^ </pattern>
+        <template><srai>MEDICO</srai></template>
+    </category>
+    
+        <!-- <querer> <pedir> <citamedica> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>pedir</set> ^ <set>citamedica</set> ^ </pattern>
+        <template><srai>MEDICO</srai></template>
+    </category>
+    
+        <!-- <como> <pedir> <citamedica> -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>pedir</set> ^ <set>citamedica</set> ^ </pattern>
+        <template><srai>MEDICO</srai></template>
+    </category>
+    
+        <!-- <recordar> <citamedica> -->
+	<category>
+        <pattern> ^ <set>recordar</set> ^ <set>citamedica</set> ^ </pattern>
+        <template><srai>CITAMEDI</srai></template>
+    </category>
+    
+	<!-- BLOQUE 6: ORIENTACIÓN -->
+	
+	    <!-- ¿<como> <llegar> <sitio>? -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>llegar</set> ^ <set>ahaciahasta</set> ^ <set>sitio</set> ^ </pattern>
+        <template><srai>MAPAS</srai></template>
+    </category>
+    
+        <!-- no <encontrar> <sitio> -->
+	<category>
+        <pattern> ^ NO ^ <set>encontrar</set> ^ <set>sitio</set> ^ </pattern>
+        <template><srai>MAPAS</srai></template>
+    </category>
+    
+        <!-- <llevar a> <sitio> -->
+	<category>
+        <pattern> ^ <set>llevara</set> ^ <set>sitio</set> ^ </pattern>
+        <template><srai>MAPAS</srai></template>
+    </category>
+    
+        <!-- <querer> <llegar> <sitio> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>llegar</set> ^ <set>sitio</set> ^ </pattern>
+        <template><srai>MAPAS</srai></template>
+    </category>
+    
+	<!-- BLOQUE 7: BANCA -->
+	
+	    <!-- ¿<como> <servir> <bancodigital>? -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>servir</set> ^ <set>bancodigital</set> ^ </pattern>
+        <template><srai>BANCO</srai></template>
+    </category>
+    
+        <!-- ¿<bancodigital> <como> <servir>? -->
+	<category>
+        <pattern> ^ <set>bancodigital</set> ^ <set>como</set> ^ <set>servir</set> ^ </pattern>
+        <template><srai>BANCO</srai></template>
+    </category>
+    
+        <!-- ¿<como> <hacer> <actividadbanco>? -->
+	<category>
+        <pattern> ^ <set>como</set> ^ <set>hacer</set> ^ <set>actividadbanco</set> ^ </pattern>
+        <template><srai>BANCO</srai></template>
+    </category>
+    
+        <!-- ¿<actividadbanco> <como> <hacer>? -->
+	<category>
+        <pattern> ^ <set>actividadbanco</set> ^ <set>como</set> ^ <set>hacer</set> ^ </pattern>
+        <template><srai>BANCO</srai></template>
+    </category>
+    
+        <!-- ¿<como> <pagar> con <movil>? -->
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>pagar</set> ^ <set>con</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>PAYGOOGLE</srai></template>
+    </category>
+	    
+	<!-- BLOQUE 8: RECOMENDACIONES -->
+	
+	    <!-- <recomendar> juego -->
+	<category>
+        <pattern> ^ <set>recomendar</set> ^ JUEGO ^ </pattern>
+        <template><srai>JUEGOSRECOMENDADOS</srai></template>
+    </category>
+    
+        <!-- <recomendar> <media> -->
+	<category>
+        <pattern> ^ <set>recomendar</set> ^ <set>media</set> ^ </pattern>
+        <template><srai>OPCIONESENTRETENIMIENTO</srai></template>
+    </category>
+    
+        <!-- ¿<haber> <app> <recordar> <pastillas>? -->
+	<category>
+        <pattern> ^ <set>haber</set> ^ <set>app</set> ^ <set>recordar</set> ^ <set>pastillas</set> ^ </pattern>
+        <template><srai>PASTILLAS</srai></template>
+    </category>
+	
+</aiml>

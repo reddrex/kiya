@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- Índice de respuestas del bloque Comunicación:
+	
+	1. Llamadas:
+	    - LLAMADA
+	    - CONTACTO
+	    - BUZONVOZ
+	    - FINLLAMADA
+	    - NOMEOIR
+	    - NOOIR
+	    - ALTAVOZ
+	    
+	2. Vídeollamadas:
+	    - VIDEOLLAMADA
+	    - APPVIDEOLLAMADA
+	    - NOMEESCUCHARVIDEO
+	    - NOESCUCHARVIDEO
+	    
+	3. Whatsapp:
+	    - WHATSAPP
+	    - GRUPO
+	    - CHAT
+	    - FOTO
+	    - UBICACION
+	    - DOCUMENTO
+	    - CONTACTOWHATSAPP
+	    
+	4. Mensajes:
+	    - LEERMENSAJE
+	    - MENSAJE
+	    - BORRARMENSAJE
+	
+	5. Correo electrónico:
+	    - APPCORREO
+	    - CUENTA
+	    - CORREO
+	    - BORRARCORREO
+	-->
+	
+    <!-- BLOQUE 1: LLAMADAS -->
+	
+	    <!-- LLAMADA -->
+	<category>
+	    <pattern>LLAMADA</pattern>
+	    <template>Ingresa el número de teléfono al que deseas llamar. Asegúrate de incluir el código de país si estás llamando a un número internacional. Una vez ingresado el número, busca el botón de llamada o el icono de teléfono en la pantalla del móvil y presionalo para iniciar la llamada. A continuación, el teléfono realizará el marcado y comenzará a establecer la conexión. Escucharás tonos de llamada mientras esperas a que la otra persona responda.
+</template>
+    </category>
+    
+    <category>
+	    <pattern>LLAMADA</pattern>
+	    <template>Ingresa el número de teléfono al que deseas llamar. Asegúrate de incluir el código de país si estás llamando a un número internacional. Una vez ingresado el número, busca el botón de llamada o el icono de teléfono en la pantalla del móvil y presionalo para iniciar la llamada. A continuación, el teléfono realizará el marcado y comenzará a establecer la conexión. Escucharás tonos de llamada mientras esperas a que la otra persona responda.
+</template>
+    </category>
+    
+        <!-- CONTACTO -->
+    <category>
+        <pattern>CONTACTO</pattern>
+        <template>Por lo general, encontrarás la aplicación de contactos en la pantalla de inicio. Busca el icono que se parece a un libro de direcciones o dice ‘Contactos’ y tócalo para abrir la aplicación. Se te presentará un formulario en blanco donde podrás ingresar la información del nuevo contacto. Por lo general, se te pedirá que ingreses el nombre y el número de teléfono como mínimo. Una vez que hayas completado la información del contacto, busca la opción para guardar o agregar. Esto puede estar representado por un botón que dice "Guardar", "Aceptar" o "Agregar contacto". Tócalo para guardar el contacto en tu lista de contactos.
+</template>
+    </category>
+    
+        <!-- BUZONVOZ -->
+    <category>
+        <pattern>BUZONVOZ</pattern>
+        <template>Por lo general, puedes acceder al buzón de voz manteniendo presionada la tecla de marcación 1 en tu teléfono o marcando un número corto específico, como 123 o *86. Es posible que necesites ingresar una contraseña o un código de acceso para iniciar sesión en tu buzón de voz. Si es la primera vez que accedes, es posible que se te solicite establecer una contraseña. Una vez que hayas ingresado al buzón de voz, escucharás un menú de opciones. Por lo general, la opción para escuchar mensajes recientes se encuentra en el menú principal. Sigue las indicaciones de voz o las instrucciones en la pantalla para seleccionar la opción de escuchar mensajes. Una vez que hayas escuchado todos los mensajes que deseas revisar, puedes finalizar la llamada.
+</template>
+    </category>
+    
+        <!-- FINLLAMADA -->
+    <category>
+        <pattern>FINLLAMADA</pattern>
+        <template>Durante una llamada, verás en la pantalla de tu teléfono un botón rojo con un ícono de teléfono o una imagen similar. Este botón suele estar en la parte inferior de la pantalla. Para finalizar la llamada, simplemente toca este botón.</template>
+    </category>
+
+        <!-- NOMEOIR -->
+    <category>
+        <pattern>NOMEOIR</pattern>
+        <template>Asegúrate de que la llamada no haya sido desconectada accidentalmente. Verifica que tengas una señal fuerte si estás utilizando un teléfono móvil. 
+Asegúrate de que el volumen de tu teléfono esté ajustado correctamente. Si el volumen está demasiado bajo, la otra persona podría no escucharte.
+Si estás utilizando un auricular o unos auriculares con micrófono, verifica que estén conectados correctamente y que el micrófono no esté obstruido. Si es posible, prueba a utilizar el altavoz del teléfono para descartar problemas con los auriculares.
+Si ninguno de los pasos anteriores soluciona el problema, intenta colgar y volver a llamar a la persona. A veces, reiniciar la llamada puede resolver problemas técnicos temporales.
+Si has intentado todas estas soluciones y la otra persona aún no te puede oír, comunícale el problema. Pídele que verifique si hay problemas con su propio dispositivo o conexión.
+</template>
+    </category>
+    
+        <!-- NOOIR -->
+    <category>
+        <pattern>NOOIR</pattern>
+        <template>Asegúrate de que el volumen de tu teléfono esté ajustado correctamente. Sube el volumen al máximo para asegurarte de que no sea un problema de volumen.
+Si estás utilizando el altavoz de tu teléfono, asegúrate de que esté activado. Puedes activar o desactivar el altavoz durante una llamada presionando el icono del altavoz en la pantalla de llamada o ajustando la configuración de altavoz de tu teléfono.
+Asegúrate de que no haya nada bloqueando el altavoz de tu teléfono, como tu dedo, una funda de teléfono gruesa o cualquier otro objeto. Además, verifica que la pantalla de tu teléfono no esté bloqueada durante la llamada, ya que algunas configuraciones pueden apagar el audio cuando la pantalla está bloqueada.
+Asegúrate de tener una conexión estable. Si estás utilizando datos móviles, verifica que tengas una buena cobertura. Si estás en una llamada a través de Wi-Fi, verifica que estés conectado a una red Wi-Fi funcional.
+Intenta colgar y volver a llamar a la persona. A veces, reiniciar la llamada puede resolver problemas temporales de conexión o configuración.
+</template>
+    </category>
+    
+        <!-- ALTAVOZ -->
+    <category>
+        <pattern>ALTAVOZ</pattern>
+        <template>Una vez que la llamada esté en curso y estés en la pantalla de llamada, busca el icono del altavoz. Este icono suele ser un altavoz o una serie de ondas de sonido. Cuando encuentres el icono del altavoz, simplemente tócalo una vez para activar el altavoz.
+</template>
+    </category>
+
+	<!-- BLOQUE 2: VIDEOLLAMADAS -->
+	    
+	    <!-- VIDEOLLAMADA -->
+	<category>
+	    <pattern>VIDEOLLAMADA</pattern>
+	    <template>Si aún no tienes la aplicación de videollamadas que deseas utilizar, ve a la tienda de aplicaciones de tu dispositivo (App Store para iOS, Google Play Store para Android o Microsoft Store para Windows) y descarga e instala la aplicación adecuada. Algunas aplicaciones de videollamadas populares incluyen Zoom, Skype, WhatsApp, FaceTime, Google Meet, entre otras. 
+Abre la aplicación de videollamadas en tu dispositivo. Es posible que necesites iniciar sesión con una cuenta existente o crear una nueva cuenta si es la primera vez que usas la aplicación.
+Una vez que hayas iniciado sesión en la aplicación, busca la opción para iniciar una nueva videollamada. Esto puede variar dependiendo de la aplicación, pero generalmente encontrarás un botón o una opción en la pantalla principal de la aplicación que dice "Iniciar nueva llamada" o "Iniciar nueva reunión".
+Después de seleccionar la opción para iniciar una nueva videollamada, tendrás la opción de elegir a la persona o grupo con quien quieres hablar. Puedes seleccionar contactos de tu lista de contactos o ingresar manualmente los nombres de las personas con quienes deseas hablar.
+Una vez que hayas seleccionado a la persona o grupo con quien quieres hablar presiona el botón de iniciar la llamada.
+Una vez que la otra persona acepte la invitación, la videollamada comenzará y podrás ver y escuchar a los demás participantes.
+Cuando hayas terminado la videollamada, busca la opción para finalizarla. Esto generalmente se hace presionando un botón que dice "Finalizar llamada" o "Salir de la reunión".
+</template>
+    </category>
+    
+        <!-- APPVIDEOLLAMADA -->
+	<category>
+	    <pattern>APPVIDEOLLAMADA</pattern>
+	    <template>Algunas aplicaciones de videollamadas populares incluyen Zoom, Skype, WhatsApp, FaceTime y Google Meet.</template>
+    </category>
+    
+        <!-- NOMEESCUCHARVIDEO -->
+	<category>
+	    <pattern>NOMEESCUCHARVIDEO</pattern>
+	    <template>Una conexión a internet débil o intermitente puede causar problemas de video o audio durante una videollamada. Asegúrate de estar conectado a una red Wi-Fi estable o que tu conexión de datos móviles tenga una buena señal. 
+Asegúrate de que la aplicación de videollamadas tenga permiso para acceder a tu cámara y micrófono. Verifica la configuración de tu dispositivo para asegurarte de que la cámara y el micrófono estén seleccionados correctamente como fuentes de video y audio.
+Si estás experimentando problemas con una aplicación de videollamadas en particular, prueba utilizar otra aplicación para ver si el problema persiste. Esto puede ayudarte a determinar si el problema está relacionado con la aplicación o con tu dispositivo.
+Intenta cerrar la aplicación de videollamadas y volver a abrirla. Si el problema persiste, reinicia tu dispositivo por completo.
+Asegúrate de que el volumen de tu dispositivo esté activado y ajustado correctamente. Además, verifica que el micrófono no esté bloqueado o cubierto por algo que pueda estar obstruyendo el sonido.
+</template>
+    </category>
+    
+        <!-- NOESCUCHARVIDEO -->
+	<category>
+	    <pattern>NOESCUCHARVIDEO</pattern>
+	    <template>Pídele a la otra persona que verifique su conexión a internet y que tenga la cámara y el micrófono activados. Es posible que la otra persona esté experimentando problemas técnicos en su extremo.</template>
+    </category>
+	
+	<!-- BLOQUE 3: WHATSAPP -->
+	    
+	    <!-- WHATSAPP -->
+	<category>
+	    <pattern>WHATSAPP</pattern>
+	    <template>Busca el icono de WhatsApp en la pantalla de inicio de tu dispositivo. Es un ícono verde con un teléfono blanco dentro de un bocadillo de diálogo. Cuando entres en la aplicación, verás la lista de tus chats recientes. Si deseas enviar un mensaje a uno de esos contactos, simplemente toca su nombre para abrir el chat existente. Si deseas enviar un mensaje a un nuevo contacto, toca el ícono de "Chats" en la parte inferior de la pantalla y luego el ícono de "Nuevo chat" (generalmente representado por un lápiz o un signo más) y selecciona el contacto de la lista de tus contactos o busca su nombre en la barra de búsqueda. Una vez que hayas seleccionado el contacto, verás un campo de texto en la parte inferior de la pantalla. Toca este campo para abrir el teclado y escribe tu mensaje. Cuando hayas terminado de escribir tu mensaje, simplemente presiona el ícono de enviar, que generalmente se representa con una flecha hacia arriba. Tu mensaje se enviará al contacto y aparecerá en la conversación.</template>
+    </category>
+    
+        <!-- GRUPO -->
+    <category>
+        <pattern>GRUPO</pattern>
+        <template>En la lista de chats, busca el ícono de "Chats" en la parte inferior de la pantalla y tócalo para acceder a la lista de chats. En la esquina superior derecha de la pantalla, verás un ícono de tres puntos verticales. Tócalo para abrir el menú de opciones. En el menú desplegable, selecciona la opción "Nuevo grupo". Esto te llevará a la pantalla para crear un nuevo grupo. Selecciona los contactos que deseas agregar al grupo. Puedes buscar los nombres de tus contactos en la lista o simplemente deslizar hacia abajo para seleccionarlos. Después de seleccionar los contactos, toca el botón "Siguiente" en la esquina superior derecha de la pantalla. Ahora puedes agregar un nombre para tu grupo y una foto de perfil. Toca el ícono de la cámara si deseas agregar una foto de perfil desde tu galería de fotos, o simplemente toca el campo de texto para escribir un nombre para el grupo. Una vez que hayas ingresado el nombre y añadido una foto de perfil, toca el botón "Crear" en la esquina superior derecha de la pantalla.</template>
+    </category>
+    
+        <!-- BORRARCHAT -->
+	<category>
+	    <pattern>BORRARCHAT</pattern>
+	    <template>Ve a la pantalla principal donde se muestran todos tus chats. Mantén pulsado el chat que deseas eliminar. Esto resaltará el chat y te mostrará opciones adicionales en la parte superior o inferior de la pantalla, dependiendo de tu dispositivo. Una vez que el chat esté resaltado, verás un icono de "Eliminar" o un ícono de un cubo de basura en la parte superior o inferior de la pantalla, dependiendo de tu dispositivo. Toca este icono. Se te preguntará si deseas eliminar el chat. Confirma tu selección tocando "Eliminar" o "Borrar" en el mensaje de confirmación.</template>
+    </category>
+    
+        <!-- FOTO -->
+	<category>
+	    <pattern>FOTO</pattern>
+	    <template>Ve a la pantalla principal donde se muestran todos tus chats. Selecciona el chat al que deseas enviar la foto. Si deseas enviar la foto a un nuevo chat, toca el icono de lápiz o de chat en la esquina inferior derecha para iniciar un nuevo chat y selecciona el contacto o grupo al que deseas enviar la foto. Una vez que estés en el chat seleccionado, verás un icono de clip o de papel en la esquina inferior izquierda de la pantalla. Tócalo para abrir el menú de adjuntos. En el menú de adjuntos, selecciona la opción "Galería" o "Fotos y videos" para abrir tu galería de fotos. Busca y selecciona la foto que deseas enviar. Puedes navegar por tus álbumes o carpetas para encontrar la foto que deseas enviar. Una vez que hayas seleccionado la foto, aparecerá en la ventana de vista previa. Puedes agregar un mensaje si lo deseas en el campo de texto debajo de la foto. Finalmente, toca el icono de enviar (generalmente representado por una flecha hacia arriba) para enviar la foto.</template>
+    </category>
+    
+        <!-- UBICACION -->
+	<category>
+	    <pattern>UBICACION</pattern>
+	    <template>Ve al chat al que deseas enviar tu ubicación. Puede ser un chat individual o un grupo. Una vez que estés en el chat, busca el icono de adjuntos o el ícono de clip en la esquina inferior izquierda de la pantalla. Tócalo para abrir el menú de adjuntos. En el menú de adjuntos, selecciona la opción "Ubicación". Este ícono generalmente se representa como un mapa o una ubicación. Se te darán dos opciones: "Ubicación en tiempo real" (te permite compartir tu ubicación en tiempo real durante un período de tiempo con el contacto o grupo seleccionado. Puedes elegir compartir tu ubicación durante 15 minutos, 1 hora u 8 horas) y "Ubicación actual" (te permite compartir tu ubicación actual en ese momento con el contacto o grupo seleccionado. Esta opción no actualiza la ubicación en tiempo real, sino que solo comparte tu ubicación actual en el momento en que la envías). Selecciona la opción que prefieras. La ubicación se enviará al chat seleccionado y estará disponible para que todos los participantes del chat la vean.</template>
+    </category>
+    
+        <!-- DOCUMENTO -->
+	<category>
+	    <pattern>DOCUMENTO</pattern>
+	    <template>Ve al chat al que deseas enviar el documento. Puede ser un chat individual o un grupo. Una vez que estés en el chat, busca el icono de adjuntos o el ícono de clip en la esquina inferior izquierda de la pantalla. Tócalo para abrir el menú de adjuntos. En el menú de adjuntos, selecciona la opción "Documento". Este ícono generalmente se representa como un ícono de documento o archivo. Se abrirá tu carpeta de archivos, donde puedes buscar y seleccionar el documento que deseas enviar. Puedes buscar documentos almacenados en tu dispositivo o en servicios en la nube como Google Drive o Dropbox. Una vez que hayas seleccionado el documento, aparecerá en la ventana de vista previa. Puedes agregar un mensaje si lo deseas en el campo de texto debajo del documento. Finalmente, toca el icono de enviar (generalmente representado por una flecha hacia arriba) para enviar el documento.</template>
+    </category>
+    
+        <!-- CONTACTOWHATSAPP -->
+	<category>
+	    <pattern>CONTACTOWHATSAPP</pattern>
+	    <template>Ve al chat al que deseas enviar el contacto. Puede ser un chat individual o un grupo. Una vez que estés en el chat, busca el icono de adjuntos o el ícono de clip en la esquina inferior izquierda de la pantalla. Tócalo para abrir el menú de adjuntos. En el menú de adjuntos, selecciona la opción "Contacto". Este ícono generalmente se representa como una tarjeta de contacto o un ícono de persona. Se te mostrará una lista de contactos almacenados en tu dispositivo. Selecciona el contacto que deseas enviar. Se abrirá una ventana de vista previa del contacto seleccionado. Verás su nombre, número de teléfono y cualquier otra información de contacto disponible. Si lo deseas, puedes agregar un mensaje en el campo de texto debajo del contacto. Finalmente, toca el ícono de enviar (generalmente representado por una flecha hacia arriba) para enviar el contacto.</template>
+    </category>
+	
+	<!-- BLOQUE 4: MENSAJES -->
+	
+	    <!-- LEERMENSAJE -->
+	<category>
+	    <pattern>LEERMENSAJE</pattern>
+	    <template>Busca el ícono de la aplicación de mensajería en la pantalla de inicio de tu teléfono. Por lo general, este ícono se parece a un sobre o a un bocadillo de diálogo. Toca el ícono de la aplicación de mensajería para abrirla. Una vez dentro de la aplicación de mensajería, verás una lista de tus conversaciones recientes. Selecciona la conversación que deseas leer tocando en ella. Dentro de la conversación seleccionada, podrás leer todos los mensajes enviados y recibidos. Los mensajes más recientes aparecerán en la parte inferior de la pantalla, mientras que los mensajes más antiguos estarán más arriba. Desplázate hacia arriba o hacia abajo en la conversación para leer todos los mensajes anteriores. Puedes tocar en cualquier mensaje para ver detalles adicionales, como la hora en que se envió o recibió el mensaje.</template>
+    </category>
+    
+        <!-- MENSAJE -->
+	<category>
+	    <pattern>MENSAJE</pattern>
+	    <template>Busca el ícono de la aplicación de mensajería en la pantalla de inicio de tu teléfono. Por lo general, este ícono se parece a un sobre o a un bocadillo de diálogo. Toca el ícono de la aplicación de mensajería para abrirla. Una vez dentro de la aplicación de mensajería, busca y selecciona el ícono o botón que te permita iniciar una nueva conversación o redactar un nuevo mensaje. Este ícono suele estar representado por un signo más (+) o un ícono de lápiz. Se abrirá una nueva ventana o pantalla donde podrás escribir tu mensaje. Toca el área de texto para abrir el teclado en pantalla. Utiliza el teclado en pantalla para escribir tu mensaje. Simplemente toca las teclas en el teclado para ingresar las letras, números y símbolos que deseas incluir en tu mensaje. Cuando estés listo para enviar tu mensaje, busca y selecciona el botón de enviar. Este botón generalmente se representa como un ícono de flecha hacia arriba o un ícono de avión de papel. Tu mensaje se enviará al destinatario y aparecerá en la conversación seleccionada en la aplicación de mensajería.</template>
+    </category>
+    
+        <!-- BORRARMENSAJE -->
+	<category>
+	    <pattern>BORRARMENSAJE</pattern>
+	    <template>Ve al chat o conversación que contiene el mensaje que deseas borrar. Mantén presionado el mensaje que deseas eliminar. Esto generalmente activará un menú de opciones para ese mensaje. En el menú de opciones, busca y selecciona la opción "Eliminar" o "Eliminar mensaje". Dependiendo de la aplicación, es posible que se te presente la opción de eliminar el mensaje solo para ti o para todos en el chat. Si tienes la opción de eliminar el mensaje solo para ti, el mensaje se eliminará de tu dispositivo, pero seguirá visible para los demás participantes del chat. Si seleccionas la opción para eliminar el mensaje para todos, el mensaje será eliminado tanto de tu dispositivo como de los dispositivos de los demás participantes en el chat. Una vez que el mensaje ha sido eliminado, verás una notificación en la conversación indicando que el mensaje ha sido eliminado. Dependiendo de la aplicación, es posible que veas un mensaje genérico como "Este mensaje fue eliminado".</template>
+    </category>
+
+	
+	<!-- BLOQUE 5: CORREO ELECTRÓNICO -->
+	
+	    <!-- APPCORREO -->
+	<category>
+	    <pattern>APPCORREO</pattern>
+	    <template>Las aplicaciones más populares y mas sencillas de utilizar son las siguientes: Gmail, Outlook, Yahoo Mail, Apple Mail y Microsoft Mail.</template>
+    </category>
+    
+        <!-- CUENTA -->
+    <category>
+        <pattern>CUENTA</pattern>
+        <template>Hay muchos proveedores de correo electrónico disponibles, como Gmail, Outlook, Yahoo Mail, entre otros. Decide cuál prefieres utilizar y accede al sitio web del proveedor. 
+En el sitio web del proveedor de correo electrónico que hayas elegido, busca el enlace o el botón que te permita crear una nueva cuenta o registrarte. Este enlace generalmente se encuentra en la página de inicio del sitio web y suele estar etiquetado como "Crear cuenta" o "Registrarse".
+Completa el formulario de registro con la información solicitada. Esto suele incluir tu nombre completo, fecha de nacimiento, dirección de correo electrónico deseada, contraseña y número de teléfono (en algunos casos). 
+Decide cuál será tu dirección de correo electrónico y escríbela en el campo correspondiente.
+Elige una contraseña segura para tu cuenta de correo electrónico. Asegúrate de que tu contraseña sea lo suficientemente segura como para proteger tu cuenta, utilizando una combinación de letras, números y caracteres especiales, y evitando contraseñas obvias o fáciles de adivinar.
+Algunos proveedores de correo electrónico pueden requerir que verifiques tu dirección de correo electrónico o tu número de teléfono antes de completar el registro. Sigue las instrucciones proporcionadas para completar este proceso de verificación.
+Antes de finalizar el registro, es posible que se te solicite que leas y aceptes los términos y condiciones del servicio del proveedor de correo electrónico. Asegúrate de revisar estos términos y condiciones cuidadosamente y selecciona la opción para aceptarlos si estás de acuerdo.
+Una vez que hayas proporcionado toda la información requerida y aceptado los términos y condiciones, selecciona la opción para completar el registro o crear tu cuenta. Dependiendo del proveedor de correo electrónico, es posible que recibas un correo electrónico de confirmación o un mensaje en pantalla indicando que tu cuenta ha sido creada con éxito.
+</template>
+    </category>
+    
+        <!-- CORREO -->
+	<category>
+	    <pattern>CORREO</pattern>
+	    <template>En la mayoría de las aplicaciones de correo electrónico, verás un botón que dice "Redactar" o "Nuevo mensaje". Haz clic en esta opción para comenzar a redactar un nuevo correo electrónico. Escribe la dirección de correo electrónico del destinatario. Escribe un asunto breve y descriptivo que resuma el contenido del correo electrónico. En el área de redacción, escribe el contenido del correo electrónico. Una vez que estés satisfecho con el contenido del correo electrónico, haz clic en el botón "Enviar" para enviarlo al destinatario.</template>
+    </category>
+    
+        <!-- BORRARCORREO -->
+	<category>
+	    <pattern>BORRARCORREO</pattern>
+	    <template>Haz clic en el correo electrónico que deseas borrar para abrirlo. En la mayoría de los clientes de correo electrónico, verás un botón o un enlace etiquetado como "Eliminar", "Borrar" o un ícono de papelera. Haz clic en esta opción para borrar el correo electrónico. Después de borrar el correo electrónico, es posible que se mueva a la carpeta de elementos eliminados o papelera. Si deseas recuperar el correo electrónico o asegurarte de que se ha eliminado correctamente, puedes revisar esta carpeta.</template>
+    </category>
+    
+</aiml>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Índice de áreas temáticas:
+	
+	1. Saludos, despedidas y agradecimientos
+	[Respuesta: HELLO]
+	    - <saludos>
+	
+	[Respuesta: AUREVOIR]
+	    - <despedida>
+	    
+	[Respuesta: AGRADECIMIENTO]
+	    - <gracias>
+	
+	2. Propósito e identidad
+	[Respuesta: PROPOSITO]
+	    - <paraque> SIRVES
+	    - <paraque> TE PODER <servir>
+	    - <quecual> PUEDES HACER
+	    - <quecual> PUEDES RESPONDER
+	
+	[Respuesta: IDENTIDAD]
+	    - <quequien> ERES
+	    - <como> TE LLAMAS
+	    - <quecual> SER TU NOMBRE
+	
+	3. Problemas técnicos
+	[Respuesta: TONTO]
+	    - NO <querer> ESA RESPUESTA
+	    - RESPUESTA <negativo>
+	    - ERES <insulto>
+	
+	[Respuesta: SERVICIOTECNICO]
+	    - NO FUNCIONAR
+	    - TENER <duda>
+	    - TENER <problematecnico>
+	
+	-->
+	
+	<!-- ÁREA TEMÁTICA 1: Saludos y despedidas -->
+	
+	    <!-- <saludos> -->
+	<category>
+	    <pattern> ^ <set>saludos</set> ^ </pattern>
+	    <template><srai>HELLO</srai></template>
+    </category>
+    
+	    <!-- <despedida> -->
+	<category>
+	    <pattern> ^ <set>despedida</set> ^ </pattern>
+	    <template><srai>AUREVOIR</srai></template>
+    </category>
+        
+        <!-- <gracias> -->
+    <category>
+        <pattern> ^ <set>gracias</set> ^ </pattern>
+        <template><srai>AGRADECIMIENTO</srai></template>
+    </category>
+    
+	<!-- ÁREA TEMÁTICA 2: Propósito e identidad -->
+	
+	    <!-- <paraque> SIRVES -->
+	<category>
+	    <pattern> ^ <set>paraque</set> ^ SIRVES ^ </pattern>
+	    <template><srai>PROPOSITO</srai></template>
+    </category>
+    
+        <!-- <paraque> TE PODER <servir> -->
+    <category>
+        <pattern> ^ <set>paraque</set> ^ TE ^ PODER ^ <set>servir</set> ^ </pattern>
+        <template><srai>PROPOSITO</srai></template>
+    </category>
+    
+        <!-- <quecual> PUEDES HACER -->
+    <category>
+        <pattern> ^ <set>quecual</set> ^ PUEDES ^ HACER ^ </pattern>
+        <template><srai>PROPOSITO</srai></template>
+    </category>
+    
+        <!-- <quecual> PUEDES RESPONDER -->
+    <category>
+        <pattern> ^ <set>quecual</set> ^ PUEDES ^ RESPONDER ^ </pattern>
+        <template><srai>PROPOSITO</srai></template>
+    </category>
+    
+        <!-- <quequien> ERES -->
+    <category>
+        <pattern> ^ <set>quequien</set> ^ ERES ^ </pattern>
+        <template><srai>IDENTIDAD</srai></template>
+    </category>
+    
+        <!-- <como> TE LLAMAS -->
+    <category>
+        <pattern> ^ <set>como</set> ^ TE ^ LLAMAS ^ </pattern>
+        <template><srai>IDENTIDAD</srai></template>
+    </category>
+    
+        <!-- <quecual> SER TU NOMBRE -->
+    <category>
+        <pattern> ^ <set>quecual</set> ^ SER ^ TU ^ NOMBRE ^ </pattern>
+        <template><srai>IDENTIDAD</srai></template>
+    </category>
+	
+	<!-- ÁREA TEMÁTICA 3: Problemas técnicos -->
+	
+	    <!-- NO <querer> RESPUESTA -->
+	<category>
+	    <pattern> ^ NO ^ <set>querer</set> ^ RESPUESTA ^ </pattern>
+	    <template><srai>TONTO</srai></template>
+    </category>
+    
+        <!-- RESPUESTA <negativo> -->
+    <category>
+        <pattern> ^ RESPUESTA <set>negativo</set> ^ </pattern>
+        <template><srai>TONTO</srai></template>
+    </category>
+    
+        <!-- ERES <insulto> -->
+    <category>
+        <pattern> ^ ERES ^ <set>insulto</set> ^ </pattern>
+        <template><srai>TONTO</srai></template>
+    </category>
+    
+        <!-- NO FUNCIONAR -->
+    <category>
+        <pattern> ^ NO ^ FUNCIONAR ^ </pattern>
+        <template><srai>SERVICIOTECNICO</srai></template>
+    </category>
+    
+        <!-- TENER <duda> -->
+    <category>
+        <pattern> ^ TENER ^<set>duda</set> ^ </pattern>
+        <template><srai>SERVICIOTECNICO</srai></template>
+    </category>
+    
+        <!-- TENER <problematecnico> -->
+    <category>
+        <pattern> ^ TENER ^ <set>problematecnico</set> ^ </pattern>
+        <template><srai>SERVICIOTECNICO</srai></template>
+    </category>
+    
+</aiml>

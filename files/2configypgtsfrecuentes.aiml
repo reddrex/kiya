@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Índice de bloque Configuración y preguntas frecuentes:
+	
+	1. Cuestiones generales
+	    [Respuesta: ENCENDIDO]
+	    - ¿cómo <activar> el <movil>?
+	    - ¿dónde <activar> el <movil>?
+	    - <querer> <activar> el <movil>
+	    
+	    [Respuesta: APAGADO]
+	    - ¿cómo <desactivar> el <movil>?
+	    - ¿dónde <desactivar> el <movil>?
+	    - <querer> <desactivar> el <movil>
+	    
+	    [Respuesta: REINICIADO]
+	    - ¿cómo <reiniciar> el <movil>?
+	    - ¿dónde <reiniciar> el <movil>?
+	    - <querer> <reiniciar> el <movil>
+	    
+	    [Respuesta: ACTIVAPANTALLA]
+	    - ¿cómo <activar> la pantalla?
+	    - ¿dónde <activar> la pantalla?
+	    - <querer> <activar> la pantalla
+	    
+	    [Respuesta: DESACTIVAPANTALLA]
+	    - ¿cómo <desactivar> la pantalla?
+	    - ¿dónde <desactivar> la pantalla?
+	    - <querer> <desactivar> la pantalla
+	    
+	    [Respuesta: CARGAMOVIL]
+	    - ¿cómo <cargar> la <bateria>?
+	    - ¿dónde <cargar> la <bateria>?
+	    - <querer> <cargar> la <bateria>
+	    - ¿cómo <cargar> el <movil>?
+	    - ¿dónde <cargar> el <movil>?
+	    - <querer> <cargar> el <movil>
+	    
+	    [Respuesta: NUEVACONTRASENA]
+	    - ¿cómo <elegir> una contraseña para el <movil>?
+	    - ¿dónde <elegir> una contraseña para el <movil>?
+	    - <querer> <elegir> una contraseña para el <movil>
+	    
+	    [Respuesta: OTRACONTRASENA]
+	    - ¿cómo <cambiar> la contraseña del <movil>?
+	    - ¿dónde <cambiar> la contraseña del <movil>?
+	    - <querer> <cambiar> la contraseña del <movil>
+	
+	2. Conexiones
+	    [Respuesta: CONEXWIFI]
+	    - ¿cómo <activar> <internet>?
+	    - ¿dónde <activar> <internet>?
+	    - <querer> <activar> <internet>
+	    - ¿cómo <conectar> <internet>?
+	    - ¿dónde <conectar> <internet>?
+	    - <querer> <conectar> <internet>
+	    
+	    [Respuesta: CONEXDATOS]
+	    - ¿cómo <activar> <datos>?
+	    - ¿dónde <activar> <datos>?
+	    - <querer> <activar> <datos>
+	    - ¿cómo <conectar> <datos>?
+	    - ¿dónde <conectar> <datos>?
+	    - <querer> <conectar> <datos>
+	    
+	    [Respuesta: CONEXBLUETOOTH]
+	    - ¿cómo <activar> bluetooth?
+	    - ¿dónde <activar> bluetooth?
+	    - <querer> <activar> bluetooth
+	    - ¿cómo <conectar> bluetooth?
+	    - ¿dónde <conectar> bluetooth?
+	    - <querer> <conectar> bluetooth
+	
+	3. Pantalla
+	    [Respuesta: HACERCAPTURA]
+	    - ¿cómo <hacer> <captura>?
+	    - <querer> <hacer> <captura>
+	    
+	    [Respuesta: NUEVOFONDO]
+	    - ¿cómo <elegir> fondo?
+	    - <querer> <elegir> fondo
+	    - ¿cómo <cambiar> fondo?
+	    - <querer> <cambiar> fondo
+	
+	4. Imagen
+	    [Respuesta: HACERFOTOVIDEO]
+	    - ¿cómo <hacer> <imagen>?
+	    - <querer> <hacer> <imagen>
+	    - ¿cómo <hacerfoto> <imagen>?
+	    - <querer> <hacerfoto> <imagen>
+	    
+	    [Respuesta: VERFOTOVIDEO]
+	    - ¿cómo <ver> <imagen>?
+	    - ¿dónde <ver> <imagen>?
+	    - <querer> <ver> <imagen>
+	    - ¿dónde <encontrar> <imagen>?
+	    
+	    [Respuesta: BORRARFOTOVIDEO]
+	    - ¿cómo <borrar> <imagen>?
+	    - <querer> <borrar> <imagen>
+	
+	5. Sonido y tono
+	    [Respuesta: AUMENTARVOLUMEN]
+	    - ¿cómo <aumentar> <volumen>?
+	    - ¿dónde <aumentar> <volumen>?
+	    - <querer> <aumentar> <volumen>
+	    
+	    [Respuesta: DISMINUIRVOLUMEN]
+	    - ¿cómo <disminuir> <volumen>?
+	    - ¿dónde <disminuir> <volumen>?
+	    - <querer> <disminuir> <volumen>
+	    
+	    [Respuesta: ACTIVARSILENCIO]
+	    - ¿cómo <activar> <silencio>?
+	    - ¿dónde <activar> <silencio>?
+	    - <querer> <activar> <silencio>
+	    - ¿cómo <poner> <silencio>?
+	    - ¿dónde <poner> <silencio>?
+	    - <querer> <poner> <silencio>
+	    
+	    [Respuesta: DESACTIVARSILENCIO]
+	    - ¿cómo <desactivar> <silencio>?
+	    - ¿dónde <desactivar> <silencio>?
+	    - <querer> <desactivar> <silencio>
+	    
+	    [Respuesta: TONOMOVIL]
+	    - ¿cómo <elegir> <tono>?
+	    - ¿dónde <elegir> <tono>?
+	    - <querer> <elegir> <tono>
+	    - ¿cómo <cambiar> <tono>?
+	    - ¿dónde <cambiar> <tono>?
+	    - <querer> <cambiar> <tono>
+	
+	6. Letra
+	    [Respuesta: CAMBIARTAMANO]
+	    - ¿cómo <aumentar> tamaño <texto> del <movil>?
+	    - ¿dónde <aumentar> tamaño <texto> del <movil>?
+	    - <querer> <aumentar> tamaño <texto> del <movil>
+	    - ¿cómo <disminuir> tamaño <texto> del <movil>?
+	    - ¿dónde <disminuir> tamaño <texto> del <movil>?
+	    - <querer> <disminuir> tamaño <texto> del <movil>
+	    - ¿cómo <cambiar> tamaño <texto> del <movil>?
+	    - ¿dónde <cambiar> tamaño <texto> del <movil>?
+	    - <querer> <cambiar> tamaño <texto> del <movil>
+	    - ¿cómo <poner> <tamano> <texto> del <movil>?
+	    - <querer> <poner> <tamano> <texto> del <movil>
+	    - ¿cómo <poner> <texto> del <movil> <tamano>?
+	    - <querer> <poner> <texto> del <movil> <tamano>
+	    - ¿cómo <hacer> <tamano> <texto> del <movil>?
+	    - <querer> <hacer> <tamano> <texto> del <movil>
+	    - ¿cómo <hacer> <texto> del <movil> <tamano>?
+	    - <querer> <hacer> <texto> del <movil> <tamano>
+	
+	-->
+	
+	<!-- BLOQUE 1: CUESTIONES GENERALES -->
+	
+	    <!-- ¿cómo <activar> el <movil>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>activar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>ENCENDIDO</srai></template>
+    </category>
+	    
+	    <!-- ¿dónde <activar> el <movil>? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>activar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>ENCENDIDO</srai></template>
+    </category>
+	    
+	    <!-- <querer> <activar> el <movil> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>activar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>ENCENDIDO</srai></template>
+    </category>
+    
+    	<!-- ¿cómo <desactivar> el <movil>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>desactivar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>APAGADO</srai></template>
+    </category>
+	    
+	    <!-- ¿dónde <desactivar> el <movil>? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>desactivar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>APAGADO</srai></template>
+    </category>
+	    
+	    <!-- <querer> <desactivar> el <movil> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>desactivar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>APAGADO</srai></template>
+    </category>
+    
+        <!-- ¿cómo <reiniciar> el <movil>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>reiniciar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>REINICIADO</srai></template>
+    </category>
+	    
+	    <!-- ¿dónde <reiniciar> el <movil>? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>reiniciar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>REINICIADO</srai></template>
+    </category>
+	    
+	    <!-- <querer> <reiniciar> el <movil> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>reiniciar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>REINICIADO</srai></template>
+    </category>
+    
+        <!-- ¿cómo <activar> la pantalla? -->
+    <category>
+        <pattern> ^ COMO ^ <set>activar</set> ^ PANTALLA ^ </pattern>
+        <template><srai>ACTIVAPANTALLA</srai></template>
+    </category>
+        
+        <!-- ¿dónde <activar> la pantalla? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>activar</set> ^ PANTALLA ^ </pattern>
+        <template><srai>ACTIVAPANTALLA</srai></template>
+    </category>
+
+	    <!-- <querer> <activar> la pantalla -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>activar</set> ^ PANTALLA ^ </pattern>
+        <template><srai>ACTIVAPANTALLA</srai></template>
+    </category>
+
+        <!-- ¿cómo <desactivar> la pantalla? -->
+    <category>
+        <pattern> ^ COMO ^ <set>desactivar</set> ^ PANTALLA ^ </pattern>
+        <template><srai>DESACTIVAPANTALLA</srai></template>
+    </category>
+        
+        <!-- ¿dónde <desactivar> la pantalla? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>desactivar</set> ^ PANTALLA ^ </pattern>
+        <template><srai>DESACTIVAPANTALLA</srai></template>
+    </category>
+
+	    <!-- <querer> <desactivar> la pantalla -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>desactivar</set> ^ PANTALLA ^ </pattern>
+        <template><srai>DESACTIVAPANTALLA</srai></template>
+    </category>
+
+        <!-- ¿cómo <cargar> la <bateria>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>cargar</set> ^ <set>bateria</set> ^ </pattern>
+        <template><srai>CARGAMOVIL</srai></template>
+    </category>
+        
+        <!-- ¿dónde <cargar> la <bateria>? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>cargar</set> ^ <set>bateria</set> ^ </pattern>
+        <template><srai>CARGAMOVIL</srai></template>
+    </category>
+
+	    <!-- <querer> <cargar> la <bateria> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>cargar</set> ^ <set>bateria</set> ^ </pattern>
+        <template><srai>CARGAMOVIL</srai></template>
+    </category>
+
+        <!-- ¿cómo <cargar> el <movil>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>cargar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>CARGAMOVIL</srai></template>
+    </category>
+        
+        <!-- ¿dónde <cargar> el <movil>? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>cargar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>CARGAMOVIL</srai></template>
+    </category>
+
+	    <!-- <querer> <cargar> el <movil> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>cargar</set> ^ <set>movil</set> ^ </pattern>
+        <template><srai>CARGAMOVIL</srai></template>
+    </category>
+	
+	    <!-- ¿cómo <elegir> una contraseña para el <movil>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>elegir</set> ^ CONTRASEÑA ^ <set>movil</set> ^ </pattern>
+        <template><srai>NUEVACONTRASENA</srai></template>
+    </category>
+        
+        <!-- ¿dónde <elegir> una contraseña para el <movil>? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>elegir</set> ^ CONTRASEÑA ^ <set>movil</set> ^ </pattern>
+        <template><srai>NUEVACONTRASENA</srai></template>
+    </category>
+
+	    <!-- <querer> <elegir> una contraseña para el <movil> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>elegir</set> ^ CONTRASEÑA ^ <set>movil</set> ^ </pattern>
+        <template><srai>NUEVACONTRASENA</srai></template>
+    </category>
+
+    	<!-- ¿cómo <cambiar> la contraseña del <movil>? -->
+    <category>
+        <pattern> ^ COMO ^ <set>cambiar</set> ^ CONTRASEÑA ^ <set>movil</set> ^ </pattern>
+        <template><srai>OTRACONTRASENA</srai></template>
+    </category>
+        
+        <!-- ¿dónde <cambiar> la contraseña del <movil>? -->
+	<category>
+        <pattern> ^ DONDE ^ <set>cambiar</set> ^ CONTRASEÑA ^ <set>movil</set> ^ </pattern>
+        <template><srai>OTRACONTRASENA</srai></template>
+    </category>
+
+	    <!-- <querer> <cambiar> la contraseña del <movil> -->
+	<category>
+        <pattern> ^ <set>querer</set> ^ <set>cambiar</set> ^ CONTRASEÑA ^ <set>movil</set> ^ </pattern>
+        <template><srai>OTRACONTRASENA</srai></template>
+    </category>
+	
+	<!-- BLOQUE 2: CONEXIONES -->
+	
+	    <!-- ¿cómo <activar> <internet>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>activar</set> ^ <set>internet</set> ^ </pattern>
+	    <template><srai>CONEXWIFI</srai></template>
+	</category>
+		
+	    <!-- ¿dónde <activar> <internet>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>activar</set> ^ <set>internet</set> ^ </pattern>
+	    <template><srai>CONEXWIFI</srai></template>
+	</category>
+		
+	    <!-- <querer> <activar> <internet>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>activar</set> ^ <set>internet</set> ^ </pattern>
+	    <template><srai>CONEXWIFI</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <conectar> <internet>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>conectar</set> ^ <set>internet</set> ^ </pattern>
+	    <template><srai>CONEXWIFI</srai></template>
+	</category>
+		
+	    <!-- ¿dónde <conectar> <internet>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>conectar</set> ^ <set>internet</set> ^ </pattern>
+	    <template><srai>CONEXWIFI</srai></template>
+	</category>
+		
+	    <!-- <querer> <conectar> <internet>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>conectar</set> ^ <set>internet</set> ^ </pattern>
+	    <template><srai>CONEXWIFI</srai></template>
+	</category>
+
+	    <!-- ¿cómo <activar> <datos>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>activar</set> ^ <set>datos</set> ^ </pattern>
+	    <template><srai>CONEXDATOS</srai></template>
+	</category>
+		
+	    <!-- ¿dónde <activar> <datos>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>activar</set> ^ <set>datos</set> ^ </pattern>
+	    <template><srai>CONEXDATOS</srai></template>
+	</category>
+		
+	    <!-- <querer> <activar> <datos>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>activar</set> ^ <set>datos</set> ^ </pattern>
+	    <template><srai>CONEXDATOS</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <conectar> <datos>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>conectar</set> ^ <set>datos</set> ^ </pattern>
+	    <template><srai>CONEXDATOS</srai></template>
+	</category>
+		
+	    <!-- ¿dónde <conectar> <datos>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>conectar</set> ^ <set>datos</set> ^ </pattern>
+	    <template><srai>CONEXDATOS</srai></template>
+	</category>
+		
+	    <!-- <querer> <conectar> <datos>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>conectar</set> ^ <set>datos</set> ^ </pattern>
+	    <template><srai>CONEXDATOS</srai></template>
+	</category>
+
+	    <!-- ¿cómo <activar> bluetooth? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>activar</set> ^ BLUETOOTH ^ </pattern>
+	    <template><srai>CONEXBLUETOOTH</srai></template>
+	</category>
+		
+	    <!-- ¿dónde <activar> bluetooth? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>activar</set> ^ BLUETOOTH ^ </pattern>
+	    <template><srai>CONEXBLUETOOTH</srai></template>
+	</category>
+		
+	    <!-- <querer> <activar> bluetooth? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>activar</set> ^ BLUETOOTH ^ </pattern>
+	    <template><srai>CONEXBLUETOOTH</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <conectar> bluetooth? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>conectar</set> ^ BLUETOOTH ^ </pattern>
+	    <template><srai>CONEXBLUETOOTH</srai></template>
+	</category>
+		
+	    <!-- ¿dónde <conectar> bluetooth? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>conectar</set> ^ BLUETOOTH ^ </pattern>
+	    <template><srai>CONEXBLUETOOTH</srai></template>
+	</category>
+		
+	    <!-- <querer> <conectar> bluetooth? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>conectar</set> ^ BLUETOOTH ^ </pattern>
+	    <template><srai>CONEXBLUETOOTH</srai></template>
+	</category>
+	
+	<!-- BLOQUE 3: PANTALLA -->
+	
+	    <!-- ¿cómo <hacer> <captura>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>hacer</set> ^ <set>captura</set> ^ </pattern>
+	    <template><srai>HACERCAPTURA</srai></template>
+	</category>
+
+	    <!-- <querer> <hacer> <captura> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>hacer</set> ^ <set>captura</set> ^ </pattern>
+	    <template><srai>HACERCAPTURA</srai></template>
+	</category>
+
+	    <!-- ¿cómo <elegir> fondo? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>elegir</set> ^ FONDO ^ </pattern>
+	    <template><srai>NUEVOFONDO</srai></template>
+	</category>
+
+	    <!-- <querer> <elegir> fondo -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>elegir</set> ^ FONDO ^ </pattern>
+	    <template><srai>NUEVOFONDO</srai></template>
+	</category>
+	
+		<!-- ¿cómo <cambiar> fondo? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>cambiar</set> ^ FONDO ^ </pattern>
+	    <template><srai>NUEVOFONDO</srai></template>
+	</category>
+
+	    <!-- <querer> <cambiar> fondo -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>cambiar</set> ^ FONDO ^ </pattern>
+	    <template><srai>NUEVOFONDO</srai></template>
+	</category>
+
+	<!-- BLOQUE 4: IMAGEN -->
+	
+	    <!-- ¿cómo <hacer> <imagen>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>hacer</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>HACERFOTOVIDEO</srai></template>
+	</category>
+
+	    <!-- <querer> <hacer> <imagen> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>hacer</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>HACERFOTOVIDEO</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <hacerfoto> <imagen>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>hacerfoto</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>HACERFOTOVIDEO</srai></template>
+	</category>
+
+	    <!-- <querer> <hacerfoto> <imagen> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>hacerfoto</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>HACERFOTOVIDEO</srai></template>
+	</category>
+
+	    <!-- ¿cómo <ver> <imagen>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>ver</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>VERFOTOVIDEO</srai></template>
+	</category>
+
+	    <!-- ¿dónde <ver> <imagen>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>ver</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>VERFOTOVIDEO</srai></template>
+	</category>
+
+	    <!-- <querer> <ver> <imagen> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>ver</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>VERFOTOVIDEO</srai></template>
+	</category>
+
+	    <!-- ¿dónde <encontrar> <imagen>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>encontrar</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>VERFOTOVIDEO</srai></template>
+	</category>
+	
+		<!-- ¿cómo <borrar> <imagen>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>borrar</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>BORRARFOTOVIDEO</srai></template>
+	</category>
+
+	    <!-- <querer> <borrar> <imagen> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>borrar</set> ^ <set>imagen</set> ^ </pattern>
+	    <template><srai>BORRARFOTOVIDEO</srai></template>
+	</category>
+
+	<!-- BLOQUE 5: SONIDO Y TONO -->
+	
+	    <!-- ¿cómo <aumentar> <volumen>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>aumentar</set> ^ <set>volumen</set> ^ </pattern>
+	    <template><srai>AUMENTARVOLUMEN</srai></template>
+	</category>
+
+	    <!-- ¿dónde <aumentar> <volumen>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>aumentar</set> ^ <set>volumen</set> ^ </pattern>
+	    <template><srai>AUMENTARVOLUMEN</srai></template>
+	</category>
+	
+	    <!-- <querer> <aumentar> <volumen>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>aumentar</set> ^ <set>volumen</set> ^ </pattern>
+	    <template><srai>AUMENTARVOLUMEN</srai></template>
+	</category>
+
+	    <!-- ¿cómo <disminuir> <volumen>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>disminuir</set> ^ <set>volumen</set> ^ </pattern>
+	    <template><srai>DISMINUIRVOLUMEN</srai></template>
+	</category>
+
+	    <!-- ¿dónde <disminuir> <volumen>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>disminuir</set> ^ <set>volumen</set> ^ </pattern>
+	    <template><srai>DISMINUIRVOLUMEN</srai></template>
+	</category>
+	
+	    <!-- <querer> <disminuir> <volumen>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>disminuir</set> ^ <set>volumen</set> ^ </pattern>
+	    <template><srai>DISMINUIRVOLUMEN</srai></template>
+	</category>
+
+	    <!-- ¿cómo <activar> <silencio>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>activar</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>ACTIVARSILENCIO</srai></template>
+	</category>
+
+	    <!-- ¿dónde <activar> <silencio>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>activar</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>ACTIVARSILENCIO</srai></template>
+	</category>
+	
+	    <!-- <querer> <activar> <silencio>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>activar</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>ACTIVARSILENCIO</srai></template>
+	</category>
+
+	    <!-- ¿cómo <poner> <silencio>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>poner</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>ACTIVARSILENCIO</srai></template>
+	</category>
+
+	    <!-- ¿dónde <poner> <silencio>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>poner</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>ACTIVARSILENCIO</srai></template>
+	</category>
+	
+	    <!-- <querer> <poner> <silencio>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>poner</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>ACTIVARSILENCIO</srai></template>
+	</category>
+
+	    <!-- ¿cómo <desactivar> <silencio>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>desactivar</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>DESACTIVARSILENCIO</srai></template>
+	</category>
+
+	    <!-- ¿dónde <desactivar> <silencio>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>desactivar</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>DESACTIVARSILENCIO</srai></template>
+	</category>
+	
+	    <!-- <querer> <desactivar> <silencio>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>desactivar</set> ^ <set>silencio</set> ^ </pattern>
+	    <template><srai>DESACTIVARSILENCIO</srai></template>
+	</category>
+
+	    <!-- ¿cómo <elegir> <tono>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>elegir</set> ^ <set>tono</set> ^ </pattern>
+	    <template><srai>TONOMOVIL</srai></template>
+	</category>
+
+	    <!-- ¿dónde <elegir> <tono>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>elegir</set> ^ <set>tono</set> ^ </pattern>
+	    <template><srai>TONOMOVIL</srai></template>
+	</category>
+	
+	    <!-- <querer> <elegir> <tono>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>elegir</set> ^ <set>tono</set> ^ </pattern>
+	    <template><srai>TONOMOVIL</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <cambiar> <tono>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>cambiar</set> ^ <set>tono</set> ^ </pattern>
+	    <template><srai>TONOMOVIL</srai></template>
+	</category>
+
+	    <!-- ¿dónde <cambiar> <tono>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>cambiar</set> ^ <set>tono</set> ^ </pattern>
+	    <template><srai>TONOMOVIL</srai></template>
+	</category>
+	
+	    <!-- <querer> <cambiar> <tono>? -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>cambiar</set> ^ <set>tono</set> ^ </pattern>
+	    <template><srai>TONOMOVIL</srai></template>
+	</category>
+
+	<!-- BLOQUE 6: LETRA -->
+	
+	    <!-- ¿cómo <aumentar> tamaño <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>aumentar</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- ¿dónde <aumentar> tamaño <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>aumentar</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+		
+	    <!-- <querer> <aumentar> tamaño <texto> del <movil> -->
+	<category>
+	    <pattern> <set>querer</set> <set>aumentar</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+
+	    <!-- ¿cómo <disminuir> tamaño <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>disminuir</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- ¿dónde <disminuir> tamaño <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>disminuir</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+		
+	    <!-- <querer> <disminuir> tamaño <texto> del <movil> -->
+	<category>
+	    <pattern> <set>querer</set> <set>disminuir</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+
+	    <!-- ¿cómo <cambiar> tamaño <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>cambiar</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- ¿dónde <cambiar> tamaño <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ DONDE ^ <set>cambiar</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+		
+	    <!-- <querer> <cambiar> tamaño <texto> del <movil> -->
+	<category>
+	    <pattern> <set>querer</set> <set>cambiar</set> ^ TAMAÑO ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <poner> <tamano> <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>poner</set> ^ <set>tamano</set> ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- <querer> <poner> <tamano> <texto> del <movil> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>poner</set> ^ <set>tamano</set> ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <poner> <texto> del <movil> <tamano>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>poner</set> ^ <set>texto</set> ^ <set>movil</set> ^ <set>tamano</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- <querer> <poner> <texto> del <movil> <tamano> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>poner</set> ^ <set>texto</set> ^ <set>movil</set> ^ <set>tamano</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <hacer> <tamano> <texto> del <movil>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>hacer</set> ^ <set>tamano</set> ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- <querer> <hacer> <tamano> <texto> del <movil> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>hacer</set> ^ <set>tamano</set> ^ <set>texto</set> ^ <set>movil</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- ¿cómo <hacer> <texto> del <movil> <tamano>? -->
+	<category>
+	    <pattern> ^ COMO ^ <set>hacer</set> ^ <set>texto</set> ^ <set>movil</set> ^ <set>tamano</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+	
+	    <!-- <querer> <hacer> <texto> del <movil> <tamano> -->
+	<category>
+	    <pattern> ^ <set>querer</set> ^ <set>hacer</set> ^ <set>texto</set> ^ <set>movil</set> ^ <set>tamano</set> ^ </pattern>
+	    <template><srai>CAMBIARTAMANO</srai></template>
+	</category>
+
+</aiml>

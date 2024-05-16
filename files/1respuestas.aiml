@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Índice de respuestas del bloque General:
+	
+	1. Saludos, despedidas y agracedimientos
+	    - HELLO
+	    - AUREVOIR
+	    - AGRADECIMIENTO
+	2. Propósito e identidad
+	    - PROPOSITO
+	    - IDENTIDAD
+	3. Problemas técnicos
+	    - TONTO
+	    - SERVICIOTECNICO
+	-->
+	
+	<!-- BLOQUE 1: Saludos, despedidas y agradecimientos -->
+	    
+	    <!-- HELLO -->
+	<category>
+	    <pattern>HELLO</pattern>
+	    <template><delay>2</delay>¡Hola! ¿En qué puedo ayudarte?</template>
+    </category>
+    
+	    <!-- AUREVOIR -->
+	<category>
+	    <pattern>AUREVOIR</pattern>
+	    <template><delay>2</delay>¡Hasta la próxima!</template>
+    </category>
+    
+	    <!-- AGRADECIMIENTO -->
+	<category>
+	    <pattern>AGRADECIMIENTO</pattern>
+	    <template><delay>2</delay>¡De nada! Me encanta poder ser de ayuda.</template>
+    </category>
+    
+	<!-- BLOQUE 2: Propósito e identidad -->
+	
+	    <!-- PROPOSITO -->
+	<category>
+	    <pattern>PROPOSITO</pattern>
+	    <template><delay>3</delay>Soy un chatbot de asistencia que trata de enseñarte cómo usar tu teléfono inteligente.<delay>3</delay>Puedes preguntarme sobre distintos temas, te hago una lista, dame un segundo.<delay>5</delay>Puedes preguntarme sobre:
+	    <ul>
+	        <li>La configuración de tu teléfono y sobre el dispositivo en general: el volumen, hacer fotos, cambiar la letra, etc.</li>
+	        <li>El navegador web: cómo buscar algo, cómo cambiar la letra, etc.</li>
+	        <li>Cómo usar el móvil para comunicarte: WhatsApp, mensajes, llamadas, videollamadas, etc.</li>
+	        <li>Cómo usar las redes sociales: qué son, subir posts, buscar y seguir las cuentas de tus conocidos, etc.</li>
+	        <li>Cómo descargar y usar las aplicaciones móviles, qué son y algunas recomendaciones</li>
+        </ul><delay>3</delay>
+        Si crees que debería tratar más temas, ¡escribe o llama a nuestras oficinas!
+	    </template>
+    </category>
+    
+	    <!-- IDENTIDAD -->
+	<category>
+	    <pattern>IDENTIDAD</pattern>
+	    <template><delay>4</delay>Soy Kiya. un asistente conversacional gaditano que intenta ayudarte a controlar las nuevas tecnologías empezando por tu teléfono móvil.</template>
+    </category>
+    
+	<!-- BLOQUE 3: Problemas técnicos -->
+	    
+	    <!-- TONTO -->
+	<category>
+	    <pattern>TONTO</pattern>
+	    <template><delay>3</delay>Siento no haber podido ayudarte como es debido con tu consulta.<delay>3</delay>Nuestro equipo técnico se pondrá de inmediato a trabajar para que esto no suceda.<delay>3</delay>Mientras tanto, si tienes prisa para conocer la respuesta a tu problema, por favor, ponte en contacto con nuestra empresa.</template>
+    </category>
+    
+	    <!-- SERVICIOTECNICO -->
+	<category>
+	    <pattern>SERVICIOTECNICO</pattern>
+	    <template><delay>3</delay>Para solucionar los problemas técnicos ponte en contacto de inmediato con nuestro servicio al cliente en el siguiente número de teléfono: 000 00 00 00.<delay>3</delay>¡Esperamos tu llamada para poder ayudarte!</template>
+    </category>
+    
+</aiml>

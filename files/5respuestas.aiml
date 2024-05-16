@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	
+    <!-- Índice de las respuestas: -->
+    <!-- 1. Preguntas comunes:
+
+    - Respuesta: [SOCIALMEDIA]
+        a) Respuesta: [INSTAGRAM QUE SER]
+        b) Respuesta:[TWITTER QUE SER]
+        c) Respuesta: [TIKTOK QUE SER]
+
+    - Respuesta:[GENTE]
+    
+    - Respuesta: [MENSAJERS]
+        a) Respuesta: [MENSAJE INSTAGRAM]
+        b) Respuesta: [MENSAJE TWITTER]
+        c) Respuesta: [MENSAJE TIKTOK]
+        
+    - Respuesta: [PRIVADO]
+        a) Respuesta: [PRIVINSTA]´
+        b) Respuesta: [PRIVTW]
+        c) Respuesta: [PRIVTIKTOK]
+    
+    - Respuesta: [SAVE]
+        a) Respuesta: [SAVEINSTA]
+        b) Respuesta: [SAVETW]
+        c) Respuesta: [SAVETIKTOK]
+        
+    - Respuesta: [BLOCK]
+        a) Respuesta: [BLOQINSTA]
+        b) Respuesta: [BLOQTW]
+        c) Respuesta:  [BLOQTIKTOK]
+        
+    - Respuesta: [BORRADO]
+        a) Respuesta: [BORRADOINSTA]
+        b) Respuesta: [BORRADORTW]
+        c) Respuesta: [BORRAOTIKTOK]
+        
+    2. Preguntas específicas:
+    
+    * INSTAGRAM
+    
+    - Respuesta: [STORY]
+    - Respuesta: [SUBSTORY]
+    - Respuesta: [SUBFOTOPERFIL]
+    - Respuesta: [EDITSTORY]
+    
+    * TWITTER
+    
+    - Respuesta: [RETWITTEO]
+    - Respuesta: [COMORETWEET]
+    - Respuesta: [CITAR]
+    - Respuesta: [PARATI]
+    
+    * TIKTOK
+    
+    - Respuesta: [COMPARTIRVIDEO]
+    - Respuesta: [GRABAR] -->
+    
+    <!-- 1. Preguntas comunes -->
+	
+		<!-- SOCIAL MEDIA -->
+	<category>
+	    <pattern>SOCIALMEDIA</pattern>
+	    <template><delay>3</delay>Pulsa sobre la red social que deseas conocer.
+        <button>
+            <text>Instagram</text>
+            <postback>INSTAGRAM</postback>
+        </button>
+        <button>
+            <text>Twitter/X</text>
+            <postback>TWITTER</postback>
+        </button>
+        <button>
+            <text>Tiktok</text>
+            <postback>TIKTOK</postback>
+        </button>
+	    </template>
+    </category>
+    
+	    <!-- a) INSTAGRAM QUE SER -->
+	<category>
+	    <pattern>INSTAGRAM</pattern>
+	    <template><delay>3</delay>Instagram es una red social que se centra principalmente en compartir fotos y vídeos. 
+	    <delay>3</delay>Permite a los usuarios, a su vez, aplicar filtros y efectos a éstos, y compartirlos con sus seguidores o de manera privada con amigos seleccionados.
+	    <delay>3</delay>Los usuarios también pueden interactuar con las publicaciones de otros usuarios mediante likes, comentarios y mensajes directos entre otras actividades.
+	    </template>
+    </category>
+    
+        <!-- b) TWITTER QUE SER -->
+    <category>
+        <pattern>TWITTER</pattern>
+        <template><delay>3</delay>Twitter o X se trata de una red social que, de forma resumida, permite a los usuarios compartir pensamientos, noticias, ideas y otros contenidos de manera rápida y concisa a través de tweets.
+        </template>
+    </category>
+    
+        <!-- c) TIKTOK QUE SER -->
+    <category>
+        <pattern>TIKTOK</pattern>
+        <template><delay>3</delay>Tiktok es una red social centrada en publicar vídeos. 
+        <delay>3</delay>En ella, los usuarios pueden crear y compartir vídeos que suelen estar acompañados de música, efectos especiales, filtros y otras herramientas de edición. 
+        <delay>3</delay>La plataforma es conocida por su interfaz intuitiva y su algoritmo de recomendación que muestra contenido personalizado basado en los intereses y el comportamiento de cada usuario.
+        </template>
+    </category>
+    
+	    <!-- GENTE -->
+	<category>
+	    <pattern>GENTE</pattern>
+	    <template><delay>3</delay>Para buscar a alguien deberás encontrar el símbolo de la lupa, éste es el buscador. 
+	    <delay>3</delay>En la barra pondrás el nombre de usuario (el que va seguido de un “@“) y, una vez encontrado, tendrás la opción de “seguir” a esta persona: “Seguir” a alguien sirve para ver sus publicaciones principalmente; y que éstas salgan en tu página principal (en el símbolo de la casita).
+	    <delay>5</delay>Si la cuenta a la que quieres seguir es privada, deberás esperar a que la persona acepte tu solicitud de seguimiento (te llegará una notificación cuando suceda), si no lo es, una vez pulsado el botón, la estarás siguiendo.
+	    </template>
+    </category>
+    
+        <!-- MENSAJERS -->
+    <category>
+	    <pattern>MENSAJERS</pattern>
+	    <template><delay>3</delay>Puedes mandar mensajes de distintas formas según la red social en la que te encuentres:
+	            <button>
+	                <text>Instagram</text>
+	                <postback>MENSAJEINSTA</postback>
+	            </button> 
+	            <button>
+	                <text>Twitter/X</text>
+	                <postback>MENSAJETW</postback>
+	            </button>
+	            <button>
+	                <text>Tiktok</text>
+	                <postback>MENSAJETIKTOK</postback>
+	            </button>
+	            <button>
+	                <text>Whatsapp</text>
+	                <postback>MENSAJEWA</postback>
+                </button>
+        <delay>3</delay>
+	    Pulsa arriba sobre la red social que deseas conocer.
+	    </template>
+    </category>
+    
+        <!-- a) MENSAJE INSTAGRAM -->
+	<category>
+	    <pattern>MENSAJEINSTA</pattern>
+	    <template><delay>3</delay>Si estás en Instagram, desde la página de inicio, verás un símbolo de un avión de papel. Una vez le des, entrarás a la bandeja de mensajes: para crear una nueva conversación, deberás pulsar el icono que está arriba la derecha que parece un lápiz; ahí, buscarás el nombre de usuario a quien le quieres mandar el mensaje y una vez lo encuentres, cuando envíes el mensaje que quieras, crearás una conversación que aparecerá en la bandeja de mensajes.
+	    </template>
+    </category>
+    
+        <!-- b) MENSAJE TWITTER -->
+    <category>
+        <pattern>MENSAJETW</pattern>
+        <template><delay>3</delay>Si estás en X o Twitter, deberás acceder, desde la barra de abajo, al símbolo del sobre. Una vez le des, te llevará a la bandeja de mensajes. Si quieres crear una nueva conversación, deberás pulsar el icono redondo azul de abajo a la derecha, donde buscarás el nombre de usuario de la persona a la que quieres enviarle el mensaje. Una vez le envíes el mensaje, se creará una conversación nueva la cual aparecerá en la bandeja de mensajes.
+        </template>
+    </category>
+    
+        <!-- c) MENSAJE TIKTOK -->
+    <category>
+        <pattern>MENSAJETIKTOK</pattern>
+        <template><delay>3</delay>Si estás en Tiktok, deberás pulsar en la barra de abajo donde pone “bandeja de entrada”. Ahí podrás crear una conversación dándole al icono que aparece arriba a la izquierda (el “+” en un círculo). Desde ahí, buscarás el nombre de usuario de a quién quieres mandarle un mensaje y, una vez lo encuentres y le envíes el mensaje, crearás una conversación nueva, que aparecerá en la bandeja de entrada.
+        </template>
+    </category>
+        <!-- d) MENSAJE WHATSAPP -->
+    <category>
+        <pattern>MENSAJEWA</pattern>
+        <template><delay>3</delay>Busca el icono de WhatsApp en la pantalla de inicio de tu dispositivo. Es un ícono verde con un teléfono blanco dentro de un bocadillo de diálogo. 
+        <delay>3</delay>Cuando entres en la aplicación, verás la lista de tus chats recientes. 
+        <delay>3</delay>Si deseas enviar un mensaje a uno de esos contactos, simplemente toca su nombre para abrir el chat existente. 
+        <delay>3</delay>Si deseas enviar un mensaje a un nuevo contacto, toca el ícono de "Chats" en la parte inferior de la pantalla y luego el ícono de "Nuevo chat" (generalmente representado por un lápiz o un signo más) y selecciona el contacto de la lista de tus contactos o busca su nombre en la barra de búsqueda. 
+        <delay>3</delay>Una vez que hayas seleccionado el contacto, verás un campo de texto en la parte inferior de la pantalla. Toca este campo para abrir el teclado y escribe tu mensaje. 
+        <delay>3</delay>Cuando hayas terminado de escribir tu mensaje, simplemente presiona el ícono de enviar, que generalmente se representa con una flecha hacia arriba. Tu mensaje se enviará al contacto y aparecerá en la conversación.</template>
+    </category>
+    
+    <!-- PRIV -->
+    <category>
+        <pattern>PRIV</pattern>
+        <template><delay>3</delay>Al crearte una cuenta, tienes la opción de que sea una cuenta privada, es decir, que no la vea todo el mundo, sólo quien tú quieras. 
+        <delay>3</delay>La forma de hacer esto dependerá de la red social en la que te encuentres:
+	            <button>
+	                <text>Instagram</text>
+	                <postback>PRIVINSTA</postback>
+	            </button> 
+	            <button>
+	                <text>Twitter/X</text>
+	                <postback>PRIVTW</postback>
+	            </button>
+	            <button>
+	                <text>Tiktok</text>
+	                <postback>PRIVTIKTOK</postback>
+	            </button>
+        <delay>3</delay>
+	    Pulsa arriba sobre la red social que deseas conocer.
+        </template>
+    </category>
+    
+    <!-- a) PRIVINSTA -->
+    <category>
+        <pattern>PRIVINSTA</pattern>
+        <template><delay>3</delay>Si estás en Instagram, deberás entrar en tu perfil (lo podrás localizar en la barra de abajo a la derecha del todo) y, desde ahí, darle a las tres barras que aparecen en la esquina superior derecha: aquí aparecerán distintos apartados, entre ellos aquel en el que pone “Quién puede ver tu cuenta”. 
+        <delay>3</delay>En él aparece “Privacidad de la cuenta” junto al símbolo de un candado, púlsalo y, una vez dentro, sólo debe darle al botón junto a “Cuenta privada”. 
+        <delay>3</delay>Dentro del apartado vendrán explicaciones de todo lo que implica tener la cuenta privada o pública.
+        </template>
+    </category>
+    
+    <!-- b) PRIVTW -->
+    <category>
+        <pattern>PRIVTW</pattern>
+        <template><delay>3</delay>Si estás en X o Twitter, deberás darle al icono de tu perfil (situado en la esquina superior izquierda), y le darás a “Configuración y privacidad”. 
+        <delay>3</delay>Posteriormente deberás darle al apartado de “Privacidad y seguridad”, donde aparecerá una casilla de “Audiencia y etiquetas”, la cual te dará la opción de “Proteger los posts”, si le das, automáticamente sólo verán tus publicaciones aquellas personas que te sigan.
+        </template>
+    </category>
+    
+    <!-- PRIVTIKTOK -->
+    <category>
+        <pattern>PRIVTTIKTOK</pattern>
+        <template><delay>3</delay>Si estás en Tiktok, deberás entrar en tu perfil y darle a las tres barras en la esquina superior derecha. 
+        <delay>3</delay>Posteriormente, tendrás que darle a “Ajustes y privacidad”, y desde ahí darle a “Privacidad”. Entonces, sólo tendrás que pulsar en el botón a la derecha de “Cuenta privada”.
+        </template>
+    </category>
+    
+    <!-- SAVE -->
+    <category>
+        <pattern>SAVE</pattern>
+        <template><delay>3</delay>Esta acción dependerá de la red social en la que te encuentres:
+        <delay>5</delay>Tanto en Instagram como en X o Twitter y Tiktok, deberás acceder a alguna de las publicaciones que aparecen en la aplicación. 
+        <delay>3</delay>En ellas aparecerá un icono similar a una bandera en vertical con dos picos abajo, simplemente deberás pulsarlo y esa publicación se guardará automáticamente. 
+        <delay>3</delay>Para acceder a ella deberás acceder a tu perfil, ya aquí la cosa cambia en cada red social:
+	            <button>
+	                <text>Instagram</text>
+	                <postback>SAVEINSTA</postback>
+	            </button> 
+	            <button>
+	                <text>Twitter/X</text>
+	                <postback>SAVETW</postback>
+	            </button>
+	            <button>
+	                <text>Tiktok</text>
+	                <postback>SAVETIKTOK</postback>
+	            </button>
+        <delay>3</delay>
+	    Pulsa arriba sobre la red social que deseas conocer.
+        </template>
+    </category>  
+    
+    <!-- SAVEINSTA -->
+    <category>
+        <pattern>SAVEINSTA</pattern>
+        <template><delay>3</delay>Si estás en Instagram, deberás entrar en tu perfil y darle a las tres barras que aparecen en la esquina superior derecha. 
+        <delay>3</delay>Aquí te aparecerá un apartado que pone “Guardado”, y dentro aparecerán las publicaciones que hayas guardado, dándote incluso la posibilidad de crear colecciones en las que agrupar tus publicaciones guardadas según las categorías que delimites (dándole al “+” en la esquina superior derecha).
+        </template>
+    </category>
+    
+    <!-- SAVETW -->
+    <category>
+        <pattern>SAVETW</pattern>
+        <template><delay>3</delay>Si estás en X o Twitter, deberás seleccionar el icono de tu perfil (en la esquina superior izquierda) y, posteriormente, seleccionar el apartado de “Elementos guardados” con el mismo símbolo que hemos mencionado anteriormente.
+        </template>
+    </category>
+    
+    <!-- SAVETIKTOK -->
+    <category>
+        <pattern>SAVETIKTOK</pattern>
+        <template><delay>3</delay>Si estás en Tiktok, deberás entrar en tu perfil, en el que te aparecerá el mismo símbolo que hemos mencionado antes. 
+        <delay>3</delay>Dándole a éste podrás acceder a las publicaciones que has guardado y, a su vez, podrás crear distintas colecciones según la categoría que delimites (dándole a “Colecciones” y después a “Crear nueva colección”).
+        </template>
+    </category>
+    
+    <!-- BLOCK -->
+    <category>
+        <pattern>BLOCK</pattern>
+        <template><delay>3</delay>¡Claro! Aunque esta acción se hará de una forma u otra según la red social en la que te encuentres:
+	            <button>
+	                <text>Instagram</text>
+	                <postback>INSTABLOQ</postback>
+	            </button> 
+	            <button>
+	                <text>Twitter/X</text>
+	                <postback>TWBLOQ</postback>
+	            </button>
+	            <button>
+	                <text>Tiktok</text>
+	                <postback>TIKTOKBLOQ</postback>
+	            </button>
+        <delay>3</delay>
+	    Pulsa arriba sobre la red social que deseas conocer. 
+	    </template>
+    </category>
+    
+    <!-- a) INSTABLOQ -->
+    <category>
+        <pattern>INSTABLOQ</pattern>
+        <template>Si estás en Instagram, deberás entrar en el perfil de la persona que deseas bloquear y darle a los tres puntitos que aparecen en la esquina superior derecha. 
+        <delay>3</delay>En ese momento se te desplegarán distintas acciones que podrás realizar con el perfil, entre ellas “Bloquear”. Entonces, te saldrá la opción de bloquear exclusivamente o bloquear y denunciar.
+        <delay>3</delay>La denuncia no es como una denuncia que llevas a la policía, simplemente se hace con el fin de que le retiren la cuenta al usuario de la cuenta en cuestión por motivos diversos.
+        </template>
+    </category>
+    
+    <!-- b) TWBLOQ -->
+    <category>
+        <pattern>TWBLOQ</pattern>
+        <template>Si estás en X o Twitter, deberás visitar el perfil de la cuenta que quieres bloquear. 
+        <delay>3</delay>Posteriormente darle a los tres puntitos que aparecen en la esquina superior derecha y, finalmente, darle a “Bloquear a …” (teniendo que darle a “bloquear” una segunda vez por confirmación).
+        </template>
+    </category>
+    
+    <!-- c) TIKTOKBLOQ -->
+    <category>
+        <pattern>TIKTOKBLOQ</pattern>
+        <template>Si estás en Tiktok, deberás entrar en el perfil de quien quieras bloquear, luego darle al símbolo que aparece en la esquina superior derecha (similar a una flecha). 
+        <delay>3</delay>Al darle, se te desplegarán distintas opciones, entre ellas “Bloquear” junto a un símbolo de “prohibido” y, finalmente, deberás confirmar que quieres bloquear a dicho usuario.
+        </template>
+    </category>
+    
+    <!-- BORRADO -->
+    <category>
+        <pattern>BORRADO</pattern>
+        <template><delay>3</delay>Tanto en Instagram como en X o Twitter y Tiktok, la acción se realizará accediendo a alguna de tus publicaciones ubicadas en tu perfil. La cosa cambia desde aquí, pues:
+	            <button>
+	                <text>Instagram</text>
+	                <postback>BINSTA</postback>
+	            </button> 
+	            <button>
+	                <text>Twitter/X</text>
+	                <postback>BTW</postback>
+	            </button>
+	            <button>
+	                <text>Tiktok</text>
+	                <postback>BTIKTOK</postback>
+	            </button>
+        <delay>3</delay>
+	    Pulsa arriba sobre la red social que deseas conocer. 
+        </template>
+    </category>
+    
+    <!-- a) BORRADOINSTA -->
+    <category>
+        <pattern>BINSTA</pattern>
+        <template>Si estás en Instagram, deberás darle a los tres puntos que aparecen en la esquina superior derecha y darle, posteriormente, a “Eliminar”, cuya opción aparecerá en rojo. 
+        <delay>3</delay>También tienes la opción de archivar la publicación, lo cual significa que privatizas la publicación, es decir, sólo la podrás ver tú, teniendo la posibilidad de desarchivar la publicación en cualquier momento.
+        </template>
+    </category>
+    
+    <!-- b) BORRADOTW -->
+    <category>
+        <pattern>BTW</pattern>
+        <template>Si estás en X o Twitter, deberás entrar en tu perfil y seleccionar el tweet que desees borrar y, una vez dentro, seleccionar los tres puntos que aparecen en la esquina superior derecha, donde deberás darle a “Eliminar post” marcado en rojo.
+        </template>
+    </category>
+    
+    <!-- c) BORRADOTIKTOK -->
+    <category>
+        <pattern>BTIKTOK</pattern>
+        <template>Si estás en Tiktok, deberás acceder a tu perfil y a la publicación que deseas borrar. 
+        <delay>3</delay>Una vez dentro, en la barra vertical que aparece a la derecha, deberás pulsar los tres puntitos, los cuales te mostrarán una serie de acciones divididas en tres filas distintas: 
+        <delay>3</delay>En la última (aquella con los iconos sin color), tendrás que deslizar a la izquierda hasta dar con la opción de “Borrar” al final.
+        </template>
+    </category>
+    
+    <!-- INSTAGRAM: -->
+    
+    <!-- STORY -->
+    <category>
+        <pattern>STORY</pattern>
+        <template>
+            <delay>3</delay>Se trata de una foto que subes a tu perfil, pero que únicamente podrá ser visualizada por 24 horas a no ser que la “destaques”, lo cual significa que queda en tu perfil a la vista de tus seguidores al igual que una publicación más.
+            <delay>3</delay>Para subir una historia debes darle al icono de tu foto desde tu perfil, o desde la página de inicio deslizar a la derecha: 
+            <delay>8</delay>en ese momento se te abrirá la cámara de fotos, dándote la opción de hacer una foto dándole al botón, o seleccionar una foto de tu galería, a la cual podrás acceder deslizando hacia arriba.
+            <delay>8</delay>Una vez tengas la foto, tendrás la opción de subirla a tu perfil bien dándole a “Tu historia” o “Mejores amigos”, ésta última casilla significa que sólo las personas que tú selecciones de entre tus seguidores podrán visualizar tu historia.
+        </template>
+    </category>
+    
+    <!-- SUBSTORY -->
+    <category>
+        <pattern>SUBSTORY</pattern>
+        <template>
+            <delay>3</delay>Para subir una historia debes darle al icono de tu foto desde tu perfil, o desde la página de inicio deslizar a la derecha: 
+            <delay>5</delay>En ese momento se te abrirá la cámara de fotos, dándote la opción de hacer una foto dándole al botón, o seleccionar una foto de tu galería, a la cual podrás acceder deslizando hacia arriba.
+            <delay>8</delay>Una vez tengas la foto, tendrás la opción de subirla a tu perfil bien dándole a “Tu historia” o “Mejores amigos”, ésta última casilla significa que sólo las personas que tú selecciones de entre tus seguidores podrán visualizar tu historia.
+        </template>
+    </category>
+    
+    <!-- SUBFOTOPERFIL -->
+    <category>
+        <pattern>SUBFOTOPERFIL</pattern>
+        <template>
+            <delay>3</delay>Para subir una foto a Instagram, deberás seleccionar el icono del “+” en un recuadro que aparecera en la barra de abajo justo en el medio. Éste accederá a tu galería, donde deberás seleccionar la foto que quieras subir.
+            <delay>3</delay>También tienes la opción de seleccionar varias fotos para una misma publicación. 
+            <delay>8</delay>Para ello, sólo tendrás que darle al icono que aparece en un recuadro y, una vez hayas seleccionado la/s foto/s, tendrás que darle a “Siguiente” en la esquina superior derecha.
+            <delay>8</delay>Entonces, tendrás la opción de editar la foto o no y, una vez le des a “Siguiente” en la esquina inferior derecha, podrás editar la publicación si quieres. Cuando termines, sólo tendrás que darle finalmente a “Compartir”.
+        </template>
+    </category>
+    
+    <!-- EDITSTORY -->
+     <category>
+        <pattern>EDITSTORY</pattern>
+        <template>
+            <delay>3</delay>Para editar una historia simplemente debes fijarte en el despliegue de iconos que aparecen en la esquina superior derecha cuando eliges una foto o la haces directamente en el momento. 
+            <delay>3</delay>Cada icono te permite hacer una acción distinta: poner música, escribir, dibujar, añadir pegatinas, poner filtros, gifs, etc.
+            </template>
+    </category>
+    
+    <!-- TWITTER -->
+    
+    <!-- RESUB -->
+    <category>
+        <pattern>RESUB</pattern>
+        <template>
+            <delay>3</delay>Repostear o retwittear consiste en compartir en tu propio perfil el tweet de otro usuario. 
+            <delay>8</delay>Para hacer esto, hay que localizar el tweet que se quiere repostear y pulsar el icono similar a dos flechas que se siguen la una a la otra, situado entre otros dos iconos: uno siendo un bocadillo (de conversación); y el otro un corazón. 
+            <delay>3</delay>Al darle, Twitter o X te dará la opción de “Cita” o “Repostear”: para simplemente compartir el tweet, deberás elegir “repostear”.
+            </template>
+    </category>
+    
+    <!-- COMORETWEET -->
+    <category>
+        <pattern>COMORETWEET</pattern>
+        <template>
+            <delay>3</delay>Debemos localizar el tweet que se quiere repostear y pulsar el icono similar a dos flechas que se siguen la una a la otra, situado entre otros dos iconos: uno siendo un bocadillo (de conversación); y el otro un corazón.
+            <delay>3</delay>Al darle, Twitter o X te dará la opción de “Cita” o “Repostear”: para simplemente compartir el tweet, deberás elegir “repostear”.
+        </template>
+    </category>
+    
+    <!-- CITAR -->
+    <category>
+        <pattern>CITAR</pattern>
+        <template>
+            <delay>3</delay>Citar un tweet significa responder o hacer referencia a un tweet específico de otro usuario al escribir un nuevo tweet. 
+            <delay>3</delay>Cuando citas un tweet, estás incluyendo el contenido del tweet original junto con tu propio comentario o respuesta.
+            <delay>5</delay>Al citar un tweet, se muestra el contenido original del tweet que estás citando, seguido por tu respuesta o comentario.
+            </template>
+    </category>    
+    
+    <!--  PARATI (esta también se da en TIKTOK) -->
+    <category>
+        <pattern>PARATI</pattern>
+        <template>
+            <delay>3</delay>Se tratan de dos apartados dentro de tu página de inicio: El “para ti” incluye contenido de las personas que sigues, pero a su vez contenido de otros usuarios que la propia aplicación te recomienda para tu propio interés.
+            <delay>3</delay>Y, el de “siguiendo” incluye contenido de las personas a las que sigues exclusivamente.
+        </template>
+    </category>
+    
+    <!-- TIKTOK -->
+    
+    <!-- SHAREVIDEO -->
+    <category>
+        <pattern>SHAREVIDEO</pattern>
+        <template>
+            <delay>3</delay>Hay dos formas de compartir un vídeo en Tiktok:
+            <delay>3</delay>Por un lado, si quieres compartir el vídeo en tu propio perfil, debes darle al icono de las dos flechas que se siguen la una a la otra. 
+            <delay>3</delay>Esto hará que aparezca en tu perfil en un apartado con el mismo icono y, a su vez, podrá aparecer en la pantalla de inicio de tus seguidores.
+            <delay>5</delay>Y, por otro lado, si quieres compartir el vídeo con otras personas, debes acceder al vídeo que deseas compartir y, en la columna de iconos que aparece a la derecha, darle a la flecha (la cual aparece última en la columna). 
+            <delay>3</delay>En ese momento, se desplegará una serie de actividades y perfiles (estando éstos últimos en la primera fila). Entonces, sólo tendrás que seleccionar el perfil de a quien quieres enviarle el vídeo.
+        </template>
+    </category>
+    
+    <!-- GRABAR -->
+    <category>
+        <pattern>GRABAR</pattern>
+        <template>
+            <delay>3</delay>Podrás grabar un vídeo de la siguiente manera: Selecciona el “+” que aparece en la barra de abajo situado en el medio. En ese momento, se abrirá la cámara y deberás seleccionar, en la barra que aparece encima del círculo grande, bien “15 s”, “60 s” o “10 min”, esto delimita la duración del vídeo que vas a grabar.
+            <delay>3</delay>Una vez elegida, podrás pulsar suavemente el botón grande (el cual aparecerá en rojo) o dejarlo pulsado. 
+            <delay>3</delay>Cuando el vídeo sea grabado, por defecto se añadirá música o un audio a dicho vídeo:
+            <delay>5</delay>Si deseas cambiar la música o audio, deberás pulsar el recuadro blando que aparece arriba de la pantalla (con el nombre del audio), entonces podrás seleccionar otro bien buscando con la lupa alguno concreto, o bien simplemente seleccionando alguno de la lista. 
+            <delay>3</delay>Si por el contrario, no quieres que tenga música o audio, en el mismo recuadro blanco tendrás que pulsar la “x”.
+            <delay>3</delay>Cuando lo tengas listo, podrás subirlo dándole a “Tu story” (dejando ver el vídeo sólo por 24 horas en tu perfil) o darle a “Siguiente”. Si le das a siguiente podrás editar distintas informaciones que aparecerán en la publicación de tu vídeo.
+            <delay>3</delay>Finalmente, seleccionar “Borradores” o “Publicar”. Elegir “Borradores”, te permitirá seguir editando el vídeo en cualquier momento, mientras que si eliges “Publicar”, se sube directamente a tu perfil.
+            </template>
+    </category>
+</aiml>

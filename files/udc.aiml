@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li><delay>2</delay>Aún no tengo respuesta para eso 🥲<delay>2</delay>Avisaré a los desarrolladores para que en mi próxima actualización pueda ayudarte con eso 😁</li>
+            <li><delay>2</delay>Disculpa, todavía no he aprendido lo suficiente para ayudarte con eso 😞<delay>2</delay>Vuelve a consultarme en unos días</li>
+            <li><delay>2</delay>En estos momentos no puedo ayudarte con esa consulta 😬<delay>3</delay>Contacta con nuestro servicio al cliente si es una duda muy urgente o vuelve en unos días</li>
+        </random>
+    </template>
+  </category>
+</aiml>

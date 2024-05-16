@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- Índice de bloque de Redes Sociales: -->
+	
+	<!-- 
+	1. Preguntas comunes
+	Respuesta: [SOCIALMEDIA]
+	- QUE SER <redessociales>
+	Respuesta: [GENTE]
+	- <como> <buscar> <colectividad> <redessociales>
+	Respuesta: [MENSAJERS]
+	- PODER <enviar> MENSAJE 
+	- <como> <enviar> MENSAJE
+	Respuesta: [PRIVADO]
+	- PODER <hacer> <perfil> PRIVADO
+	- <como> <hacer> <perfil> PRIVADO
+	Respuesta: [SAVE]
+	- <como> GUARDAR <imagen>
+	Respuesta: [BLOCK]
+	- PODER BLOQUEAR <colectividad>
+	Respuesta: [BORRADO]
+	- <como> <borrar> <imagen>
+	
+	2. Preguntas específicas
+	* Instagram
+	    Respuesta: [STORY]
+	    - QUE SER <historia>
+	    Respuesta: [SUBSTORY]
+	    - <como> <publicar> <historia>
+	    Respuesta: [SUBFOTOPERFIL]
+	    - <como> <publicar> <imagen> <perfil>
+	    Respuesta: [EDITSTORY]
+	    - <como> <decoro> <historia>
+	  
+	* Twitter
+	    Repuesta: [RETWEET]
+	    - QUE SER <retweet>
+	    Respuesta: [paraqueRETWEET]
+	    - <como> <retweet>
+	    Repuesta: [CITAR]
+	    - QUE SER CITAR
+	    - <como> CITAR <imagen>
+	    Repuesta: [PARATI] (esta también es para Tiktok)
+	    - QUE SER <apartados>
+	    
+	 * Tiktok
+	    Respuesta: [COMPARTIRVIDEO]
+	    - <como> <enviar> <imagen>
+	    Repuesta: [VERCOMPARTIDOS]
+	    - <como> <ver> <imagen> <enviar>
+	    Respuesta: [GRABAR]
+	    - <como> <publicar> <imagen> <tiktok>
+	    - <como> <publicar> <imagen>
+	 -->
+	 
+	 
+    <!-- 1. Preguntas comunes -->
+	
+	<!-- qué es <redessociales>? -->  
+	<category>
+	    <pattern> ^ QUE SER <set>redessociales</set> ^ </pattern>
+	    <template><srai>SOCIALMEDIA</srai></template>
+    </category>
+    
+	<!-- cómo buscar otros usuarios? --> 
+	<category>
+	    <pattern>^ <set>como</set> ^ <set>encontrar</set> ^ <set>colectividad</set> ^ <set>redessociales</set> </pattern>
+	    <template><srai>GENTE</srai>
+	    </template>
+    </category>
+    
+    <!-- se pueden enviar mensajes? --> 
+    <category>
+	    <pattern> ^ PODER <set>compartir</set> ^ MENSAJE ^ </pattern>
+	    <template><srai>MENSAJERS</srai></template>
+    </category>
+    
+    <!-- cómo enviar mensajes? --> 
+    <category>
+        <pattern> ^ <set>compartir</set> ^ MENSAJE ^ </pattern>
+        <template><srai>MENSAJERS</srai></template>
+    </category>
+    
+    <!-- cómo hacer para que mi cuenta no la vea todo el mundo? --> 
+    <category>
+        <pattern> ^ <set>como</set> HACER ^ <set>perfil</set> ^ <set>colectividad</set> ^ </pattern>
+        <template><srai>PRIVADO</srai></template>
+    </category>
+    
+    <!-- cómo hacer mi perfil privado? --> 
+     <category>
+        <pattern> ^ <set>como</set> <set>hacer</set> ^ <set>perfil</set> ^ PRIVADO ^ </pattern>
+        <template><srai>PRIV</srai></template>
+    </category>
+    
+    <!-- puedo poner mi perfil privado? --> 
+    <category>
+        <pattern> ^ PODER <set>hacer</set> ^ <set>perfil</set> ^ PRIVADO ^ </pattern>
+        <template><srai>PRIVADO</srai></template>
+    </category>
+    
+    <!-- cómo guardar una publicación --> 
+     <category>
+        <pattern> ^ <set>como</set> ^ GUARDAR ^ <set>imagen</set> ^ </pattern>
+        <template><srai>SAVE</srai></template>
+    </category>
+    
+    <!-- puedo bloquear a la gente? --> 
+    <category>
+        <pattern> ^ PODER BLOQUEAR ^ <set>colectividad</set> ^ </pattern>
+        <template><srai>BLOCK</srai></template>
+    </category>
+    
+    <!-- cómo eliminar una publicación? --> 
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>borrar</set> ^ <set>imagen</set> ^ </pattern>
+        <template><srai>BORRADO</srai></template>
+    </category>
+    
+    <!-- 2. Preguntas específicas -->
+    
+    <!-- * INSTAGRAM -->
+    
+    <!-- qué son las historias? --> 
+    <category>
+        <pattern>^ QUE SER ^ <set>historia</set> ^ </pattern>
+        <template><srai>STORY</srai></template>
+    </category>
+    
+    <!-- cómo subir una historia? --> 
+    <category>
+        <pattern>^ <set>como</set> ^ <set>publicar</set> ^ <set>historia</set> ^ </pattern>
+        <template><srai>SUBSTORY</srai></template>
+    </category>
+    
+    <!-- cómo subir una foto a la cuenta?--> 
+    <category>
+        <pattern>^ <set>como</set> <set>publicar</set> ^ <set>imagen</set> ^ </pattern>
+        <template><srai>SUBFOTOPERFIL</srai></template>
+    </category>
+    
+    <!-- cómo editar una historia? --> 
+    <category>
+        <pattern> ^ <set>como</set> <set>decoro</set> ^ <set>historia</set> ^ </pattern>
+        <template><srai>EDITSTORY</srai></template>
+    </category>
+    
+    <!-- * TWITTER: -->
+    
+    <!-- qué es retwittear?--> 
+    <category>
+        <pattern> ^ QUE SER <set>retweet</set> ^ </pattern>
+        <template><srai>RESUB</srai></template>
+    </category>
+    
+    <!-- qué es un retweet? -->
+    <category>
+        <pattern> ^ QUE SER ^ <set>retweet</set> ^ </pattern>
+        <template><srai>RESUB</srai></template>
+    </category>
+    
+    <!-- cómo retwittear? --> 
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>retweet</set> ^ </pattern>
+        <template><srai>COMORETWEET</srai></template>
+    </category>
+    
+    <!-- qué es citar? --> 
+    <category>
+        <pattern> ^ QUE SER CITAR ^ </pattern>
+        <template><srai>CITAR</srai></template>
+    </category>
+    
+    <!-- cómo cito un tweet? --> 
+    <category>
+        <pattern> ^ <set>como</set> ^ CITAR ^ <set>imagen</set> ^ </pattern>
+        <template><srai>CITAR</srai></template>
+    </category>
+    
+    <!-- qué son el "para ti" y el "siguiendo"? --> 
+    <category>
+        <pattern>^ QUE SER ^ <set>apartados</set> ^ </pattern>
+        <template><srai>PARATI</srai></template>
+    </category>
+    
+    <!-- * TIKTOK: -->
+    
+    <!-- cómo compartir <imagen> en tiktok? --> 
+    <category>
+        <pattern>^ <set>como</set> ^ <set>compartir</set> ^ <set>imagen</set> ^ <set>tiktok</set> ^ </pattern>
+        <template><srai>SHAREVIDEO</srai></template>
+    </category>
+    
+    <!-- cómo compartir un tiktok? --> 
+    <category>
+        <pattern>^ <set>como</set> ^ <set>compartir</set> ^ <set>imagen</set> ^ </pattern>
+        <template><srai>SHAREVIDEO</srai></template>
+    </category>
+    
+    <!-- cómo grabar un vídeo en tiktok? --> 
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>publicar</set> ^ <set>imagen</set> ^ <set>tiktok</set> ^ </pattern>
+        <template><srai>GRABAR</srai></template>
+    </category>
+    
+    <!-- cómo grabar un tiktok? --> 
+    <category>
+        <pattern> ^ <set>como</set> ^ <set>publicar</set> ^ <set>imagen</set> ^ </pattern>
+        <template><srai>GRABAR</srai></template>
+    </category>
+</aiml>

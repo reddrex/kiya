@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- NOTAS SOBRE FUNCIONAMIENTO:
+	
+	El programa está dividido en bloques de AIML, y dentro de cada bloque, hay distintas
+	áreas temáticas. 
+	
+	Un bloque de AIML es un archivo de AIML. Por cada tema tenemos dos, uno de preguntas y otro
+	de respuestas. Esto lo hacemos para evitar tener que repetir la misma respuesta varias veces
+	para distintas preguntas. Además, si hubiera algún problema con la respuesta, solo tendríamos 
+	que cambiar 1 categoría, no varias.
+	
+	Las áreas temáticas son subtemas en los que están divididos los temas principales. Estos subtemas
+	sirven para agrupar las preguntas y respuestas en sus respectivos archivos AIML.
+	
+	El orden de esta estructura es de esta manera para facilitar la corrección y los cambios a los
+	desarrolladores del proyecto. En el log, al ver que el chatbot da a un usuario una respuesta 
+	incorrecta, podremos buscar tanto el patrón de la pregunta o la respuesta de forma más rápida
+	gracias al orden por temas y la separación de preguntas y respuestas.
+	
+	-->
+	
+</aiml>

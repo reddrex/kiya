@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- ÍNDICE DE RESPUESTAS DE NAVEGACIÓN WEB 
+	
+	1. Cuestiones generales sobre el navegador
+	- Pestañas
+	- Navegador
+	- Tamaño de letra
+	- Historial de búsqueda
+	- Correo electrónico
+	
+	2. Búsquedas
+	- Búsqueda manual
+	- Búsqueda por voz
+	- Búsqueda por imagen
+	
+	3. Páginas web
+	- Favoritos
+	- Cookies
+	
+	4. Multimedia 
+	- Búsqueda y descarga de imágenes
+	- Búsqueda y descarga de vídeos
+	- Búsqueda y descarga de música
+	
+	5. Seguridad
+	- Navegación segura
+	- Mensaje de advertencia
+	- Página peligrosa
+	-->
+	<!-- 1. CUESTIONES GENERALES -->
+	<category>
+	    <pattern>PESTANAS</pattern>
+	    <template><delay>3</delay>Para abrir una nueva pestaña toca el icono de tres puntos en la esquina superior derecha de la pantalla y selecciona "Nueva pestaña" en el menú desplegable.
+                    <delay>3</delay>Si quieres abrir varias pestañas y cambiar entre ellas, una vez que las tienes abiertas, puedes deslizar horizontalmente sobre la barra de pestañas en la parte superior de la pantalla para cambiar entre ellas.
+                    También puedes tocar el ícono de cuadrados en la esquina superior derecha para ver una vista en miniatura de todas las pestañas abiertas y seleccionar la que desees.</template>
+	</category>
+	
+	<category>
+	   <pattern>NAVEGADOR</pattern>
+	   <template><delay>3</delay>Si el navegador de tu teléfono no funciona o se queda parado, puedes intentar realizar las siguientes acciones para solucionar el problema:
+            <delay>3</delay><ol>
+                <li>Reiniciar la aplicación del navegador. Cierra la aplicación por completo y vuelve a abrirla.</li>
+                <li>Reiniciar el teléfono.</li>
+                <li>Actualizar el navegador. Verifica si hay actualizaciones disponibles para el navegador que estás utilizando en tu teléfono. </li>
+                <li>Borrar caché y datos. En la configuración de tu teléfono, busca la opción de aplicaciones o administrador de aplicaciones. Encuentra el navegador en la lista de aplicaciones instaladas y selecciona "Borrar caché" y "Borrar datos". Ten en cuenta que esto borrará tus datos de navegación, como contraseñas guardadas y cookies.</li>
+                <li>Probar otro navegador. Si el navegador que estás utilizando sigue sin funcionar correctamente, prueba a descargar e instalar otro navegador desde la tienda de aplicaciones de tu dispositivo.</li>
+            </ol>
+        </template>
+	</category>
+	
+	<category>
+	   <pattern>SIZELETRA</pattern>
+	   <template><delay>3</delay>Para cambiar el tamaño de la letra, abre el navegador en tu dispositivo. Toca el icono de los tres puntos en la esquina superior derecha para abrir el menú. Selecciona "Configuración". En la sección "Avanzado", elige "Tamaño del texto". Selecciona el tamaño de texto que desees. </template>
+	</category>
+	
+	<category>
+	    <pattern>HISTBUS</pattern>
+	    <template><delay>3</delay>Abre la aplicación del navegador. Toca el icono de los tres puntos en la esquina superior derecha para abrir el menú. Selecciona "Historial" en el menú. Aquí verás una lista de tus páginas visitadas recientemente y búsquedas realizadas.</template>
+	</category>
+	
+	<category>
+	    <pattern>MAIL</pattern>
+	    <template><delay>3</delay>Para poder ver tu correo electrónico:
+	        <delay>3</delay>
+	        <ol>
+                <li>Abre el navegador. Ingresa a la página de inicio de sesión de tu correo electrónico. En la barra de direcciones del navegador, escribe la URL del sitio web de tu proveedor de correo electrónico. Por ejemplo, para Gmail, sería "www.gmail.com", para Outlook podría ser "www.outlook.com", para Yahoo Mail sería "www.yahoo.com", y así sucesivamente.</li>
+                <li>Inicia sesión en tu cuenta ingresando tu dirección de correo electrónico y tu contraseña.</li>
+                <li>Accede a tu bandeja de entrada, donde podrás ver tus correos electrónicos recibidos.</li>
+            </ol>
+        </template>
+	</category>
+
+		<!-- 2. BÚSQUEDAS -->
+		
+	<category>
+	    <pattern>MANUALNAV</pattern>
+	     <template><delay>3</delay>Para realizar cualquier búsqueda de manera manual:
+	         <delay>3</delay><ol>
+                <li>Abrir el navegador</li>
+                <li>En la parte superior de la ventana del navegador, verás una barra de búsqueda.</li>
+                <li>Escribe lo que estás buscando.</li>
+                <li>Una vez que hayas escrito lo que quieres buscar, toca el botón de búsqueda en la pantalla de tu dispositivo.</li>
+                <li>Después de buscar, verás una lista de sitios web que tienen información relacionada con lo que buscaste. Haz clic en uno de los resultados para abrirlo y ver más detalles.</li>
+                <li>Una vez que hayas abierto un sitio web, puedes leer la información que contiene.</li>
+            </ol>
+        </template>
+	</category>
+	
+	<category>
+	    <pattern>BUSQUEDA POR VOZ</pattern>
+	    <template><delay>3</delay> Para realizar una búsqueda por voz:
+	    <delay>3</delay><ol>
+                <li>En la mayoría de los dispositivos móviles, mantén presionado el botón de inicio o el botón de encendido para activar el asistente de voz.</li>
+                <li>Una vez que el asistente de voz esté activado, simplemente di en voz alta lo que quieres buscar.</li>
+                <li>El asistente de voz procesará tu solicitud y te proporcionará una respuesta hablada.</li>
+            </ol>
+        </template>
+	</category>
+	
+	<category>
+	    <pattern>BUSQUEDA POR IMAGEN</pattern>
+	    <template><delay>3</delay>Para realizar una búsqueda mediante imágenes:
+	        <delay>3</delay><ol>
+                <li>Abre el navegador en tu dispositivo y accede al motor de búsqueda de tu elección, como Google.</li>
+                <li>En la barra de búsqueda, presiona el icono de la cámara.</li>
+                <li>Se te dará la opción de seleccionar una imagen de tu galería o de tomar una foto en el momento.</li>
+                <li>Puedes revisar los resultados y hacer clic en aquellos que te interesen para obtener más información.</li>
+            </ol>
+	   </template>
+	</category>
+	
+		<!-- 3. PÁGINAS WEB -->
+		
+	<category>
+	    <pattern>FAV</pattern>
+	    <template><delay>3</delay>Los favoritos del navegador son enlaces a páginas web que has guardado para acceder rápidamente en el futuro. Para guardar tus favoritos:
+	        <delay>3</delay>
+	        <ol>
+                <li>Abre la aplicación del navegador en tu teléfono móvil.</li>
+                <li>Visita la página web que deseas guardar como favorita.</li>
+                <li>Toca el icono de los tres puntos en la esquina superior derecha de la pantalla.</li>
+                <li>También puedes tocar el icono de la estrella en la barra de direcciones para agregar la página a tus favoritos</li>
+                <li>Para acceder a tus favoritos toca el icono de los tres puntos y luego selecciona "Marcadores" para ver la lista de tus favoritos guardados.</li>
+            </ol>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>COOKIES</pattern>
+	    <template><delay>3</delay>Las cookies son pequeños archivos de texto que los sitios web guardan en tu dispositivo cuando los visitas. Estos archivos contienen información sobre tu interacción con el sitio, como tus preferencias de navegación, datos de inicio de sesión, configuraciones personalizadas y otra información relevante. Las cookies pueden ser útiles porque permiten que los sitios web te reconozcan y te ofrezcan una experiencia más personalizada y eficiente.
+                <delay>4</delay>Ahora, en cuanto a si debes aceptar o rechazar las cookies, depende de tus preferencias personales y de tus preocupaciones sobre la privacidad en línea. 
+        </template>
+	</category>
+	
+		<!-- 4. MULTIMEDIA -->
+		
+	<category>
+	    <pattern>BYDFOTO</pattern>
+	    <template><delay>3</delay>Para buscar y descargar imágenes:
+	        <delay>3</delay><ol>
+                <li>Abre el navegador en tu teléfono móvil y visita un motor de búsqueda como Google Images.</li>
+                <li>Escribe tu búsqueda. Utiliza palabras clave relevantes para lo que estás buscando.</li>
+                <li>Verás una lista de imágenes relacionadas con tu búsqueda. Desliza hacia abajo para ver más resultados.</li>
+                <li>Toca la imagen que te gustaría descargar para verla en tamaño completo.</li>
+                <li>Mantén presionada la imagen hasta que aparezca un menú y selecciona "Descargar imagen" o "Guardar imagen”.</li>
+                <li>La imagen se guardará en la carpeta de descargas o en la carpeta de imágenes, dependiendo de tu dispositivo.</li>
+            </ol>
+	   </template>
+	</category>
+	   
+	 <category>
+	    <pattern>BYDVIDEOS</pattern>
+	    <template><delay>3</delay>Para buscar y descargar vídeos:
+	        <delay>3</delay><ol>
+                <li>Abre el navegador en tu teléfono móvil y visita un sitio de vídeos como YouTube.</li>
+                <li>Escribe tu búsqueda. Utiliza palabras clave relevantes para lo que estás buscando.</li>
+                <li>Verás una lista de vídeos relacionados con tu búsqueda. Desliza hacia abajo para ver más resultados.</li>
+                <li>Toca el vídeo que te gustaría descargar para reproducirlo.</li>
+                <li>Copia el enlace del vídeo. En la mayoría de los navegadores móviles, puedes hacerlo tocando y manteniendo el dedo sobre la barra de dirección del navegador y seleccionando "Copiar".</li>
+                <li>Sal del navegador y abre una aplicación o sitio web que te permita descargar vídeos de YouTube u otros sitios de vídeo. Pega el enlace del vídeo en el campo de búsqueda y sigue las instrucciones para descargar el vídeo en tu dispositivo móvil.</li>
+            </ol>
+	   </template>
+	 </category>
+	 
+	 <category>
+	    <pattern>BYDMUSICA</pattern>
+	    <template><delay>3</delay>Para buscar y descargar música:
+	        <delay>3</delay><ol>
+                <li>Abre el navegador en tu teléfono móvil y visita un sitio de música como YouTube o alguna plataforma como Spotify.</li>
+                <li>Escribe tu búsqueda. Utiliza palabras clave relevantes para lo que estás buscando, como el nombre de la canción, artista o álbum que te interese.</li>
+                <li>Verás una lista de resultados relacionados con tu búsqueda. Desliza hacia abajo para ver más resultados.</li>
+                <li>Si estás utilizando una plataforma de streaming como YouTube o SoundCloud, podrás reproducir la música directamente desde el navegador. Si encuentras la canción que te gusta, puedes simplemente escucharla en línea.</li>
+                <li>Si deseas descargar la música para escucharla sin conexión, es posible que necesites utilizar una aplicación de terceros o un sitio web que te permita descargar música de forma gratuita o de pago. Busca en el navegador "descargar música desde YouTube" u opciones similares y sigue las instrucciones proporcionadas por el sitio web o la aplicación.</li>
+            </ol>
+	   </template>
+	 </category>
+	
+		<!-- 5. SEGURIDAD -->
+		
+	<category>
+	    <pattern>NAVEGACION SEGURA</pattern>
+	    <template><delay>3</delay>Aquí tienes algunos consejos para navegar de forma segura por internet:
+	    <delay>3</delay><ol>
+                <li>Asegúrate de que tanto tu sistema operativo estén siempre actualizadas.</li>
+                <li>Usa contraseñas únicas y seguras para tus cuentas en línea.</li>
+                <li>No abras correos electrónicos de remitentes desconocidos o no solicitados.</li>
+                <li>Antes de ingresar información personal o financiera en un sitio web, verifica que la URL comience con "https://" y que haya un candado en la barra de direcciones del navegador. Esto indica que la conexión es segura y que el sitio web está cifrado.</li>
+                <li>No accedas a sitios web que contienen información confidencial, como cuentas bancarias o correo electrónico, mientras estés conectado a una red Wi-Fi pública no segura.</li>
+                <li>Instala y utiliza un software antivirus y antimalware para protegerte contra amenazas en línea. También considera el uso de extensiones de navegador que bloqueen anuncios y rastreadores de sitios web.</li>
+            </ol>
+        </template>
+	</category>
+	
+	<category>
+	    <pattern>MENSAJE DE ADVERTENCIA</pattern>
+	    <template><delay>3</delay>No ignores los mensajes de advertencia o seguridad. Si estás realizando alguna actividad en particular cuando te aparezca, detén esa actividad de inmediato. Asegúrate de que el mensaje provenga de una fuente legítima. Algunos mensajes de advertencia falsos pueden ser intentos de estafa o phishing para engañarte y obtener información confidencial.
+            <delay>3</delay>Si tienes instalado software de seguridad en tu dispositivo, ejecuta un análisis completo para detectar y eliminar cualquier amenaza potencial.
+        </template>
+	</category>
+	
+	<category>
+	    <pattern>PAGINA PELIGROSA</pattern>
+	    <template><delay>3</delay>Para saber si una página web es peligrosa:
+	    <delay>3</delay><ol>
+                <li>Si la dirección web parece extraña o tiene errores, es mejor no confiar en ella.</li>
+                <li>Si ves un candado en la barra de direcciones del navegador o si la dirección web comienza con "https://", es una buena señal de que el sitio es seguro.</li>
+                <li>Si el sitio se ve desordenado o tiene muchos errores, es mejor no confiar en él.</li>
+                <li>Si el sitio tiene una política de privacidad y términos de uso claramente visibles, es más probable que sea seguro.</li>
+                <li>Si tu navegador te muestra una advertencia sobre el sitio, es mejor no arriesgarse y buscar otro lugar.</li>
+            </ol>
+        </template>
+	</category>
+	
+</aiml>

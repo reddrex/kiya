@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Índice de respuestas del bloque Aplicaciones y entretenimiento:
+	
+	1. Cuestiones generales
+	    - TIPOSAPPS
+	    - TIENDA
+	    - PAGOAPP
+	    - DIFERENCIAAPLICACION
+	    - HACERDESCARGAS
+	    - CALENDARIO
+	    - ALARMA
+	    - NOTAS
+	    
+	2. Vídeos
+	    - VIDEOS
+	    
+	3. Series y películas
+	    - STREAMING
+	    - TV
+	    
+	4. Música y radio
+	    - MUSICA
+	    - RADIO
+	
+	5. Salud
+	    - MEDICO
+	    - CITAMEDI
+	    
+	6. Orientación
+	    - MAPAS
+	    
+	7. Banca
+	    - BANCO
+	    - PAYGOOGLE
+	    
+	8. Recomendaciones
+	    - JUEGOSRECOMENDADOS
+	    - OPCIONESENTRETENIMIENTO
+	    - PASTILLAS
+	    
+	9. Extras
+	    - GOOGLECALENDAR
+	    - MEDISAFE
+	    - RECORDATORIOS
+	    - SALDO
+	    - TRANSFERENCIAS
+	    - TARJETA
+	    - IBANPIN
+	    - BIZUM
+	    - ACCIONESBANCOVARIAS
+	-->
+	
+	<!-- BLOQUE 1: CUESTIONES GENERALES -->
+	
+	    <!-- TIPOSAPPS -->
+	<category>
+	    <pattern>TIPOSAPP</pattern>
+	    <template><delay>5</delay>Si tu teléfono móvil fuera una caja de herramientas, las aplicaciones móviles o "apps" serían las herramientas.<delay>3</delay>Cada app sirve para tareas diferentes:<delay>3</delay>
+	    <ul>
+	        <li>Hay aplicaciones de entretenimiento: para jugar, ver la televisión, vídeos, o escuchar música.</li>
+	        <li>Otras son para tareas del día a día: poner el despertador, anotar fechas importantes, hacer fotos, orientarte...</li>
+	        <li>Y otras son para cosas más específicas, como pedir cita al médico o hacer operaciones bancarias (una transferencia, por ejemplo).</li>
+        </ul>
+	    </template>
+    </category>
+    
+        <!-- TIENDA -->
+    <category>
+        <pattern>TIENDA</pattern>
+        <template><delay>3</delay>Las app las puedes encontrar en la tienda de tu teléfono móvil<delay>3</delay>Pero, ¡espera! No es una tienda a la que puedas ir<delay>3</delay>Esta tienda la puedes encontrar en tu propio móvil; en Apple se llama App Store, y en Android, Google Play</template>
+    </category>
+    
+        <!-- PAGOAPP -->
+    <category>
+        <pattern>PAGOAPP</pattern>
+        <template><delay>3</delay>Te tengo buenas noticias... Generalmente, ¡las app no suelen costar dinero!<delay>5</delay>Sin embargo, es verdad que algunas sí te permiten hacer compras dentro de la app<delay>3</delay>Por ejemplo, descargar la app de una tienda de ropa puede ser gratis, pero comprar ropa dentro de ella costaría dinero<delay>4</delay>También hay aplicaciones que son de pago: el precio se indicará en la tienda de aplicaciones, y te pedirá la tarjeta de crédito antes de poder descargarla.</template>
+    </category>
+    
+        <!-- DIFERENCIAAPLICACION -->
+    <category>
+        <pattern>DIFERENCIAAPLICACION</pattern>
+        <template><delay>4</delay>Generalmente, las apps con coste y las que no cuestan dinero no suelen tener demasiadas diferencias aparte de tener que pagar por ellas.<delay>3</delay>Además, las apps gratuitas suelen mostrar anuncios para ganar dinero.<delay>3</delay>Aun así, es verdad, que algunas versiones de pago tienen más funcionalidades que las versiones gratis.<delay>5</delay>Un ejemplo sería una aplicación de edición de fotos, donde la versión gratuita te daría acceso solo a algunas herramientas y mostraría anuncios de vez en cuando.<delay>5</delay>Por otro lado, la versión de pago no tendría anuncios y te permitiría hacer uso de todas las funciones de la app.</template>
+    </category>
+    
+        <!-- DESCARGAS -->
+    <category>
+        <pattern>HACERDESCARGAS</pattern>
+        <template><delay>3</delay>Voy a explicarte ahora paso por paso cómo descargar una app:<delay>7</delay>
+        <ol>
+            <li>Busca el icono que dice "App Store" si tienes un iPhone, o "Google Play Store" si tienes un teléfono Android. Estos son los lugares donde puedes descargar nuevas aplicaciones.</li>
+            <li>Una vez que abras la tienda de aplicaciones, verás una barra de búsqueda en la parte superior de la pantalla. Toca esa barra y luego escribe el nombre de la aplicación que deseas descargar.</li>
+            <li>Después de escribir el nombre de la aplicación, toca el botón "Buscar" o presiona la tecla "Enter" en el teclado de tu teléfono. Aparecerán una lista de resultados relacionados con tu búsqueda.</li>
+            <li>Busca la aplicación correcta en la lista y tócala.</li>
+            <li>Si estás seguro de que deseas descargar esa aplicación, busca un botón que diga "Instalar" o "Descargar". Toca ese botón y espera a que la descarga se complete.</li>
+        </ol><delay>3</delay>
+        Una vez que la descarga haya terminado, verás un nuevo icono en tu pantalla de inicio con el nombre de la aplicación que descargaste. ¡Felicidades, has descargado una nueva aplicación en tu teléfono!
+        </template>
+    </category>
+    
+        <!-- CALENDARIO -->
+    <category>
+        <pattern>CALENDARIO</pattern>
+        <template><delay>3</delay>Tengo varias opciones para lo que me pides:<delay>3</delay>
+        <ul>
+            <li>
+                <button>
+                    <text>Calendario</text>
+                    <postback>GOOGLECALENDAR</postback>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <text>Medisafe</text>
+                    <postback>MEDISAFE</postback>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <text>Recordatorios</text>
+                    <postback>RECORDATORIOS</postback>
+                </button>
+            </li>
+        </ul><delay>3</delay>
+        Pulsa arriba sobre la aplicación que quieras saber más.<delay>3</delay>No obstante, te recomiendo especialmente el calendario, ya que puedes usarlo para recordarte multitud de cosas, desde pagos hasta cenas con la familia.
+        </template>
+    </category>
+    
+        <!-- ALARMA -->
+    <category>
+        <pattern>ALARMA</pattern>
+        <template><delay>3</delay>¡Vamos a ver paso por paso cómo poner la alarma del móvil!<delay>7</delay>
+        <ol>
+            <li>Busca la aplicación de "Reloj" en tu teléfono. Por lo general, tiene un icono que se parece a un reloj despertador. Tócalo para abrir la aplicación.</li>
+            <li>Una vez que estés en la aplicación de reloj, busca la opción que dice "Alarma" o "Despertador". Debería estar en la parte inferior de la pantalla o en algún lugar fácilmente visible. Tócalo.</li>
+            <li>Ahora verás una lista de todas las alarmas que has configurado previamente, si las hay. Para agregar una nueva alarma, busca un botón que diga "Agregar" o un signo más (+). Tócalo para crear una nueva alarma.</li>
+            <li>Selecciona la hora a la que deseas que suene la alarma. Puedes hacer esto girando una rueda o escribiendo la hora manualmente, dependiendo de cómo esté diseñada la aplicación en tu teléfono.</li>
+            <li>Después de configurar la hora, asegúrate de activar la alarma. Esto generalmente se hace tocando un interruptor o marcando una casilla que dice "Activar". Sin esto, la alarma no sonará.</li>
+        </ol><delay>4</delay>
+        ¡Y eso es todo! Ahora tu alarma está lista y sonará en la hora que estableciste. Si necesitas ajustarla o apagarla en el futuro, simplemente abre la aplicación de reloj y haz los cambios necesarios.
+        </template>
+    </category>
+    
+        <!-- NOTAS -->
+    <category>
+        <pattern>NOTAS</pattern>
+        <template><delay>3</delay>Las notas son una app perfecta para hacer listas de la compra o apuntar información importante:<delay>7</delay>
+        <ol>
+            <li>Busca la aplicación de "Notas" en tu teléfono. Por lo general, tiene un icono que se asemeja a una hoja de papel o un bloc de notas. Tócalo para abrir la aplicación.</li>
+            <li>Una vez que estés en la aplicación de notas, verás una pantalla donde puedes crear y ver tus notas existentes.</li>
+            <li>Para crear una nueva nota, busca un botón que diga "Nueva nota" o un ícono de "+" en la parte inferior de la pantalla. Tócalo para empezar a escribir una nueva nota.</li>
+            <li>Escribe lo que quieras en la nota utilizando el teclado en pantalla de tu teléfono.</li>
+            <li>Para guardar la nota, depende de tu teléfono: en algunos tendrás que presionar "guardar" y en otros servirá con darle al botón de retroceder, se guarda automáticamente.</li>
+        </ol><delay>3</delay>
+        Y eso es todo ¡Ya estás utilizando las notas en tu teléfono! Si necesitas volver a una nota más tarde o hacer cambios, simplemente abre la aplicación de notas y busca la nota que deseas editar.
+        </template>
+    </category>
+	
+	<!-- BLOQUE 2: VÍDEOS -->
+	    
+	    <!-- VIDEOS -->
+	<category>
+	    <pattern>VIDEOS</pattern>
+	    <template><delay>3</delay>Puedes ver vídeos en redes sociales como TikTok, pero fuera de ellas, el mejor sitio es YouTube.<delay>4</delay>Aquí encontrarás videoclips de canciones, entrevistas, películas, contenido educativo, documentales y mucho más.<delay>4</delay>Una vez hayas descargado la aplicación o la hayas encontrado en tu móvil, solo tienes que entrar en ella.<delay>4</delay>Podrás buscar vídeos utilizando la barra de búsqueda o explorar las diferentes categorías disponibles.<delay>5</delay>Cuando encuentres un vídeo que te interese, simplemente tócalo para reproducirlo.<delay>4</delay>Puedes ajustar el volumen y la calidad del vídeo tocando los controles en la pantalla, y también puedes pausar o detener el vídeo en cualquier momento.</template>
+    </category>
+	
+	<!-- BLOQUE 3: SERIES Y PELÍCULAS -->
+	    
+	    <!-- STREAMING -->
+	<category>
+	    <pattern>STREAMING</pattern>
+	    <template><delay>3</delay>Para ver una serie en tu teléfono necesitas tener descargada una app de streaming (HBO, Disney+, Netflix). Además, debes tener una cuenta de uno de estos servicios, los cuales son de pago.<delay>4</delay>Una vez te hayas asegurado de esto, para ver una serie, tienes que hacer lo siguiente:<delay>7</delay>
+	    <ol>
+	        <li>Una vez que hayas descargado la aplicación, ábrela y es posible que te pidan que inicies sesión o crees una cuenta. Sigue las instrucciones en pantalla para iniciar sesión con una cuenta existente o crear una nueva cuenta si es necesario.</li>
+	        <li>Ahora podrás explorar el catálogo de series disponibles en la aplicación. Puedes buscar series específicas utilizando la función de búsqueda o explorar las categorías y recomendaciones que ofrece la aplicación.</li>
+	        <li>Cuando encuentres una serie que te interese, simplemente toca su imagen o su título para abrir la página de detalles. Aquí encontrarás información sobre la serie, como la sinopsis, el elenco y las temporadas disponibles.</li>
+	        <li>Para comenzar a ver la serie, simplemente toca el botón de reproducción. Dependiendo de la aplicación, es posible que puedas elegir el episodio que deseas ver.</li>
+        </ol><delay>3</delay>
+        ¡Y eso es todo! Ahora estás listo para ver series en tu teléfono móvil.
+	    </template>
+    </category>
+    
+        <!-- TV -->
+    <category>
+        <pattern>TV</pattern>
+        <template><delay>4</delay>Para ver un canal de televisión en tu móvil existen dos opciones: usar el navegador o descargar una app.<delay>4</delay>Te recomiendo descargar la app de tus canales preferidos si tu intención es verlos con frecuencia en el teléfono.<delay>4</delay>Algunas apps de televisión que pueden interesarte son las de Movistar+, RTVE a la carta, ATRESplayer o MitelePlus.<delay>4</delay>
+        <ul>
+            <li>Para ver contenidos de la 1, 2, Canal 24h, TDP o Clan descarga la app de RTVE.</li>
+            <li>Para ver programas de la cuatro, telecinco, FDF, Divinity, Energy o Boing usa la aplicación MitelePlus.</li>
+            <li>Para ver antena 3, neox o nova puedes emplear ATRESPlayer.</li>
+        </ul>
+        </template>
+    </category>
+	
+	<!-- BLOQUE 4: MÚSICA -->
+	
+	    <!-- MUSICA -->
+	<category>
+	    <pattern>MUSICA</pattern>
+	    <template><delay>3</delay>Para escuchar música en tu móvil tienes dos opciones: la radio o una app de música.<delay>3</delay>Lo bueno de las aplicaciones es que te permiten tener algo más de control sobre lo que escuchas.<delay>4</delay>Algunas apps que te pueden interesar son Spotify, Apple Music o Amazon Music.<delay>7</delay>Estas apps funcionan de manera similar a las apps de streaming o vídeo, simplemente debes iniciar sesión en tu cuenta, entrar en la app y seleccionar o buscar la música que deseas escuchar.</template>
+    </category>
+    
+        <!-- RADIO -->
+    <category>
+        <pattern>RADIO</pattern>
+        <template><delay>3</delay>Para escuchar la radio en tu teléfono puedes usar la app por defecto que ya debes tener.<delay>3</delay>Solo tienes que buscarla, tocarla para entrar, y una vez en ella, sintonizarla hasta dar con la emisora que deseas escuchar.</template>
+    </category>
+	
+	<!-- BLOQUE 5: SALUD -->
+	
+	    <!-- MEDICO -->
+	<category>
+	    <pattern>MEDICO</pattern>
+	    <template><delay>4</delay>Cada comunidad autónoma suele tener su propia aplicación para reservar citas médicas.<delay>4</delay>Aquí en Andalucía, el Servicio Andaluz de Salud (SAS) tiene una aplicación llamada "Salud Responde" que puedes descargar en tu móvil.<delay>3</delay>Sigue los siguientes pasos:<delay>7</delay>
+	    <ol>
+	        <li>Una vez que hayas descargado la aplicación, ábrela y sigue las instrucciones para iniciar sesión si ya tienes una cuenta o regístrate si no la tienes. Vas a necesitar tu número de tarjeta sanitaria y otros datos personales.</li>
+	        <li>Una vez dentro de la aplicación, busca la opción que dice "Pedir cita médica" o algo similar.</li>
+	        <li>Después de encontrar la opción para pedir cita, la aplicación te va a pedir que elijas al médico o el servicio para el cual quieres la cita. Puedes buscarlo por nombre o especialidad.</li>
+	        <li>Después de seleccionar al médico o servicio, te van a mostrar los días y las horas disponibles para la cita. Elige la que mejor te convenga y confirma la cita.</li>
+	        <li>Una vez que hayas confirmado la cita, la aplicación te va a mostrar un resumen con los detalles. Guarda esta información para que no se te olvide.</li>
+        </ol>
+	    </template>
+    </category>
+    
+        <!-- CITAMEDI -->
+    <category>
+        <pattern>CITAMEDI</pattern>
+        <template><delay>3</delay>Para esto te recomiendo anotar tus citas médicas en el calendario y marcar que te lo recuerde</template>
+    </category>
+    
+    <!-- BLOQUE 6: ORIENTACIÓN -->
+    
+        <!-- MAPAS -->
+    <category>
+        <pattern>MAPAS</pattern>
+        <template><delay>3</delay>Voy a enseñarte a usar Google Maps para orientarte:<delay>8</delay>
+        <ol>
+            <li>Asegúrate de tener instalada la aplicación.</li>
+            <li>Una vez que estés dentro de la aplicación, verás un cuadro de búsqueda en la parte superior de la pantalla. Toca este cuadro de búsqueda para poder ingresar la dirección del lugar al que quieres ir.</li>
+            <li>Ahora, escribe la dirección completa del lugar al que deseas ir. Esto incluye el nombre de la calle, el número de la calle, la ciudad y el código postal si lo conoces. Por ejemplo, "Calle de la Prueba 123, Ciudad Ejemplo, Código Postal".</li>
+            <li>Después de ingresar la dirección, toca el botón de búsqueda en tu teclado o en la pantalla de tu dispositivo.</li>
+            <li>La app te mostrará los resultados en el mapa. Puede que veas varias opciones si hay lugares similares cercanos. Selecciona el destino correcto.</li>
+            <li>Una vez que hayas seleccionado el destino correcto, toca el botón de "Direcciones" (generalmente es un ícono de flecha o un botón con la palabra "Direcciones").</li>
+            <li>Ahora, introduce tu ubicación actual. Puedes hacer esto tocando el ícono de la flecha que representa tu ubicación actual en el mapa. Si Google Maps ya conoce tu ubicación, simplemente muestra la distancia y el tiempo estimado para llegar.</li>
+            <li>La aplicación calculará la ruta más rápida o conveniente para llegar al destino que has elegido y te proporcionará instrucciones paso a paso.</li>
+        </ol>
+        </template>
+    </category>
+    
+	<!-- BLOQUE 7: BANCA -->
+	    
+	    <!-- BANCO -->
+    <category>
+        <pattern>BANCO</pattern>
+        <template><delay>3</delay>Para acceder a tus servicios bancarios existen las aplicaciones del banco.<delay>3</delay>En ellas puedes hacer las siguientes actividades sin tener que ir a una oficina:<delay>5</delay>
+        <ul>
+            <li>
+                <button>
+                    <text>Ver el saldo y extractos bancarios</text>
+                    <postback>SALDO</postback>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <text>Realizar transferencias o pagar facturas</text>
+                    <postback>TRANSFERENCIAS</postback>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <text>Encender, apagar y bloquear tu tarjeta de débito/crédito</text>
+                    <postback>TARJETA</postback>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <text>Ver el pin de la tarjeta o el IBAN de la cuenta</text>
+                    <postback>IBANPIN</postback>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <text>Hacer un bizum</text>
+                    <postback>BIZUM</postback>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <text>Otras acciones</text>
+                    <postback>ACCIONESBANCOVARIAS</postback>
+                </button>
+            </li>
+        </ul>
+        </template>
+    </category>
+    
+        <!-- PAYGOOGLE -->
+    <category>
+        <pattern>PAYGOOGLE</pattern>
+        <template><delay>3</delay>Para pagar con el teléfono móvil debes descargar una aplicación como Google Pay o Apple Pay.<delay>4</delay>Luego debes introducir los datos de tu tarjeta bancaria en la aplicación y activar el NFC de tu dispositivo móvil para poder realizar pagos sin necesidad de llevar encima la tarjeta física.<delay>4</delay>Te recomiendo contactar con tu entidad más cercana si necesitas ayuda con este proceso.</template>
+    </category>
+	
+	<!-- BLOQUE 8: RECOMENDACIONES -->
+	
+	    <!-- JUEGOSRECOMENDADOS -->
+	<category>
+	    <pattern>JUEGOSRECOMENDADOS</pattern>
+	    <template></template>
+    </category>
+    
+        <!-- OPCIONESENTRETENIMIENTO -->
+    <category>
+        <pattern>OPCIONESENTRETENIMIENTO</pattern>
+        <template></template>
+    </category>
+    
+        <!-- PASTILLAS -->
+    <category>
+        <pattern>PASTILLAS</pattern>
+        <template><delay>3</delay>Puedes usar muchas aplicaciones diferentes para este propósito, como el calendario o recordatorios.<delay>3</delay>Sin embargo, te recomiendo específicamente Medisafe.<srai>MEDISAFE</srai></template>
+    </category>
+    
+    <!-- BLOQUE 9: EXTRAS -->
+    
+        <!-- GOOGLECALENDAR -->
+    <category>
+        <pattern>GOOGLECALENDAR</pattern>
+        <template>Es como un calendario en papel pero digital y que puedes llevar a todos lados. Te permite configurar recordatorios para eventos médicos y cualquier otra cosa que necesites recordar como comidas, cenas, fiestas o cumpleaños.</template>
+    </category>
+    
+        <!-- MEDISAFE -->
+    <category>
+        <pattern>MEDISAFE</pattern>
+        <template>Es una aplicación diseñada específicamente para ayudarte a gestionar tus medicamentos y citas médicas. Te permite establecer recordatorios para tomar tus medicamentos a tiempo y también te recuerda las citas médicas.</template>
+    </category>
+    
+        <!-- RECORDATORIOS -->
+    <category>
+        <pattern>RECORDATORIOS</pattern>
+        <template>Esta es una app de Apple cuya función únicamente es hacer listas de la compra o recordarte eventos.</template>
+    </category>
+    
+        <!-- SALDO -->
+    <category>
+        <pattern>SALDO</pattern>
+        <template><delay>3</delay>Para consultar el saldo de tu cuenta, debes:<delay>5</delay>
+        <ol>
+            <li>Abrir la aplicación de tu banco: BBVA, Santander, La Caixa, etc.</li>
+            <li>Iniciar sesión con tu usuario y contraseña</li>
+            <li>Nada más entrar, debería mostrarte el saldo de tu cuenta, pero si esto no es así, busca un apartado en el que ponga "Cuentas" o "Saldo" y haz click en él.</li>
+            <li>Si tienes alguna duda más sobre este proceso, no dudes en contactar con tu banco</li>
+        </ol>
+        </template>
+    </category>
+    
+        <!-- TRANSFERENCIAS -->
+    <category>
+        <pattern>TRANSFERENCIAS</pattern>
+        <template><delay>3</delay>Para realizar una transferencia con tu teléfono sigue estos pasos:<delay>5</delay>
+        <ol>
+            <li>Abre la aplicación de tu banco: BBVA, Santander, La Caixa, etc.</li>
+            <li>Inicia sesión con tu usuario y contraseña</li>
+            <li>Busca tres puntos o tres barras y presiona sobre ellos</li>
+            <li>Busca la opción de "Transferencias" o "Enviar dinero"</li>
+            <li>Introduce los datos del destinatario y de la operación: nombre, IBAN y cantidad</li>
+            <li>Sigue las instrucciones en la pantalla para completar la transferencia, y todo listo</li>
+            <li>Si tienes alguna duda o te produce inseguridad realizar esta actividad en el móvil, no dudes en contactar con tu banco</li>
+        </ol>
+        </template>
+    </category>
+    
+        <!-- TARJETA -->
+    <category>
+        <pattern>TARJETA</pattern>
+        <template><delay>3</delay>En la app del banco puedes realizar distintas actividades relacionadas con tu tarjeta, incluso hasta puedes solicitar una nueva.<delay>5</delay>
+        <ul>
+            <li>Bloquear tarjeta: debes escoger esto si has perdido la tarjeta y no crees que tengas opción de volver a encontrarla, o si te la han robado. Una vez hayas abierto la aplicación e iniciado sesión, ve al apartado de "Tarjetas", y en la tarjeta que quieras bloquear o cancelar, busca la opción de "bloquear" o "reportar como perdida" y sigue las instrucciones.</li><delay>1</delay>
+            <li>Apagar tarjeta: esta puede ser una opción si has perdido la tarjeta pero podrías encontrarla, por ejemplo, en tu casa. Por el momento, mientras la buscas, puedes apagarla para evitar disgustos si resulta que no aparece. Debes seguir los mismos pasos que en el apartado anterior, pero en lugar de bloquearla o reportarla, simplemente seleccionar "Apagar" o "Desactivar".</li><delay>1</delay>
+            <li>Encender tarjeta: esto puede servirte para cuando acabas de recibir tu tarjeta por correo, o para encenderla una vez la hayas encontrado. Debes repetir los mismos pasos que en los apartados anteriores, pero seleccionando al final "Encender".</li><delay>1</delay>
+        </ul>
+        </template>
+    </category>
+    
+        <!-- IBANPIN -->
+    <category>
+        <pattern>IBANPIN</pattern>
+        <template><delay>3</delay>Esta operación es similar a otras como la de "ver saldo". Sigue estos pasos:<delay>3</delay>
+        <ol>
+            <li>Abre la aplicación de tu banco e inicia sesión con tu usuario y contraseña</li>
+            <li>Busca la sección de "tarjetas" o "cuentas" de tu aplicación</li>
+            <li>Al hacer click en ella, probablemente se te ofrezca la posibilidad tanto de ver el "PIN" de la tarjeta como el "IBAN" de la cuenta</li>
+            <li>Si no lo encuentras, pide ayuda o contacta con tu banco</li>
+        </ol>
+        </template>
+    </category>
+    
+        <!-- BIZUM -->
+    <category>
+        <pattern>BIZUM</pattern>
+        <template><delay>3</delay>Últimamente muchos bancos han incorporado la opción de hacer un bizum en sus apps, así que puedes hacer lo siguiente:<delay>5</delay>
+        <ol>
+            <li>Entra en la app de tu banco e inicia sesión con tu usuario y clave</li>
+            <li>Haz click en los tres puntos o barras, que suelen ser las opciones, y busca un apartado de "bizum" o "enviar dinero a un contacto"</li>
+            <li>Elige la opción de seleccionar al contacto a través de la libreta de contactos</li>
+            <li>Escoge el contacto al que deseas pasarle el dinero y establece una cantidad</li>
+            <li>Asegúrate de que el nombre y los apellidos del contacto son correctos antes de enviar el dinero, luego dale a confirmar</li>
+            <li>Si el nombre es incorrecto, presiona "cancelar" y repite la operación o pide ayuda</li>
+            <li>Si todo esto no funciona o encuentras alguna dificultad, ¡no desesperes! Lo mejor es contactar con tu banco para que resuelvan tus dudas</li>
+        </ol>
+        </template>
+    </category>
+    
+        <!-- ACCIONESBANCOVARIAS -->
+    <category>
+        <pattern>ACCIONESBANCOVARIAS</pattern>
+        <template><delay>3</delay>Para otras acciones que no puedo cubrir, por favor dirígete a tu entidad bancaria.<delay>3</delay>Si no conoces su número de teléfono puedes buscarlo por internet.</template>
+    </category>
+    
+</aiml>
