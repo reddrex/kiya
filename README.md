@@ -3,7 +3,7 @@
 
 These are the files for an NLP university course project where we developed an AIML (Artificial Intelligence Markup Language) conversational agent. Its purpose is to serve as a PoC (Proof of Concept) for an AI assistant that helped the Spanish-speaking elderly navigate their questions when interacting with mobile devices.
 
-We followed an adapted version of the [IThaKA pattern design](https://zenodo.org/records/18237644?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImVmODhkYzdlLTA3MjYtNGQ1Mi1iZmZjLWZiZWUyNzNhNGI1YSIsImRhdGEiOnt9LCJyYW5kb20iOiIyYmNhNTY2NjhhZjE3YWI2MTlmZGIwY2I5MjQxMTM5YiJ9.ldHE_ZEOSI9zYmWijTPjCPVYO7JBWrgRdzyLmC5L6gaXdhYLvoKSyqY2CL-lqhmPfhJHfvQssChVQoOqgXdQmA.), leaving out the dual index structure of common and specific knowledge, as we weren't going to reuse the chatbot and it was a small PoC that wasn't going to have much personality (common knowledge).
+We followed an adapted version of the [IThaKA pattern design](https://zenodo.org/records/18237644), leaving out the dual index structure of common and specific knowledge, as we weren't going to reuse the chatbot and it was a small PoC that wasn't going to have much personality (common knowledge).
 
 
 
