@@ -9,10 +9,12 @@ We followed an adapted version of the [IThaKA pattern design](https://zenodo.org
 
 ## Authors
 
-- Jorge Zamora Rey ([@reddrex](https://github.com/reddrex))
 - Andrea Alonso
 - Nuria García
+- Clara García Novo
 - Carmen Oliva
+- Aurora Ramos Hernández
+- Jorge Zamora Rey ([@reddrex](https://github.com/reddrex))
 
 
 ## FAQ
