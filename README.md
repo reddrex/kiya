@@ -23,7 +23,7 @@ We followed an adapted version of the [IThaKA pattern design](https://zenodo.org
 
 Because of the diversity of skills in the team, we deployed the files in Pandorabots. However, you just need an AIML interpreter for our files to work with your project. You can easily use libraries that support AIML 2.0/2.1 that must support the sets, maps and such that Pandorabots uses; e.g. pyaiml21 in Python or Program AB in Java.
 
-#### Where can I try it? Do I have to clone the repository and choose and interpreter?
+#### Where can I try it? Do I have to clone the repository and choose an interpreter?
 
 Not really, it used to be that way, but I've recently tried to emulate an AIML interpreter in Javascript so you can interact with the chatbot here (those files are on the gh pages branch, chatbot files remain on the origin/main one).
 You can try it on github pages, here: https://reddrex.github.io/kiya/. Do keep in mind that it is a rule-based chatbot with a very small corpora of predefined interactions.
