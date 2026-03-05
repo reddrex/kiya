@@ -25,7 +25,7 @@ Because of the diversity of skills in the team, we deployed the files in Pandora
 
 #### Where can I try it? Do I have to clone the repository and choose and interpreter?
 
-Not really, it used to be that way, but I've recently tried to emulate an AIML interpreter in Javascript so you can interact with the chatbot here.
+Not really, it used to be that way, but I've recently tried to emulate an AIML interpreter in Javascript so you can interact with the chatbot here (those files are on the gh pages branch, chatbot files remain on the origin/main one).
 You can try it on github pages, here: . Do keep in mind that it is a rule-based chatbot with a very small corpora of predefined interactions.
 
 #### Can I reuse your project?
